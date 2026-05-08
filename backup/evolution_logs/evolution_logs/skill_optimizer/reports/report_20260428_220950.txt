@@ -1,0 +1,20 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-04-28 22:09
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🔴 通过率: 61.5%  |  ✅ 通过: 8  |  ❌ 非预期失败: 4  |  ⚠️ 预期环境失败: 1  |  🔶退化: 6
+
+  技能明细:
+  🔴 mlops/training/unsloth: 0.0% ❌1 | avg 0ms
+  🔴 xiaoa-persona-system: 0.0% ❌3 | avg 0ms
+  🟢 unsloth: 100.0% | avg 0ms
+  🟢 mlops/xiaoa-persona-system: 100.0% | avg 0ms
+  🟢 note-taking/obsidian: 100.0% | avg 0ms
+  🟢 english-learning-resources: 100.0% | avg 0ms
+  🟢 google-workspace: 100.0% | avg 0ms
+  🟢 maps: 100.0% | avg 0ms
+  🟢 nano-pdf: 100.0% | avg 0ms
+  🟢 notion: 100% ⚠️1 | avg 7720.0ms
+  🟢 powerpoint: 100.0% | avg 0ms
+═══════════════════════════════════════════════════════

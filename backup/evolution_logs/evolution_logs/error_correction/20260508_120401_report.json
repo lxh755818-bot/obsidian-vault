@@ -1,0 +1,77 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-08T12:04:01.204506",
+  "scan_window_hours": 12,
+  "errors_found": 1269,
+  "errors_closed": 0,
+  "errors_accepted": 0,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio: Unclosed client session": 607,
+    "asyncio: Unclosed connector": 34,
+    "asyncio: Future exception was never retrieved": 2
+  },
+  "category_breakdown": {
+    "traceback_generic": {
+      "groups": 1,
+      "occurrences": 506
+    },
+    "lark_ws_no_close": {
+      "groups": 157,
+      "occurrences": 182
+    },
+    "unknown": {
+      "groups": 5,
+      "occurrences": 11
+    },
+    "cron_job_timeout": {
+      "groups": 4,
+      "occurrences": 8
+    },
+    "api_exception": {
+      "groups": 2,
+      "occurrences": 252
+    },
+    "hindsight_api_402": {
+      "groups": 1,
+      "occurrences": 126
+    },
+    "vision_invalid_image_source": {
+      "groups": 1,
+      "occurrences": 1
+    },
+    "lark_connect_timeout": {
+      "groups": 6,
+      "occurrences": 8
+    },
+    "lark_ws_1011": {
+      "groups": 7,
+      "occurrences": 12
+    },
+    "minimax_model_dump_error": {
+      "groups": 16,
+      "occurrences": 144
+    },
+    "feishu_edit_failed": {
+      "groups": 7,
+      "occurrences": 7
+    },
+    "invalid_api_response": {
+      "groups": 1,
+      "occurrences": 1
+    },
+    "build_anthropic_kwargs": {
+      "groups": 1,
+      "occurrences": 11
+    }
+  },
+  "tracker_summary": {
+    "total_tracked": 73,
+    "closed": 18,
+    "accepted": 55,
+    "open": 0,
+    "in_progress": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-05-02T14:01:37.864405",
+  "current_index": 155,
+  "total_skills": 180,
+  "current": {
+    "skill": "xurl",
+    "category": "social-media/xurl",
+    "type": "api",
+    "metrics": {
+      "latency_ms": 0,
+      "success": null,
+      "output_valid": false,
+      "error": "xurl not installed"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 1,
+      "error_rate_pct": 0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "xurl CLI not installed \u2014 mark as manual_only or install via: curl -fsSL https://raw.githubusercontent.com/xdevplatform/xurl/main/install.sh | bash"
+    ],
+    "status": "warning"
+  },
+  "summary": {
+    "audit_passed": 3,
+    "audit_warnings": 0,
+    "action": "xurl CLI not installed - manual_only"
+  }
+}

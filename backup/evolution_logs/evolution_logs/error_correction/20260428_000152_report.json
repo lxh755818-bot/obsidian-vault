@@ -1,0 +1,60 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-28T00:01:52.036572",
+  "scan_window_hours": 12,
+  "errors_found": 4,
+  "errors_closed": 0,
+  "errors_accepted": 0,
+  "errors_open": 4,
+  "reports": [
+    {
+      "error_id": "err_001",
+      "error_type": "LarkWebSocketError",
+      "summary": "Lark WebSocket接收消息循环异常退出：no close frame received (出现24次)",
+      "status": "open",
+      "solution": "WebSocket连接被异常关闭，可能原因：1)飞书服务端主动断开 2)网络中断 3)心跳超时。当前SDK应会自动重连。建议：确认SDK重连机制是否正常",
+      "test_result": "network_issue",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "LarkWebSocketError",
+      "summary": "Lark WebSocket连接失败：callback/ws/endpoint超时 (出现6次)",
+      "status": "open",
+      "solution": "WebSocket连接建立失败，可能是网络问题或飞书服务端不可达。建议检查网络到open.feishu.cn的连接",
+      "test_result": "network_issue",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_003",
+      "error_type": "FeishuAPIError",
+      "summary": "飞书消息编辑失败：连接超时 (出现2次)",
+      "status": "open",
+      "solution": "飞书服务器连接超时，可能是网络问题或飞书服务端波动。当前日志中已自动重试。建议：1)检查网络连接 2)飞书服务状态监控 3)实现指数退避重试",
+      "test_result": "network_issue",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_004",
+      "error_type": "asyncio_unhandled_exception",
+      "summary": "asyncio未处理异常 (出现2次)",
+      "status": "open",
+      "solution": "需要查看具体异常信息。建议捕获更完整的堆栈信息进行分析",
+      "test_result": "needs_more_info",
+      "test_duration_ms": 0
+    }
+  ],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio: Unclosed client session": 1874,
+    "asyncio: Unclosed connector": 123,
+    "asyncio: Future exception was never retrieved": 6
+  },
+  "tracker_summary": {
+    "total_tracked": 40,
+    "closed": 19,
+    "accepted": 21,
+    "open": 0,
+    "in_progress": 0
+  }
+}

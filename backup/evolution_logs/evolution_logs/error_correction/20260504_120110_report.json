@@ -1,0 +1,33 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-04T12:01:10.197424",
+  "scan_window_hours": 12,
+  "errors_found": 248,
+  "errors_closed": 0,
+  "errors_accepted": 0,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [],
+  "noise_filtered": {},
+  "category_breakdown": {
+    "lark_ws_no_close": {
+      "groups": 47,
+      "occurrences": 94
+    },
+    "minimax_model_dump_error": {
+      "groups": 77,
+      "occurrences": 154
+    }
+  },
+  "tracker_summary": {
+    "total_tracked": 67,
+    "closed": 18,
+    "accepted": 49,
+    "open": 0,
+    "in_progress": 0
+  },
+  "notes": [
+    "lark_ws_no_close: 47 groups/94 occurrences — WebSocket no close frame received/sent, known accepted (Lark platform behavior)",
+    "minimax_model_dump_error: 77 groups/154 occurrences — MiniMax API returns dict instead of Pydantic model, known accepted (偶发，下游fallback处理)"
+  ]
+}

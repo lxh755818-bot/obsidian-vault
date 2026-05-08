@@ -1,0 +1,25 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-05-01 14:01
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🟡 通过率: 70.0%  |  ✅ 通过: 7  |  ❌ 非预期失败: 2  |  ⚠️ 预期环境失败: 1  |  🔶退化: 3
+
+  技能明细:
+  🔴 notion: 0.0% ❌2 | avg 12.0ms
+  🟢 google-workspace: 100.0% | avg 0ms
+  🟢 linear: 100% ⚠️1 | avg 0ms
+  🟢 maps: 100.0% | avg 1.0ms
+  🟢 productivity/nano-pdf/nano-pdf: 100.0% | avg 0ms
+  🟢 ocr-and-documents: 100.0% | avg 1.0ms
+  🟢 productivity/powerpoint/powerpoint: 100.0% | avg 0ms
+  🟢 productivity/maps/maps: 100.0% | avg 1.0ms
+  🟢 nano-pdf: 100.0% | avg 23.0ms
+
+───────────────────────────────────────────────────────
+  📋 待审批修复方案: 4 个
+    → xiaoa-persona-system_fix_v2.json
+    → nano-pdf_fix_v2.json
+    → notion_fix_v2.json
+    → arxiv_fix_v2.json
+═══════════════════════════════════════════════════════

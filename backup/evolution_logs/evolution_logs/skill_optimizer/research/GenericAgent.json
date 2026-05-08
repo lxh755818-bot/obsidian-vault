@@ -1,0 +1,98 @@
+{
+  "topic": "GenericAgent",
+  "rank": 4,
+  "stars": "~4,300",
+  "github_url": "https://github.com/lsdefine/GenericAgent",
+  "key_features": [
+    "Self-evolving skill tree: grows skills from 3.3K-line seed through usage, not preloaded",
+    "9 atomic tools + ~100-line Agent Loop providing full system-level computer control",
+    "Cognition loop architecture: perceive → understand → act → feedback → analyze gap → update understanding → memory → next round",
+    "Desktop pet + keychain integration for interactive frontend",
+    "MiniMax as first-class LLM provider (added March 2026)",
+    "L4 session archiver + scheduler cron integration",
+    "Browser, terminal, filesystem, keyboard/mouse, screen vision, and ADB mobile device control",
+    "TMWebDriver for browser automation with CDP bridge"
+  ],
+  "tech_stack": [
+    "Python 3.11/3.12",
+    "pywebview",
+    "CDP (Chrome DevTools Protocol) bridge",
+    "ADB (Android Debug Bridge) for mobile",
+    "OpenAI compatible API format",
+    "Claude compatible API format",
+    "MiniMax LLM provider"
+  ],
+  "pricing": "Open source (MIT License), no pricing",
+  "hermes_comparison": {
+    "advantages": [
+      "Unique self-evolving philosophy: grows skills from minimal seed vs Hermes's pre-built skill system",
+      "More minimal core (~3K lines) with emergence of complex capabilities",
+      "Desktop pet/avatar frontend for interactive experience",
+      "Strong browser automation via TMWebDriver with CDP bridge",
+      "Active development: 340 commits, very recent commits (Apr 2026)"
+    ],
+    "disadvantages": [
+      "Much lower star count (3.5K vs Hermes's ~96K)",
+      "Less mature ecosystem and community",
+      "Fewer integrations and tools out of the box",
+      "Less documented compared to Hermes",
+      "Small contributor base (single main author lsdefine)"
+    ],
+    "threat_level": "medium",
+    "inspiration": [
+      "Self-evolving skill tree approach could inspire Hermes to evolve capabilities from minimal seeds rather than preloading all skills",
+      "Cognition loop architecture with explicit gap analysis between feedback and understanding is a sophisticated reflection mechanism",
+      "Desktop pet/avatar frontend provides a unique interactive layer that Hermes could consider for user engagement",
+      "MiniMax as LLM provider integration shows multi-provider flexibility"
+    ]
+  },
+  "community": {
+    "contributors": "1 main author (lsdefine), limited but active",
+    "last_commit": "2026-04-13",
+    "open_issues": "Unknown (not captured in search)",
+    "daily_new_stars": "~848/day (as of Apr 16-18, 2026)"
+  },
+  "verdict": "Innovative self-evolving agent framework with unique philosophy of growing skills from minimal seed; strong on browser/desktop automation but nascent community.",
+  "action_items": [
+    "Monitor GenericAgent's growth trajectory and star count as a leading indicator of self-evolution approach adoption",
+    "Study the cognition loop architecture (perceive → understand → act → feedback → gap analysis → update) for potential integration into Hermes reflection mechanism",
+    "Evaluate TMWebDriver + CDP bridge approach for browser automation as alternative/complement to existing Hermes capabilities",
+    "Consider self-evolving skill tree concept for Hermes: start minimal and grow capabilities through actual usage rather than preloading"
+  ],
+  "researched_at": "2026-04-19T02:10:00Z",
+  "sources": [
+    {
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "type": "github",
+      "date": "2026-04-13"
+    },
+    {
+      "url": "https://blog.csdn.net/shimingwang/article/details/159805805",
+      "type": "blog",
+      "date": "2026-04-04"
+    },
+    {
+      "url": "https://blog.csdn.net/ZHHHHH15/article/details/160267506",
+      "type": "blog",
+      "date": "2026-04-18"
+    },
+    {
+      "url": "https://github.com/lsdefine/GenericAgent/blob/main/GETTING_STARTED.md",
+      "type": "doc",
+      "date": "2026-03-29"
+    }
+  ],
+  "quality_score": {
+    "total": 14,
+    "stars_accuracy": 2,
+    "features": 2,
+    "tech_stack": 2,
+    "vs_hermes": 2,
+    "community": 2,
+    "action_items": 2,
+    "sources": 2
+  },
+  "stars_exact": "~4,300",
+  "trend": "rising",
+  "threat_level": "medium"
+}

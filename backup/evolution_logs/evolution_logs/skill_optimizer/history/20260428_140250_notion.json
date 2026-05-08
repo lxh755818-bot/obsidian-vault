@@ -1,0 +1,35 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-28T14:02:50.570684",
+  "current_index": 113,
+  "total_skills": 151,
+  "current": {
+    "skill": "notion",
+    "category": "productivity/notion",
+    "type": "api",
+    "metrics": {
+      "latency_ms": 7720,
+      "success": false,
+      "output_valid": false,
+      "error": "NOTION_API_KEY not configured"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 100.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "依赖不可用: NOTION_API_KEY，需要在 ~/.hermes/.env 配置 NOTION_API_KEY"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 0,
+    "action": "NOTION_API_KEY 未配置，技能无法实际调用"
+  }
+}

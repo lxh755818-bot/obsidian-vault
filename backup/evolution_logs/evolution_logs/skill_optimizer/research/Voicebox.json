@@ -1,0 +1,118 @@
+{
+  "topic": "Voicebox",
+  "topic_safe": "Voicebox",
+  "researched_at": "2026-04-19T02:24:00Z",
+  "quality_score": {
+    "total": 14,
+    "stars_accuracy": 3,
+    "features": 2,
+    "tech_stack": 2,
+    "vs_hermes": 1,
+    "community": 2,
+    "action_items": 2,
+    "sources": 2
+  },
+  "stars": {
+    "current": 19000,
+    "trend": "rising",
+    "daily_new": 894,
+    "as_of": "2026-04-17"
+  },
+  "core_features": [
+    {
+      "feature": "Local Voice Cloning",
+      "description": "Clone any voice from just 3 seconds of audio. Supports uploading clips, recording from microphone, or capturing system audio (including from YouTube videos). All processing runs locally.",
+      "hermes_gap": "Hermes has no native voice cloning capability"
+    },
+    {
+      "feature": "Multi-Engine Architecture",
+      "description": "5 TTS engines: Qwen3-TTS, LuxTTS, Chatterbox Multilingual, Chatterbox Turbo, HumeAI TADA. Users can choose the right model for each job.",
+      "hermes_gap": "No multi-engine TTS flexibility"
+    },
+    {
+      "feature": "23 Language Support",
+      "description": "Supports 23 languages including English, Arabic, Japanese, Hindi, Swahili, and more.",
+      "hermes_gap": null
+    },
+    {
+      "feature": "Post-Processing Effects",
+      "description": "Pitch shifting, reverb, delay, chorus, compression, and filters built-in",
+      "hermes_gap": null
+    },
+    {
+      "feature": "Multi-Voice Timeline Editor",
+      "description": "Compose multi-voice projects with timeline editing. Infinite length via automatic chunking and crossfading.",
+      "hermes_gap": "No multi-voice content creation in Hermes"
+    },
+    {
+      "feature": "Privacy-First",
+      "description": "All models and voice data stay on the user's machine. No cloud dependency.",
+      "hermes_gap": "Hermes relies on cloud TTS services"
+    }
+  ],
+  "tech_stack": {
+    "language": "Python",
+    "framework": "Desktop App (Qt/GTK)",
+    "key_dependencies": ["Qwen3-TTS", "LuxTTS", "Chatterbox", "HumeAI TADA"]
+  },
+  "vs_hermes": {
+    "advantages": [
+      "Voicebox provides local voice cloning, Hermes has none",
+      "Voicebox is completely free and open source",
+      "Multi-engine flexibility for different use cases",
+      "Desktop app with GUI, easier for non-technical users"
+    ],
+    "disadvantages": [
+      "Hermes is an AI agent framework, Voicebox is only TTS",
+      "Voicebox has no agent/multi-tool capabilities",
+      "Voicebox is desktop-only, not API/integratable"
+    ],
+    "inspired_takeaways": [
+      "Consider integrating open-source TTS engines (Coqui, XTTS) for local voice cloning",
+      "Multi-engine TTS architecture could allow users to choose quality vs speed",
+      "Local privacy-first approach for voice data could be a differentiator"
+    ]
+  },
+  "community": {
+    "github_stars": 19000,
+    "trending_rank": 8,
+    "open_issues": null,
+    "recent_activity": "high",
+    "main_use_cases": ["Content creators", "Podcasters", "Video producers", "Accessibility applications"]
+  },
+  "threat_level": "medium",
+  "key_findings": [
+    "jamiepine/voicebox is a rising open-source project (~19k stars, +894/day) providing local voice cloning as ElevenLabs alternative",
+    "Meta's original Voicebox (2023) was a research model, never open-sourced - different project entirely",
+    "Voicebox targets creators/producers, not developers - different market from Hermes"
+  ],
+  "action_items": [
+    {
+      "priority": "medium",
+      "action": "Monitor voice cloning open-source space - XTTS, Coqui TTS, and Voicebox are all gaining traction",
+      "reason": "Voice cloning becoming commoditized could impact cloud TTS services"
+    },
+    {
+      "priority": "low",
+      "action": "Consider optional local TTS engine integration for privacy-sensitive use cases",
+      "reason": "User demand for offline voice processing may grow"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/jamiepine/voicebox",
+      "type": "github",
+      "date": "2026-04-17"
+    },
+    {
+      "url": "https://voicebox.sh/",
+      "type": "doc",
+      "date": "2026-04-17"
+    },
+    {
+      "url": "https://github.com/bbylw/voicebox-cn",
+      "type": "github",
+      "date": "2026-03-19"
+    }
+  ]
+}

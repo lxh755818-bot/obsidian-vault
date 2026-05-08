@@ -1,0 +1,55 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-24T12:02:44.909923",
+  "errors_found": 3,
+  "errors_closed": 0,
+  "errors_open": 1,
+  "errors_accepted": 2,
+  "reports": [
+    {
+      "error_id": "err_015+err_024",
+      "error_type": "NetworkError/FeishuConnection",
+      "summary": "飞书服务器连接失败/DNS解析错误 - 342次新发生 (最近12小时)。症状: HTTPSConnectionPool连接open.feishu.cn失败，NameResolutionError。已有多次记录(err_015/err_024)，均为网络环境问题。",
+      "status": "accepted",
+      "solution": "网络环境问题，非代码错误。DNS解析open.feishu.cn失败，建议检查：1) DNS服务器配置 2) 网络连通性 3) 防火墙/代理设置。Gateway会在连接恢复后自动重连。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "count": 342,
+      "keywords": [
+        "feishu_connection",
+        "HTTPSConnectionPool",
+        "NameResolutionError"
+      ]
+    },
+    {
+      "error_id": "err_017+err_023+err_101+err_119",
+      "error_type": "WebSocketError/FeishuPingTimeout",
+      "summary": "飞书WebSocket ping超时断开 - 4次新发生 (最近12小时)。已有多次记录(err_017/err_023/err_101/err_119)，因飞书服务器连接频繁断开导致WebSocket keepalive超时。",
+      "status": "accepted",
+      "solution": "飞书WebSocket连接不稳定，建议检查网络质量。Gateway会尝试自动重连。当前错误可能是网络质量差或飞书服务端问题。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "count": 4,
+      "keywords": [
+        "feishu_ping_timeout",
+        "keepalive ping timeout",
+        "loop_exit"
+      ]
+    },
+    {
+      "error_id": "err_025",
+      "error_type": "APIConnectionError/MiniMax",
+      "summary": "MiniMax API连接错误 - 40次新发生 (最近12小时)。cron job调用MiniMax API失败，Connection error。可能是同一网络问题导致。",
+      "status": "open",
+      "solution": "MiniMax API调用失败(40次)，与飞书连接失败发生在同一时间段，可能为同一网络问题(出口流量DNS/连接受限)。建议：1) 检查网络到MiniMax API的连通性 2) 检查代理配置 3) 确认API密钥有效。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "count": 40,
+      "keywords": [
+        "api_connection_error",
+        "minimax-cn",
+        "API call failed"
+      ]
+    }
+  ]
+}

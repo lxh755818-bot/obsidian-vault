@@ -1,0 +1,78 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-02T12:01:36.628101",
+  "scan_window_hours": 12,
+  "errors_found": 91,
+  "errors_closed": 0,
+  "errors_accepted": 8,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [
+    {
+      "summary": "Traceback (most recent call last):",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: TracebackGeneric"
+    },
+    {
+      "summary": "    raise ApiException.from_response(",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: ApiExceptionLogTruncation"
+    },
+    {
+      "summary": "hindsight_client_api.exceptions.ApiException: (402)",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: GenericError"
+    },
+    {
+      "summary": "[Lark] [2026-04-27 08:29:19,905] [ERROR] receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7633224751536753613]",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: TimeoutError"
+    },
+    {
+      "summary": "ERROR Lark: receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7633224751536753613]",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: FeishuWebSocket1011KeepaliveTimeout"
+    },
+    {
+      "summary": "ERROR root: API call failed after 3 retries. 'dict' object has no attribute 'model_dump' | provider=minimax-cn model=MiniMax-M2.7-highspeed msgs=2 tokens=~680",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: MinimaxModelDumpError"
+    },
+    {
+      "summary": "ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7633998850127023035]",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: FeishuWebSocketNoCloseFrame"
+    },
+    {
+      "summary": "[Lark] [2026-04-29 15:00:41,128] [ERROR] connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by NameResolutionError(",
+      "previous_status": "unknown",
+      "current_status": "accepted",
+      "reason": "known accepted pattern: ConnectionError"
+    }
+  ],
+  "noise_filtered": {
+    "asyncio: Unclosed client session": 607,
+    "asyncio: Unclosed connector": 34,
+    "asyncio: Future exception was never retrieved": 2
+  },
+  "tracker_summary": {
+    "total_tracked": 67,
+    "closed": 18,
+    "accepted": 49,
+    "open": 0,
+    "in_progress": 0
+  },
+  "log_files_checked": [
+    "/data/data/com.termux/files/home/.hermes/logs/agent.log",
+    "/data/data/com.termux/files/home/.hermes/logs/errors.log",
+    "/data/data/com.termux/files/home/.hermes/logs/gateway.log",
+    "/data/data/com.termux/files/home/.hermes/logs/mcp-stderr.log"
+  ]
+}

@@ -1,0 +1,1206 @@
+{
+  "date": "2026-04-25",
+  "entries": [
+    {
+      "id": "oai:arXiv.org:2604.20862v1",
+      "title": "Architecture of an AI-Based Automated Course of Action Generation System for Military Operations",
+      "summary": "arXiv:2604.20862v1 Announce Type: new \nAbstract: The automation system for Course of Action (CoA) planning is an essential element in future warfare. As maneuver speeds increase, surveillance ranges extend, and weapon ranges grow, the operational area expands, making traditional manned-based CoA pla...",
+      "link": "https://arxiv.org/abs/2604.20862",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20972v1",
+      "title": "Escaping the Agreement Trap: Defensibility Signals for Evaluating Rule-Governed AI",
+      "summary": "arXiv:2604.20972v1 Announce Type: new \nAbstract: Content moderation systems are typically evaluated by measuring agreement with human labels. In rule-governed environments this assumption fails: multiple decisions may be logically consistent with the governing policy, and agreement metrics penalize ...",
+      "link": "https://arxiv.org/abs/2604.20972",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20987v1",
+      "title": "Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks",
+      "summary": "arXiv:2604.20987v1 Announce Type: new \nAbstract: Long horizon interactive environments are a testbed for evaluating agents skill usage abilities. These environments demand multi step reasoning, the chaining of multiple skills over many timesteps, and robust decision making under delayed rewards and ...",
+      "link": "https://arxiv.org/abs/2604.20987",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20995v1",
+      "title": "Value-Conflict Diagnostics Reveal Widespread Alignment Faking in Language Models",
+      "summary": "arXiv:2604.20995v1 Announce Type: new \nAbstract: Alignment faking, where a model behaves aligned with developer policy when monitored but reverts to its own preferences when unobserved, is a concerning yet poorly understood phenomenon, in part because current diagnostic tools remain limited. Prior d...",
+      "link": "https://arxiv.org/abs/2604.20995",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21003v1",
+      "title": "The Last Harness You'll Ever Build",
+      "summary": "arXiv:2604.21003v1 Announce Type: new \nAbstract: AI agents are increasingly deployed on complex, domain-specific workflows -- navigating enterprise web applications that require dozens of clicks and form fills, orchestrating multi-step research pipelines that span search, extraction, and synthesis, ...",
+      "link": "https://arxiv.org/abs/2604.21003",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21006v1",
+      "title": "Deep FinResearch Bench: Evaluating AI's Ability to Conduct Professional Financial Investment Research",
+      "summary": "arXiv:2604.21006v1 Announce Type: new \nAbstract: We introduce Deep FinResearch Bench, a practical and comprehensive evaluation framework for deep research (DR) agents in financial investment research. The benchmark assesses three dimensions of report quality: qualitative rigor, quantitative forecast...",
+      "link": "https://arxiv.org/abs/2604.21006",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21018v1",
+      "title": "Adaptive Test-Time Compute Allocation with Evolving In-Context Demonstrations",
+      "summary": "arXiv:2604.21018v1 Announce Type: new \nAbstract: While scaling test-time compute can substantially improve model performance, existing approaches either rely on static compute allocation or sample from fixed generation distributions. In this work, we introduce a test-time compute allocation framewor...",
+      "link": "https://arxiv.org/abs/2604.21018",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21027v1",
+      "title": "HypEHR: Hyperbolic Modeling of Electronic Health Records for Efficient Question Answering",
+      "summary": "arXiv:2604.21027v1 Announce Type: new \nAbstract: Electronic health record (EHR) question answering is often handled by LLM-based pipelines that are costly to deploy and do not explicitly leverage the hierarchical structure of clinical data. Motivated by evidence that medical ontologies and patient t...",
+      "link": "https://arxiv.org/abs/2604.21027",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21036v1",
+      "title": "Who Defines Fairness? Target-Based Prompting for Demographic Representation in Generative Models",
+      "summary": "arXiv:2604.21036v1 Announce Type: new \nAbstract: Text-to-image(T2I) models like Stable Diffusion and DALL-E have made generative AI widely accessible, yet recent studies reveal that these systems often replicate societal biases, particularly in how they depict demographic groups across professions. ...",
+      "link": "https://arxiv.org/abs/2604.21036",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21044v1",
+      "title": "Active Data",
+      "summary": "arXiv:2604.21044v1 Announce Type: new \nAbstract: In some complex domains, certain problem-specific decompositions can provide advantages over monolithic designs by enabling comprehension and specification of the design. In this paper we present an intuitive and tractable approach to reasoning over l...",
+      "link": "https://arxiv.org/abs/2604.21044",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21061v1",
+      "title": "InVitroVision: a Multi-Modal AI Model for Automated Description of Embryo Development using Natural Language",
+      "summary": "arXiv:2604.21061v1 Announce Type: new \nAbstract: The application of artificial intelligence (AI) in IVF has shown promise in improving consistency and standardization of decisions, but often relies on annotated data and does not make use of the multimodal nature of IVF data. We investigated whether ...",
+      "link": "https://arxiv.org/abs/2604.21061",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21092v1",
+      "title": "Mind the Prompt: Self-adaptive Generation of Task Plan Explanations via LLMs",
+      "summary": "arXiv:2604.21092v1 Announce Type: new \nAbstract: Integrating Large Language Models (LLMs) into complex software systems enables the generation of human-understandable explanations of opaque AI processes, such as automated task planning. However, the quality and reliability of these explanations heav...",
+      "link": "https://arxiv.org/abs/2604.21092",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21098v1",
+      "title": "Propensity Inference: Environmental Contributors to LLM Behaviour",
+      "summary": "arXiv:2604.21098v1 Announce Type: new \nAbstract: Motivated by loss of control risks from misaligned AI systems, we develop and apply methods for measuring language models' propensity for unsanctioned behaviour. We contribute three methodological improvements: analysing effects of changes to environm...",
+      "link": "https://arxiv.org/abs/2604.21098",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21103v1",
+      "title": "AI Governance under Political Turnover: The Alignment Surface of Compliance Design",
+      "summary": "arXiv:2604.21103v1 Announce Type: new \nAbstract: Governments are increasingly interested in using AI to make administrative decisions cheaper, more scalable, and more consistent. But for probabilistic AI to be incorporated into public administration it must be embedded in a compliance layer that mak...",
+      "link": "https://arxiv.org/abs/2604.21103",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21154v1",
+      "title": "Agentic AI for Personalized Physiotherapy: A Multi-Agent Framework for Generative Video Training and Real-Time Pose Correction",
+      "summary": "arXiv:2604.21154v1 Announce Type: new \nAbstract: At-home physiotherapy compliance remains critically low due to a lack of personalized supervision and dynamic feedback. Existing digital health solutions rely on static, pre-recorded video libraries or generic 3D avatars that fail to account for a pat...",
+      "link": "https://arxiv.org/abs/2604.21154",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21155v1",
+      "title": "Multi-Agent Empowerment and Emergence of Complex Behavior in Groups",
+      "summary": "arXiv:2604.21155v1 Announce Type: new \nAbstract: Intrinsic motivations are receiving increasing attention, i.e. behavioral incentives that are not engineered, but emerge from the interaction of an agent with its surroundings. In this work we study the emergence of behaviors driven by one such incent...",
+      "link": "https://arxiv.org/abs/2604.21155",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21193v1",
+      "title": "Trust but Verify: Introducing DAVinCI -- A Framework for Dual Attribution and Verification in Claim Inference for Language Models",
+      "summary": "arXiv:2604.21193v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have demonstrated remarkable fluency and versatility across a wide range of NLP tasks, yet they remain prone to factual inaccuracies and hallucinations. This limitation poses significant risks in high-stakes domains such a...",
+      "link": "https://arxiv.org/abs/2604.21193",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21209v1",
+      "title": "Align Generative Artificial Intelligence with Human Preferences: A Novel Large Language Model Fine-Tuning Method for Online Review Management",
+      "summary": "arXiv:2604.21209v1 Announce Type: new \nAbstract: Online reviews have played a pivotal role in consumers' decision-making processes. Existing research has highlighted the significant impact of managerial review responses on customer relationship management and firm performance. However, a large porti...",
+      "link": "https://arxiv.org/abs/2604.21209",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21232v1",
+      "title": "ReCAPA: Hierarchical Predictive Correction to Mitigate Cascading Failures",
+      "summary": "arXiv:2604.21232v1 Announce Type: new \nAbstract: Vision-Language-Action systems follow instructions to execute multi-step tasks in multimodal environments. Recent VLA approaches typically rely on post-hoc correction mechanisms or operate under fixed task decompositions and alignment schemes. However...",
+      "link": "https://arxiv.org/abs/2604.21232",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.21256v1",
+      "title": "Robustness Analysis of POMDP Policies to Observation Perturbations",
+      "summary": "arXiv:2604.21256v1 Announce Type: new \nAbstract: Policies for Partially Observable Markov Decision Processes (POMDPs) are often designed using a nominal system model. In practice, this model can deviate from the true system during deployment due to factors such as calibration drift or sensor degrada...",
+      "link": "https://arxiv.org/abs/2604.21256",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19756v1",
+      "title": "WorkflowGen:an adaptive workflow generation mechanism driven by trajectory experience",
+      "summary": "arXiv:2604.19756v1 Announce Type: new \nAbstract: Large language model (LLM) agents often suffer from high reasoning overhead, excessive token consumption, unstable execution, and inability to reuse past experiences in complex tasks like business queries, tool use, and workflow orchestration. Traditi...",
+      "link": "https://arxiv.org/abs/2604.19756",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19757v1",
+      "title": "Transparent Screening for LLM Inference and Training Impacts",
+      "summary": "arXiv:2604.19757v1 Announce Type: new \nAbstract: This paper presents a transparent screening framework for estimating inference and training impacts of current large language models under limited observability. The framework converts natural-language application descriptions into bounded environment...",
+      "link": "https://arxiv.org/abs/2604.19757",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19767v1",
+      "title": "Accelerating PayPal's Commerce Agent with Speculative Decoding: An Empirical Study on EAGLE3 with Fine-Tuned Nemotron Models",
+      "summary": "arXiv:2604.19767v1 Announce Type: new \nAbstract: We evaluate speculative decoding with EAGLE3 as an inference-time optimization for PayPal's Commerce Agent, powered by a fine-tuned llama3.1-nemotron-nano-8B-v1 model. Building on prior work (NEMO-4-PAYPAL) that reduced latency and cost through domain...",
+      "link": "https://arxiv.org/abs/2604.19767",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19800v1",
+      "title": "On-Meter Graph Machine Learning: A Case Study of PV Power Forecasting for Grid Edge Intelligence",
+      "summary": "arXiv:2604.19800v1 Announce Type: new \nAbstract: This paper presents a detailed study of how graph neural networks can be used on edge intelligent meters in a microgrid to forecast photovoltaic power generation. The problem background and the adopted technologies are introduced, including ONNX and O...",
+      "link": "https://arxiv.org/abs/2604.19800",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19835v1",
+      "title": "Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts",
+      "summary": "arXiv:2604.19835v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) has become the dominant architecture for scaling large language models: frontier models routinely decouple total parameters from per-token computation through sparse expert routing. Scaling laws show that under fixed active co...",
+      "link": "https://arxiv.org/abs/2604.19835",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19840v1",
+      "title": "Graph-Theoretic Models for the Prediction of Molecular Measurements",
+      "summary": "arXiv:2604.19840v1 Announce Type: new \nAbstract: Graph-theoretic approaches offer simplicity, interpretability, and low computational cost for molecular property prediction. Among these, the model proposed by Mukwembi and Nyabadza, based on the external activity $D(G)$ and internal activity $\\zeta(G...",
+      "link": "https://arxiv.org/abs/2604.19840",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19857v1",
+      "title": "Rethinking Reinforcement Fine-Tuning in LVLM: Convergence, Reward Decomposition, and Generalization",
+      "summary": "arXiv:2604.19857v1 Announce Type: new \nAbstract: Reinforcement fine-tuning with verifiable rewards (RLVR) has emerged as a powerful paradigm for equipping large vision-language models (LVLMs) with agentic capabilities such as tool use and multi-step reasoning. Despite striking empirical successes, m...",
+      "link": "https://arxiv.org/abs/2604.19857",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19859v1",
+      "title": "DR-Venus: Towards Frontier Edge-Scale Deep Research Agents with Only 10K Open Data",
+      "summary": "arXiv:2604.19859v1 Announce Type: new \nAbstract: Edge-scale deep research agents based on small language models are attractive for real-world deployment due to their advantages in cost, latency, and privacy. In this work, we study how to train a strong small deep research agent under limited open-da...",
+      "link": "https://arxiv.org/abs/2604.19859",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19877v1",
+      "title": "Super Apriel: One Checkpoint, Many Speeds",
+      "summary": "arXiv:2604.19877v1 Announce Type: new \nAbstract: We release Super Apriel, a 15B-parameter supernet in which every decoder layer provides four trained mixer choices -- Full Attention (FA), Sliding Window Attention (SWA), Kimi Delta Attention (KDA), and Gated DeltaNet (GDN). A placement selects one mi...",
+      "link": "https://arxiv.org/abs/2604.19877",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19903v1",
+      "title": "A Multi-Plant Machine Learning Framework for Emission Prediction, Forecasting, and Control in Cement Manufacturing",
+      "summary": "arXiv:2604.19903v1 Announce Type: new \nAbstract: Cement production is among the largest contributors to industrial air pollution, emitting ~3 Mt NOx/year. The industry-standard mitigation approach, selective non-catalytic reduction (SNCR), exhibits low NH3 utilization efficiency, resulting in operat...",
+      "link": "https://arxiv.org/abs/2604.19903",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19930v1",
+      "title": "Physics-Guided Dimension Reduction for Simulation-Free Operator Learning of Stiff Differential--Algebraic Systems",
+      "summary": "arXiv:2604.19930v1 Announce Type: new \nAbstract: Neural surrogates for stiff differential-algebraic equations (DAEs) face two key challenges: soft-constraint methods leave algebraic residuals that stiffness amplifies into large errors, while hard-constraint methods require trajectory data from compu...",
+      "link": "https://arxiv.org/abs/2604.19930",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19936v1",
+      "title": "Generalization and Membership Inference Attack a Practical Perspective",
+      "summary": "arXiv:2604.19936v1 Announce Type: new \nAbstract: With the emergence of new evaluation metrics and attack methodologies for Membership Inference Attacks (MIA), it becomes essential to reevaluate previously accepted assumptions. In this paper, we revisit the longstanding debate regarding the correlati...",
+      "link": "https://arxiv.org/abs/2604.19936",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19974v1",
+      "title": "Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders",
+      "summary": "arXiv:2604.19974v1 Announce Type: new \nAbstract: Large language models can be uncertain yet correct, or confident yet wrong, raising the question of whether their output-level uncertainty and their actual correctness are driven by the same internal mechanisms or by distinct feature populations. We i...",
+      "link": "https://arxiv.org/abs/2604.19974",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.19979v1",
+      "title": "Fast Amortized Fitting of Scientific Signals Across Time and Ensembles via Transferable Neural Fields",
+      "summary": "arXiv:2604.19979v1 Announce Type: new \nAbstract: Neural fields, also known as implicit neural representations (INRs), offer a powerful framework for modeling continuous geometry, but their effectiveness in high-dimensional scientific settings is limited by slow convergence and scaling challenges. In...",
+      "link": "https://arxiv.org/abs/2604.19979",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20019v1",
+      "title": "Multi-Objective Reinforcement Learning for Generating Covalent Inhibitor Candidates",
+      "summary": "arXiv:2604.20019v1 Announce Type: new \nAbstract: Rational design of covalent inhibitors requires simultaneously optimizing multiple properties, such as binding affinity, target selectivity, or electrophilic reactivity. This presents a multi-objective problem not easily addressed by screening alone. ...",
+      "link": "https://arxiv.org/abs/2604.20019",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20021v1",
+      "title": "Continuous Semantic Caching for Low-Cost LLM Serving",
+      "summary": "arXiv:2604.20021v1 Announce Type: new \nAbstract: As Large Language Models (LLMs) become increasingly popular, caching responses so that they can be reused by users with semantically similar queries has become a vital strategy for reducing inference costs and latency. Existing caching frameworks have...",
+      "link": "https://arxiv.org/abs/2604.20021",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20022v1",
+      "title": "Statistics, Not Scale: Modular Medical Dialogue with Bayesian Belief Engine",
+      "summary": "arXiv:2604.20022v1 Announce Type: new \nAbstract: Large language models are increasingly deployed as autonomous diagnostic agents, yet they conflate two fundamentally different capabilities: natural-language communication and probabilistic reasoning. We argue that this conflation is an architectural ...",
+      "link": "https://arxiv.org/abs/2604.20022",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20024v1",
+      "title": "Replicable Bandits with UCB based Exploration",
+      "summary": "arXiv:2604.20024v1 Announce Type: new \nAbstract: We study replicable algorithms for stochastic multi-armed bandits (MAB) and linear bandits with UCB (Upper Confidence Bound) based exploration. A bandit algorithm is $\\rho$-replicable if two executions using shared internal randomness but independent ...",
+      "link": "https://arxiv.org/abs/2604.20024",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20062v1",
+      "title": "Federated Learning over Blockchain-Enabled Cloud Infrastructure",
+      "summary": "arXiv:2604.20062v1 Announce Type: new \nAbstract: The rise of IoT devices and the uptake of cloud computing have informed a new era of data-driven intelligence. Traditional centralized machine learning models that require a large volume of data to be stored in a single location have therefore become ...",
+      "link": "https://arxiv.org/abs/2604.20062",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.20074v1",
+      "title": "Maximum Entropy Semi-Supervised Inverse Reinforcement Learning",
+      "summary": "arXiv:2604.20074v1 Announce Type: new \nAbstract: A popular approach to apprenticeship learning (AL) is to formulate it as an inverse reinforcement learning (IRL) problem. The MaxEnt-IRL algorithm successfully integrates the maximum entropy principle into IRL and unlike its predecessors, it resolves ...",
+      "link": "https://arxiv.org/abs/2604.20074",
+      "published": "Fri, 24 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "summary": "",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
+      "link": "https://openai.com/academy/codex-automations",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-plugins-and-skills",
+      "title": "Plugins and skills",
+      "summary": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.",
+      "link": "https://openai.com/academy/codex-plugins-and-skills",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/working-with-codex",
+      "title": "Working with Codex",
+      "summary": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/working-with-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-settings",
+      "title": "Codex settings",
+      "summary": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.",
+      "link": "https://openai.com/academy/codex-settings",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/what-is-codex",
+      "title": "What is Codex?",
+      "summary": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
+      "link": "https://openai.com/academy/what-is-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-how-to-start",
+      "title": "How to get started with Codex",
+      "summary": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/codex-how-to-start",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "summary": "Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000.",
+      "link": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "published": "Thu, 23 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "title": "Making ChatGPT better for clinicians",
+      "summary": "OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research.",
+      "link": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "published": "Wed, 22 Apr 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/workspace-agents",
+      "title": "Workspace agents",
+      "summary": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations.",
+      "link": "https://openai.com/academy/workspace-agents",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "summary": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+      "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "title": "Introducing workspace agents in ChatGPT",
+      "summary": "Workspace agents in ChatGPT are Codex-powered agents that automate complex workflows, run in the cloud, and help teams scale work across tools securely.",
+      "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-openai-privacy-filter",
+      "title": "Introducing OpenAI Privacy Filter",
+      "summary": "OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy",
+      "link": "https://openai.com/index/introducing-openai-privacy-filter",
+      "published": "Wed, 22 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-chatgpt-images-2-0",
+      "title": "Introducing ChatGPT Images 2.0",
+      "summary": "ChatGPT Images 2.0 introduces a state-of-the-art image generation model with improved text rendering, multilingual support, and advanced visual reasoning.",
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-0",
+      "published": "Tue, 21 Apr 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "title": "Scaling Codex to enterprises worldwide",
+      "summary": "OpenAI launches Codex Labs, partners with with Accenture, PwC, Infosys, and others to help enterprises deploy and scale Codex across the software development lifecycle, and hits 4M Codex WAU.",
+      "link": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "published": "Tue, 21 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+      "title": "OpenAI helps Hyatt advance AI among colleagues",
+      "summary": "Hyatt deploys ChatGPT Enterprise across its global workforce, using GPT-5.4 and Codex to improve productivity, operations, and guest experiences.",
+      "link": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+      "published": "Mon, 20 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/codex-for-almost-everything",
+      "title": "Codex for (almost) everything",
+      "summary": "The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.",
+      "link": "https://openai.com/index/codex-for-almost-everything",
+      "published": "Thu, 16 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-gpt-rosalind",
+      "title": "Introducing GPT-Rosalind for life sciences research",
+      "summary": "OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.",
+      "link": "https://openai.com/index/introducing-gpt-rosalind",
+      "published": "Thu, 16 Apr 2026 01:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/decoupled-diloco/",
+      "title": "Decoupled DiLoCo: A new frontier for resilient, distributed AI training",
+      "summary": "",
+      "link": "https://deepmind.google/blog/decoupled-diloco/",
+      "published": "Wed, 22 Apr 2026 10:20:03 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
+      "title": "Partnering with industry leaders to accelerate AI transformation",
+      "summary": "Google DeepMind partners with global consultancies to bring the power of frontier AI to organizations around the world.",
+      "link": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
+      "published": "Tue, 21 Apr 2026 14:54:15 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "published": "Wed, 15 Apr 2026 16:03:19 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
+      "summary": "Gemini Robotics ER 1.6: Enhancing spatial reasoning and multi-view understanding for autonomous robotics.",
+      "link": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "published": "Mon, 13 Apr 2026 15:52:13 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+      "link": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "published": "Thu, 02 Apr 2026 16:00:49 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "published": "Thu, 26 Mar 2026 15:23:35 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "title": "Protecting people from harmful manipulation",
+      "summary": "Google DeepMind researches AI's harmful manipulation risks across areas like finance and health, leading to new safety measures.",
+      "link": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "published": "Wed, 25 Mar 2026 16:46:20 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
+      "title": "Lyria 3 Pro: Create longer tracks in more",
+      "summary": "Introducing Lyria 3 Pro, which unlocks longer tracks with structural awareness. We’re also bringing Lyria to more Google products and surfaces.",
+      "link": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
+      "published": "Wed, 25 Mar 2026 16:01:39 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+      "title": "Measuring progress toward AGI: A cognitive framework",
+      "summary": "We’re introducing a framework to measure progress toward AGI, and launching a Kaggle hackathon to build the relevant evaluations.",
+      "link": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+      "published": "Tue, 17 Mar 2026 16:03:47 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/10-years-of-alphago/",
+      "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+      "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+      "link": "https://deepmind.google/blog/10-years-of-alphago/",
+      "published": "Mon, 09 Mar 2026 13:52:36 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+      "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+      "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+      "published": "Tue, 03 Mar 2026 16:35:55 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+      "link": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "published": "Thu, 26 Feb 2026 16:01:50 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+      "link": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "published": "Thu, 19 Feb 2026 16:06:14 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+      "title": "A new way to express yourself: Gemini can now create music",
+      "summary": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+      "link": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+      "published": "Wed, 18 Feb 2026 16:01:38 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "title": "Accelerating discovery in India through AI-powered science and education",
+      "summary": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
+      "link": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "published": "Tue, 17 Feb 2026 13:42:20 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "summary": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges.",
+      "link": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "published": "Thu, 12 Feb 2026 16:15:09 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
+      "summary": "Research papers point to the growing impact of Deep Think across fields",
+      "link": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "published": "Mon, 09 Feb 2026 16:12:06 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "summary": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds.",
+      "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "published": "Thu, 29 Jan 2026 17:01:05 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "title": "D4RT: Teaching AI to see the world in four dimensions",
+      "summary": "D4RT: Unified, efficient 4D reconstruction and tracking up to 300x faster than prior methods.",
+      "link": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "published": "Fri, 16 Jan 2026 10:39:00 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
+      "title": "Veo 3.1 Ingredients to Video: More consistency, creativity and control",
+      "summary": "Our latest Veo update generates lively, dynamic clips that feel natural and engaging — and supports vertical video generation.",
+      "link": "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
+      "published": "Tue, 13 Jan 2026 17:00:18 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1123814",
+      "title": "BAND",
+      "summary": "\n            Coordinate and govern multi-agent work in a single chat\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/band",
+      "published": "2026-04-14T12:31:47-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1111779",
+      "title": "Beezi AI",
+      "summary": "\n            Make AI development structured, secure, and cost-efficient.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/beezi-ai",
+      "published": "2026-03-30T13:16:38-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130495",
+      "title": "Spira AI",
+      "summary": "\n            AI Influencer that always on trend, create & grow your brand\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/spira-ai",
+      "published": "2026-04-23T01:15:57-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1131158",
+      "title": "DeepSeek-V4",
+      "summary": "\n            The open-source era of 1M context intelligence\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/deepseek",
+      "published": "2026-04-23T20:52:03-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130897",
+      "title": "Codex 3.0 by OpenAI",
+      "summary": "\n            Codex can now build, test & debug on autopilot\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/codex-3-0-by-openai",
+      "published": "2026-04-23T11:48:21-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1120635",
+      "title": "TraceUI",
+      "summary": "\n            Turn any website into on-brand Ads\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/traceui",
+      "published": "2026-04-10T07:58:17-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130673",
+      "title": "NotchNest AI",
+      "summary": "\n            AI powered by Apple Intelligence now in your Notch\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/notchnest-quick-access-hub",
+      "published": "2026-04-23T05:41:19-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130862",
+      "title": "MailCue",
+      "summary": "\n            Run as a fully hardened production email server.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/mailcue-realistic-email-testing-server",
+      "published": "2026-04-23T10:36:07-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1129182",
+      "title": "Yutori Delegate",
+      "summary": "\n            Why cowork when you can delegate?\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/scouts-by-yutori",
+      "published": "2026-04-21T10:45:22-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130159",
+      "title": "Google Workspace Intelligence",
+      "summary": "\n            AI that understands and powers your Workspace\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/google",
+      "published": "2026-04-22T12:42:56-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1121048",
+      "title": "boots.list",
+      "summary": "\n            From Rekordbox collection to set-ready playlist\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/boots-list",
+      "published": "2026-04-10T23:21:50-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130748",
+      "title": "Haiker",
+      "summary": "\n            Hacker News App for non-native english speaker\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/haiker",
+      "published": "2026-04-23T07:43:39-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1131117",
+      "title": "Tyndale",
+      "summary": "\n            Translate your app with the AI you already pay for\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/tyndale",
+      "published": "2026-04-23T19:04:58-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130514",
+      "title": "Your Name in Landsat 🛰️",
+      "summary": "\n            The planet can spell your name – literally!\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/your-name-in-landsat",
+      "published": "2026-04-23T01:50:38-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1120877",
+      "title": "Emotional intelligence AI for live calls",
+      "summary": "\n            Emotional intelligence AI for live sales calls\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/emotional-intelligence-ai-for-live-calls",
+      "published": "2026-04-10T15:07:48-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1131189",
+      "title": "TuneJourney.com",
+      "summary": "\n            AI learns your listening habits and curates your live radio\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/tunejourney-com",
+      "published": "2026-04-23T21:39:59-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130694",
+      "title": "Universal Gas Framework (UGF)",
+      "summary": "\n            Route Actions, Not Liquidity\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/universal-gas-framework-ugf",
+      "published": "2026-04-23T06:09:27-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1131020",
+      "title": "Mozart Studio 1.0",
+      "summary": "\n            A Generative Audio Workstation with VSTs\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/mozart-ai",
+      "published": "2026-04-23T14:22:53-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1131066",
+      "title": "CodeCanary",
+      "summary": "\n            Turn session replays into revenue\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/codecanary",
+      "published": "2026-04-23T16:25:53-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130742",
+      "title": "SaveForm.io",
+      "summary": "\n            Automated form tracking and e-mail notifications & webhooks\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/saveform-io",
+      "published": "2026-04-23T07:24:35-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    }
+  ],
+  "count": 100
+}

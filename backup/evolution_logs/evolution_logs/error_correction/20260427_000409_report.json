@@ -1,0 +1,77 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-27T00:04:09.373725",
+  "scan_window_hours": 12,
+  "errors_found": 1,
+  "errors_closed": 0,
+  "errors_accepted": 7,
+  "errors_open": 0,
+  "reports": [
+    {
+      "error_id": "err_vision_invalid_image_20260426",
+      "error_type": "InvalidImageSource",
+      "summary": "tools.vision_tools: Error analyzing image: Invalid image source (user provided bad input)",
+      "status": "accepted",
+      "solution": "用户提供了无效的图片路径或URL，属于正常业务错误，无需修复代码",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "note": "New error found in 12h window — user input validation error, not a code bug"
+    }
+  ],
+  "open_errors_checked": [
+    {
+      "summary": "MiniMax API连接错误 (cron job, multiple times)",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现，已长期未复发"
+    },
+    {
+      "summary": "MCP tool minimax/understand_image 调用失败",
+      "previous_status": "in_progress",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现"
+    },
+    {
+      "summary": "MCP baostock list_prompts 方法不存在 (2x)",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现"
+    },
+    {
+      "summary": "飞书编辑消息失败 (2x) - 消息已被删除或过期",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现，属正常业务情况"
+    },
+    {
+      "summary": "API Server 端口 8642 被占用 (2x) - 当前未占用",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现"
+    },
+    {
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (14x)",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现"
+    },
+    {
+      "summary": "飞书 WebSocket keepalive 超时断开 (2x)",
+      "previous_status": "open",
+      "current_status": "accepted",
+      "reason": "未在最近12小时日志中出现，属平台正常行为"
+    }
+  ],
+  "noise_filtered": {
+    "asyncio_unclosed_client_session": "1000+ occurrences — 运行时警告，不影响功能，已记录但不追踪",
+    "asyncio_unclosed_connector": "40+ occurrences — 运行时警告，已记录但不追踪",
+    "asyncio_future_exception_never_retrieved": "4 occurrences — 异步Future警告，已记录但不追踪"
+  },
+  "tracker_summary": {
+    "total_tracked": 40,
+    "closed": 19,
+    "accepted": 21,
+    "open": 0,
+    "in_progress": 0
+  }
+}

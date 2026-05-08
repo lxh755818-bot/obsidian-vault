@@ -1,0 +1,28 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-04-26 21:17
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🔴 通过率: 26.3%  |  通过: 5  |  失败: 14  |  退化: 3
+
+  技能明细:
+  🔴 axolotl: 0.0% | avg 0ms
+  🔴 mlops/training/axolotl: 0.0% | avg 0ms
+  🔴 grpo-rl-training: 0.0% | avg 0ms
+  🔴 mlops/training/grpo-rl-training: 0.0% | avg 0ms
+  🔴 mlops/training/peft: 0.0% | avg 1.0ms
+  🔴 peft-fine-tuning: 0.0% | avg 0ms
+  🔴 pytorch-fsdp: 0.0% | avg 0ms
+  🔴 trl-fine-tuning: 0.0% | avg 0ms
+  🔴 mlops/training/unsloth: 0.0% | avg 0ms
+  🔴 xiaoa-persona-system: 0.0% | avg 0ms
+  🔴 peft: 50.0% | avg 0ms
+  🔴 mlops/training/pytorch-fsdp: 66.7% | avg 0ms
+  🟢 skill-cycle-optimizer: 100.0% | avg 1.5ms
+
+───────────────────────────────────────────────────────
+  📋 待审批修复方案: 3 个
+    → xiaoa-persona-system_fix_v2.json
+    → peft_diag_v2.json
+    → skill-cycle-optimizer_diag_v2.json
+═══════════════════════════════════════════════════════

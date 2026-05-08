@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-04-20T12:09:51.007941",
+  "actions": [
+    {
+      "type": "deep_research",
+      "topic": "Microsoft Agent Framework 1.0",
+      "priority": "high",
+      "reason": "Rising: Official .NET agent framework, GA release April 2026",
+      "data": {
+        "name": "Microsoft Agent Framework 1.0",
+        "stars": "new",
+        "reason": "Official .NET agent framework, GA release April 2026"
+      }
+    },
+    {
+      "type": "deep_research",
+      "topic": "QClaw",
+      "priority": "high",
+      "reason": "Rising: Tencent's OpenClaw port, 20s install via WeChat",
+      "data": {
+        "name": "QClaw",
+        "stars": "derivative",
+        "reason": "Tencent's OpenClaw port, 20s install via WeChat"
+      }
+    },
+    {
+      "type": "deep_research",
+      "topic": "openclaw/openclaw",
+      "priority": "high",
+      "reason": "Rising: GitHub TOP1, surpassed React and Linux",
+      "data": {
+        "name": "openclaw/openclaw",
+        "stars": "300K+",
+        "reason": "GitHub TOP1, surpassed React and Linux"
+      }
+    },
+    {
+      "type": "deep_research",
+      "topic": "hermes-agent-self-evolution",
+      "priority": "high",
+      "reason": "Rising: Evolutionary self-improvement module for Hermes",
+      "data": {
+        "name": "hermes-agent-self-evolution",
+        "brief": "Evolutionary self-improvement module for Hermes"
+      }
+    },
+    {
+      "type": "threat_analysis",
+      "topic": "OpenClaw has 300K+ stars and is GitHub TOP1 — major competitive threat to Hermes",
+      "priority": "high",
+      "reason": "OpenClaw has 300K+ stars and is GitHub TOP1 — major competitive threat to Hermes",
+      "data": {
+        "insight": "OpenClaw has 300K+ stars and is GitHub TOP1 — major competitive threat to Hermes"
+      }
+    },
+    {
+      "type": "gap_research",
+      "topic": "Deployment skill gap identified: no Hermes skill for Docker/K8s/deployment",
+      "priority": "high",
+      "reason": "Deployment skill gap identified: no Hermes skill for Docker/K8s/deployment",
+      "data": {
+        "insight": "Deployment skill gap identified: no Hermes skill for Docker/K8s/deployment"
+      }
+    }
+  ]
+}

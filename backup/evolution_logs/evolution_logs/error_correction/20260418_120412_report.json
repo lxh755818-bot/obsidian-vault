@@ -1,0 +1,120 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-18T12:04:12.817583",
+  "errors_found": 1652,
+  "unique_error_patterns": 1360,
+  "errors_closed": 0,
+  "errors_open": 11,
+  "reports": [
+    {
+      "error_id": "err_011",
+      "error_type": "MissingEventProcessor",
+      "summary": "bot_p2p_chat_entered_v1 (1280 occurrences)",
+      "status": "open",
+      "solution": "在 gateway/platforms/feishu.py 的 _build_event_handler() 中添加 .register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(lambda data: None)",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 1280
+    },
+    {
+      "error_id": "err_012",
+      "error_type": "InvalidInput",
+      "summary": "vision_invalid_image (4 occurrences)",
+      "status": "open",
+      "solution": "用户输入了无效图片路径，已有清晰错误提示，无需代码修复",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 4
+    },
+    {
+      "error_id": "err_013",
+      "error_type": "NetworkTimeout",
+      "summary": "vision_connect_timeout (2 occurrences)",
+      "status": "open",
+      "solution": "图片下载连接超时，已有超时处理机制，无需修复",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 2
+    },
+    {
+      "error_id": "err_014",
+      "error_type": "HTTP404",
+      "summary": "vision_404 (2 occurrences)",
+      "status": "open",
+      "solution": "外部图片URL返回404，非代码问题",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 2
+    },
+    {
+      "error_id": "err_015",
+      "error_type": "NetworkError",
+      "summary": "feishu_connection (42 occurrences)",
+      "status": "open",
+      "solution": "飞书服务器连接失败/超时，网络临时问题，已有重试机制",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 42
+    },
+    {
+      "error_id": "err_016",
+      "error_type": "TTSError",
+      "summary": "tts_edge_failed (4 occurrences)",
+      "status": "open",
+      "solution": "Edge TTS返回无音频，可能是网络或服务问题，已有降级处理",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 4
+    },
+    {
+      "error_id": "err_017",
+      "error_type": "WebSocketError",
+      "summary": "feishu_ping_timeout (9 occurrences)",
+      "status": "open",
+      "solution": "WebSocket ping超时(3003)，飞书服务端断开连接，已自动重连",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 9
+    },
+    {
+      "error_id": "err_018",
+      "error_type": "FeishuAPIError",
+      "summary": "feishu_message_withdrawn (1 occurrences)",
+      "status": "open",
+      "solution": "消息已被撤回(code 230011)，已有fallback到新消息",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    },
+    {
+      "error_id": "err_019",
+      "error_type": "ConfigError",
+      "summary": "gateway_instance_conflict (3 occurrences)",
+      "status": "open",
+      "solution": "多个gateway实例冲突，需用户手动管理进程",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 3
+    },
+    {
+      "error_id": "err_020",
+      "error_type": "WebSocketError",
+      "summary": "lark_loop_exit (5 occurrences)",
+      "status": "open",
+      "solution": "WebSocket连接正常关闭(no close frame)，自动重连",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 5
+    },
+    {
+      "error_id": "err_021",
+      "error_type": "NetworkTimeout",
+      "summary": "feishu_edit_timeout (1 occurrences)",
+      "status": "open",
+      "solution": "edit_message连接超时，已有重试机制",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    }
+  ]
+}

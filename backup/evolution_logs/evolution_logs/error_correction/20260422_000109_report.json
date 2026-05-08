@@ -1,0 +1,76 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-22T00:01:09.118611",
+  "cutoff_time": "2026-04-21T12:01:08.940444",
+  "errors_found": 15,
+  "errors_closed": 3,
+  "errors_open": 1,
+  "errors_in_progress": 1,
+  "reports": [
+    {
+      "error_id": "err_101",
+      "error_type": "lark_loop_exit",
+      "summary": "飞书WebSocket连接异常断开 (keepalive ping timeout / no close frame)",
+      "occurrence_count": 4,
+      "first_occurrence": "2026-04-21T12:20:50",
+      "last_occurrence": "2026-04-21T19:48:28",
+      "status": "accepted",
+      "solution": "飞书服务端断开连接或keepalive超时，已自动重连。网络层问题，无需代码修复。",
+      "test_result": "accepted_network_issue",
+      "test_duration_ms": 0,
+      "representative_line": "2026-04-21 12:20:50,999 ERROR Lark: receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7631049095679855822]"
+    },
+    {
+      "error_id": "err_102",
+      "error_type": "pid_file_race",
+      "summary": "多个Gateway实例PID文件竞争导致退出",
+      "occurrence_count": 5,
+      "first_occurrence": "2026-04-21T18:34:42",
+      "last_occurrence": "2026-04-21T18:37:20",
+      "status": "closed",
+      "solution": "这是用户操作问题——同时启动了多个gateway实例。需要用户手动管理进程，代码无需修改。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "representative_line": "2026-04-21 18:34:42,762 ERROR __main__: PID file race lost to another gateway instance. Exiting."
+    },
+    {
+      "error_id": "err_103",
+      "error_type": "mcp_minimax_understand_image",
+      "summary": "MCP tool minimax/understand_image 调用失败",
+      "occurrence_count": 2,
+      "first_occurrence": "2026-04-21T23:09:31",
+      "last_occurrence": "2026-04-21T23:32:31",
+      "status": "in_progress",
+      "solution": "需要检查MCP server状态和网络连通性，可能是MCP服务未运行或连接问题。",
+      "test_result": "needs_investigation",
+      "test_duration_ms": 0,
+      "representative_line": "2026-04-21 23:09:31,219 ERROR [20260421_213319_0b5dbc95] tools.mcp_tool: MCP tool minimax/understand_image call failed:"
+    },
+    {
+      "error_id": "err_104",
+      "error_type": "port_8642_in_use",
+      "summary": "API Server端口8642被占用",
+      "occurrence_count": 1,
+      "first_occurrence": "2026-04-21T23:34:15",
+      "last_occurrence": "2026-04-21T23:34:15",
+      "status": "closed",
+      "solution": "这是用户操作问题——另一个进程已占用8642端口。需要用户停止冲突进程或修改配置。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "representative_line": "2026-04-21 23:34:15,708 ERROR gateway.platforms.api_server: [Api_Server] Port 8642 already in use. Set a different port in config.yaml: platforms.api_server.port"
+    },
+    {
+      "error_id": "err_105",
+      "error_type": "gateway_instance_conflict",
+      "summary": "Gateway实例冲突 (PID 4716)",
+      "occurrence_count": 3,
+      "first_occurrence": "2026-04-21T23:34:19",
+      "last_occurrence": "2026-04-21T23:34:19",
+      "status": "closed",
+      "solution": "这是用户操作问题——已有gateway实例(PID 4716)在运行。需要用户先停止旧实例。",
+      "test_result": "not_testable",
+      "test_duration_ms": 0,
+      "representative_line": "2026-04-21 23:34:19,790 ERROR gateway.platforms.feishu: [Feishu] Another local Hermes gateway is already using this Feishu app_id (PID 4716). Stop the other gateway before starting a second Feishu websocket client."
+    }
+  ]
+}

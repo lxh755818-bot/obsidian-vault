@@ -1,0 +1,132 @@
+{
+  "topic": "Superpowers",
+  "topic_safe": "Superpowers",
+  "researched_at": "2026-04-19T01:05:00Z",
+  "quality_score": {
+    "total": 17,
+    "stars_accuracy": 3,
+    "features": 3,
+    "tech_stack": 2,
+    "vs_hermes": 2,
+    "community": 3,
+    "action_items": 3,
+    "sources": 1
+  },
+  "stars": {
+    "current": 128276,
+    "trend": "rising",
+    "daily_new": 2620,
+    "as_of": "2026-04-19"
+  },
+  "core_features": [
+    {
+      "feature": "brainstorming (构思过滤)",
+      "description": "交互式设计精炼，在写代码前澄清需求，避免AI盲目实现",
+      "hermes_gap": "Hermes缺乏结构化构思环节，用户意图澄清依赖手动干预"
+    },
+    {
+      "feature": "writing-plans (计划写作)",
+      "description": "生成具体实施计划，替代subagent review loop，减少25分钟开销",
+      "hermes_gap": "Hermes计划环节较弱，无内联self-review机制"
+    },
+    {
+      "feature": "test-driven-development (TDD)",
+      "description": "先写测试再写代码，RED-GREEN-REFACTOR循环",
+      "hermes_gap": "Hermes对TDD流程支持不系统"
+    },
+    {
+      "feature": "systematic-debugging (系统化调试)",
+      "description": "结构化调试方法论，不是凭直觉找bug",
+      "hermes_gap": null
+    },
+    {
+      "feature": "verification-before-completion (完成前验证)",
+      "description": "提交前必须验证，非简单自检",
+      "hermes_gap": "Hermes无强制验证门禁"
+    },
+    {
+      "feature": "subagent-driven-development (子代理驱动)",
+      "description": "支持多代理协作，分派专项任务",
+      "hermes_gap": null
+    },
+    {
+      "feature": "14 Skills Framework",
+      "description": "14个可组合技能，覆盖完整软件工程流程",
+      "hermes_gap": "Hermes技能框架不够工程化"
+    }
+  ],
+  "tech_stack": {
+    "language": "Markdown + YAML",
+    "framework": "Agentic Skills Framework",
+    "key_dependencies": ["Claude Code", "Codex", "OpenCode", "Cursor"]
+  },
+  "vs_hermes": {
+    "advantages": [
+      "Superpowers有完整14个技能体系，Hermes偏通用框架",
+      "Superpowers在Claude Code/Cursor等平台有原生集成",
+      "Superpowers社区更活跃（100+ contributors, 128k stars）"
+    ],
+    "disadvantages": [
+      "Superpowers仅面向AI Coding Agent，通用性不如Hermes",
+      "Superpowers不解决记忆/进化问题"
+    ],
+    "inspired_takeaways": [
+      "建议为Hermes增加工程化技能框架（brainstorming/planning/TDD流程）",
+      "学习Superpowers的inline self-review替代subagent review的开销优化",
+      "可借鉴其skill框架设计，支持多种编码代理平台"
+    ]
+  },
+  "community": {
+    "github_stars": 128276,
+    "trending_rank": 1,
+    "open_issues": 342,
+    "recent_activity": "high",
+    "main_use_cases": [
+      "Claude Code工作流增强",
+      "Codex项目开发",
+      "Cursor IDE增强"
+    ]
+  },
+  "threat_level": "high",
+  "key_findings": [
+    "Superpowers是AI Coding Agent工程化框架，不是代码生成工具",
+    "通过14个技能强制AI遵循软件工程方法论（brainstorm→plan→TDD→debug→verify）",
+    "最新v5.0.7支持Copilot CLI，优化了OpenCode集成",
+    "替代subagent review loop为inline self-review，减少25分钟执行开销",
+    "社区爆发式增长：128k stars，今日+2620，星标增长rising"
+  ],
+  "action_items": [
+    {
+      "priority": "high",
+      "action": "为Hermes设计类似brainstorming和writing-plans的工程化技能",
+      "reason": "Superpowers解决了AI coding的随意性问题，Hermes需要类似约束"
+    },
+    {
+      "priority": "medium",
+      "action": "学习Superpowers的inline self-review机制，优化子代理开销",
+      "reason": "减少不必要的多代理调度开销"
+    },
+    {
+      "priority": "low",
+      "action": "考虑支持更多编码代理平台（OpenCode等）",
+      "reason": "Superpowers多平台支持策略值得借鉴"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/obra/superpowers",
+      "type": "github",
+      "date": "2026-04-19"
+    },
+    {
+      "url": "https://blog.csdn.net/m0_73479109/article/details/159512283",
+      "type": "blog",
+      "date": "2026-03-26"
+    },
+    {
+      "url": "https://blog.csdn.net/2502_91558627/article/details/159691917",
+      "type": "blog",
+      "date": "2026-04-14"
+    }
+  ]
+}

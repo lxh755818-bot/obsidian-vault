@@ -1,0 +1,127 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-01T00:02:45.019413",
+  "scan_window_hours": 12,
+  "errors_found": 44,
+  "errors_closed": 0,
+  "errors_accepted": 17,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio_unclosed_client_session": 607,
+    "asyncio_unclosed_connector": 34,
+    "asyncio_future_exception_never_retrieved": 2
+  },
+  "tracker_summary": {
+    "total_tracked": 66,
+    "accepted": 47,
+    "closed": 19,
+    "open": 0,
+    "in_progress": 0
+  },
+  "accepted_this_run": [
+    {
+      "error_type": "traceback_generic",
+      "summary": "日志只有 Traceback 首行，无后续堆栈 — 日志写入截断，无可操作信息",
+      "count_12h": 2124,
+      "reason": "日志只有 Traceback 首行，无后续堆栈 — 日志写入截断，无可操作信息"
+    },
+    {
+      "error_type": "api_exception_response",
+      "summary": "ApiException raise 行，无完整堆栈 — 日志截断",
+      "count_12h": 190,
+      "reason": "ApiException raise 行，无完整堆栈 — 日志截断"
+    },
+    {
+      "error_type": "api_exception_httpresp",
+      "summary": "ApiException(http_resp=...) raise 行，无完整堆栈 — 日志截断",
+      "count_12h": 190,
+      "reason": "ApiException(http_resp=...) raise 行，无完整堆栈 — 日志截断"
+    },
+    {
+      "error_type": "hindsight_api_402",
+      "summary": "Hindsight API 返回 402 — 外部服务欠费/需要付费",
+      "count_12h": 190,
+      "reason": "Hindsight API 返回 402 — 外部服务欠费/需要付费"
+    },
+    {
+      "error_type": "asyncio_unhandled_exception",
+      "summary": "asyncio.run() 关闭时未处理异常 — Python shutdown race condition",
+      "count_12h": 2,
+      "reason": "asyncio.run() 关闭时未处理异常 — Python shutdown race condition"
+    },
+    {
+      "error_type": "Lark_1011_keepalive_timeout",
+      "summary": "Lark WebSocket 1011 keepalive ping timeout — 平台行为",
+      "count_12h": 13,
+      "reason": "Lark WebSocket 1011 keepalive ping timeout — 平台行为"
+    },
+    {
+      "error_type": "Lark_no_close_frame",
+      "summary": "Lark WebSocket no close frame received — 平台正常关闭",
+      "count_12h": 28,
+      "reason": "Lark WebSocket no close frame received — 平台正常关闭"
+    },
+    {
+      "error_type": "network_retry_exhaustion",
+      "summary": "连接 open.feishu.cn 重试耗尽 — 瞬态网络问题",
+      "count_12h": 173,
+      "reason": "连接 open.feishu.cn 重试耗尽 — 瞬态网络问题"
+    },
+    {
+      "error_type": "minimax_model_dump_error",
+      "summary": "MiniMax API 返回 dict 而非 Pydantic model，下游 fallback 成功处理",
+      "count_12h": 3,
+      "reason": "MiniMax API 返回 dict 而非 Pydantic model，下游 fallback 成功处理"
+    },
+    {
+      "error_type": "api_retry_exhaustion",
+      "summary": "API 3次重试后失败 — 瞬态网络错误",
+      "count_12h": 1,
+      "reason": "API 3次重试后失败 — 瞬态网络错误"
+    },
+    {
+      "error_type": "vision_invalid_image_source",
+      "summary": "用户提供了无效图片路径，不是代码bug",
+      "count_12h": 1,
+      "reason": "用户提供了无效图片路径，不是代码bug"
+    },
+    {
+      "error_type": "Lark_connect_timeout",
+      "summary": "Lark WebSocket 连接超时 — 瞬态网络问题，已自动重连",
+      "count_12h": 1,
+      "reason": "Lark WebSocket 连接超时 — 瞬态网络问题，已自动重连"
+    },
+    {
+      "error_type": "feishu_edit_timeout",
+      "summary": "飞书 edit message 超时 — 瞬态网络错误",
+      "count_12h": 3,
+      "reason": "飞书 edit message 超时 — 瞬态网络错误"
+    },
+    {
+      "error_type": "feishu_send_dns_error",
+      "summary": "飞书发送失败（DNS解析失败）— Termux 网络瞬态问题",
+      "count_12h": 24,
+      "reason": "飞书发送失败（DNS解析失败）— Termux 网络瞬态问题"
+    },
+    {
+      "error_type": "cron_feishu_delivery_error",
+      "summary": "Cron 任务投递飞书消息失败 — 瞬态网络错误",
+      "count_12h": 12,
+      "reason": "Cron 任务投递飞书消息失败 — 瞬态网络错误"
+    },
+    {
+      "error_type": "Lark_invalid_http_response",
+      "summary": "Lark WebSocket 未收到有效 HTTP 响应 — 瞬态网络问题",
+      "count_12h": 1,
+      "reason": "Lark WebSocket 未收到有效 HTTP 响应 — 瞬态网络问题"
+    },
+    {
+      "error_type": "minimax_connection_error",
+      "summary": "MiniMax API 连接错误 — Termux 瞬态网络问题",
+      "count_12h": 21,
+      "reason": "MiniMax API 连接错误 — Termux 瞬态网络问题"
+    }
+  ]
+}

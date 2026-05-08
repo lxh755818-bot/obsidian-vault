@@ -1,0 +1,726 @@
+{
+  "date": "2026-05-03",
+  "entries": [
+    {
+      "id": "https://openai.com/index/advanced-account-security",
+      "title": "Introducing Advanced Account Security",
+      "summary": "Introducing Advanced Account Security: phishing-resistant login, stronger recovery, and enhanced protections to safeguard sensitive data and prevent account takeover.",
+      "link": "https://openai.com/index/advanced-account-security",
+      "published": "Thu, 30 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/where-the-goblins-came-from",
+      "title": "Where the goblins came from",
+      "summary": "How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior.",
+      "link": "https://openai.com/index/where-the-goblins-came-from",
+      "published": "Wed, 29 Apr 2026 20:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "summary": "OpenAI scales Stargate to build the compute infrastructure powering AGI, adding new data center capacity to meet growing AI demand.",
+      "link": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "published": "Wed, 29 Apr 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "title": "Cybersecurity in the Intelligence Age",
+      "summary": "OpenAI outlines a five-part action plan for strengthening cybersecurity in the Intelligence Age, focused on democratizing AI-powered cyber defense and protecting critical systems.",
+      "link": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "published": "Wed, 29 Apr 2026 04:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-commitment-to-community-safety",
+      "title": "Our commitment to community safety",
+      "summary": "Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts.",
+      "link": "https://openai.com/index/our-commitment-to-community-safety",
+      "published": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "summary": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.",
+      "link": "https://openai.com/index/openai-on-aws",
+      "published": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "summary": "OpenAI is available at FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling secure AI adoption for U.S. federal agencies.",
+      "link": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "published": "Mon, 27 Apr 2026 14:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "summary": "OpenAI and Microsoft announce an amended agreement that simplifies the partnership, adds long-term clarity, and supports continued AI innovation at scale.",
+      "link": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "published": "Mon, 27 Apr 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "title": "An open-source spec for orchestration: Symphony",
+      "summary": "Learn how Symphony, an open-source spec for Codex orchestration, turns issue trackers into always-on agent systems—boosting engineering output and reducing context switching.",
+      "link": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/choco",
+      "title": "Choco automates food distribution with AI agents",
+      "summary": "How Choco used OpenAI APIs to streamline food distribution, boost productivity, and unlock growth—an in-depth customer story on real-world AI impact.",
+      "link": "https://openai.com/index/choco",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-principles",
+      "title": "Our principles",
+      "summary": "Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+      "link": "https://openai.com/index/our-principles",
+      "published": "Sun, 26 Apr 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "summary": "",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/what-is-codex",
+      "title": "What is Codex?",
+      "summary": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
+      "link": "https://openai.com/academy/what-is-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-how-to-start",
+      "title": "How to get started with Codex",
+      "summary": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/codex-how-to-start",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-settings",
+      "title": "Codex settings",
+      "summary": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.",
+      "link": "https://openai.com/academy/codex-settings",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/working-with-codex",
+      "title": "Working with Codex",
+      "summary": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/working-with-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-plugins-and-skills",
+      "title": "Plugins and skills",
+      "summary": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.",
+      "link": "https://openai.com/academy/codex-plugins-and-skills",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
+      "link": "https://openai.com/academy/codex-automations",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/ai-co-clinician/",
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
+      "link": "https://deepmind.google/blog/ai-co-clinician/",
+      "published": "Thu, 30 Apr 2026 12:14:15 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
+      "title": "Announcing our partnership with the Republic of Korea",
+      "summary": "Google DeepMind and Korea partner to accelerate scientific breakthroughs using frontier AI models",
+      "link": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
+      "published": "Mon, 27 Apr 2026 07:00:06 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/decoupled-diloco/",
+      "title": "Decoupled DiLoCo: A new frontier for resilient, distributed AI training",
+      "summary": "",
+      "link": "https://deepmind.google/blog/decoupled-diloco/",
+      "published": "Wed, 22 Apr 2026 10:20:03 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
+      "title": "Partnering with industry leaders to accelerate AI transformation",
+      "summary": "Google DeepMind partners with global consultancies to bring the power of frontier AI to organizations around the world.",
+      "link": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
+      "published": "Tue, 21 Apr 2026 14:54:15 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "published": "Wed, 15 Apr 2026 16:03:19 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
+      "summary": "Gemini Robotics ER 1.6: Enhancing spatial reasoning and multi-view understanding for autonomous robotics.",
+      "link": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "published": "Mon, 13 Apr 2026 15:52:13 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+      "link": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "published": "Thu, 02 Apr 2026 16:00:49 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "published": "Thu, 26 Mar 2026 15:23:35 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "title": "Protecting people from harmful manipulation",
+      "summary": "Google DeepMind researches AI's harmful manipulation risks across areas like finance and health, leading to new safety measures.",
+      "link": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "published": "Wed, 25 Mar 2026 16:46:20 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
+      "title": "Lyria 3 Pro: Create longer tracks in more",
+      "summary": "Introducing Lyria 3 Pro, which unlocks longer tracks with structural awareness. We’re also bringing Lyria to more Google products and surfaces.",
+      "link": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
+      "published": "Wed, 25 Mar 2026 16:01:39 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+      "title": "Measuring progress toward AGI: A cognitive framework",
+      "summary": "We’re introducing a framework to measure progress toward AGI, and launching a Kaggle hackathon to build the relevant evaluations.",
+      "link": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+      "published": "Tue, 17 Mar 2026 16:03:47 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/10-years-of-alphago/",
+      "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+      "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+      "link": "https://deepmind.google/blog/10-years-of-alphago/",
+      "published": "Mon, 09 Mar 2026 13:52:36 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+      "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+      "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+      "published": "Tue, 03 Mar 2026 16:35:55 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+      "link": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "published": "Thu, 26 Feb 2026 16:01:50 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+      "link": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "published": "Thu, 19 Feb 2026 16:06:14 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+      "title": "A new way to express yourself: Gemini can now create music",
+      "summary": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+      "link": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+      "published": "Wed, 18 Feb 2026 16:01:38 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "title": "Accelerating discovery in India through AI-powered science and education",
+      "summary": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
+      "link": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "published": "Tue, 17 Feb 2026 13:42:20 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "summary": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges.",
+      "link": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "published": "Thu, 12 Feb 2026 16:15:09 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
+      "summary": "Research papers point to the growing impact of Deep Think across fields",
+      "link": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "published": "Mon, 09 Feb 2026 16:12:06 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "summary": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds.",
+      "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "published": "Thu, 29 Jan 2026 17:01:05 +0000",
+      "source": "DeepMind Blog",
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136441",
+      "title": "Ara",
+      "summary": "\n            Build an entire business by texting\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/dereference-the-100x-ide",
+      "published": "2026-04-30T18:30:46-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136085",
+      "title": "Cloud Computer by Manus",
+      "summary": "\n            A dedicated cloud machine for bots and software\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/manus",
+      "published": "2026-04-30T08:50:18-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1129788",
+      "title": "Microsoft Copilot Health",
+      "summary": "\n            Dedicated space to bring your personal health data together\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/copilot-health",
+      "published": "2026-04-22T03:34:44-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1135553",
+      "title": "Feather",
+      "summary": "\n            Photo editor with local AI\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/feather-18",
+      "published": "2026-04-29T17:13:24-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1129347",
+      "title": "Scholé",
+      "summary": "\n            Turn everyday work into personalized AI learning\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/schole-2",
+      "published": "2026-04-21T15:30:17-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1135045",
+      "title": "Breaks",
+      "summary": "\n            A quiet Pomodoro that lives in your menu bar.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/breaks",
+      "published": "2026-04-29T03:16:20-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133001",
+      "title": "Filect",
+      "summary": "\n            Organize Your Files With AI\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/filect",
+      "published": "2026-04-26T14:57:34-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134756",
+      "title": "YouTube TV Custom Multiview",
+      "summary": "\n            Mix and match up to 4 live streams at once\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/google",
+      "published": "2026-04-28T19:51:28-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1135006",
+      "title": "AnyDrop",
+      "summary": "\n            AirDrop for the browser: share files, chat and sync notes\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/anydrop-3",
+      "published": "2026-04-29T02:48:08-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136364",
+      "title": "LaunchCut",
+      "summary": "\n            Interactive iOS Demo Builder\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/launchcut-2",
+      "published": "2026-04-30T14:35:28-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136527",
+      "title": "PeekFocus",
+      "summary": "\n            One keystroke blurs everything behind your active window\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/peekfocus",
+      "published": "2026-04-30T21:57:56-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1127011",
+      "title": "MUSIXQUARE",
+      "summary": "\n            Turn any room into a surround system with your devices\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/musixquare",
+      "published": "2026-04-18T15:18:21-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134077",
+      "title": "ScreenVeil",
+      "summary": "\n            Hide what shouldn’t be seen on your computer\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/screenveil",
+      "published": "2026-04-28T00:56:19-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1135846",
+      "title": "nudge",
+      "summary": "\n            Drop your tasks. AI auto-schedules your whole week.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/nudge-26",
+      "published": "2026-04-30T02:59:09-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1135963",
+      "title": "CipherLock",
+      "summary": "\n            Learn ciphers by breaking them\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/cipherlock",
+      "published": "2026-04-30T06:09:03-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1103214",
+      "title": "TrafficClaw",
+      "summary": "\n            Have a conversation with your SEO & analytics data \n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/trafficclaw",
+      "published": "2026-03-20T07:25:13-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1118981",
+      "title": "Genspark for Word",
+      "summary": "\n            Draft, edit, and research inside Microsoft Word with AI\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/genspark",
+      "published": "2026-04-08T08:53:54-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136133",
+      "title": "Beauty Diagram",
+      "summary": "\n            Diagrams that don't look like they were auto-generated\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/beauty-diagram",
+      "published": "2026-04-30T09:57:43-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136089",
+      "title": "Ghosted",
+      "summary": "\n            Pause media or lock your screen when you step away\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/ghosted-smart-presence",
+      "published": "2026-04-30T08:54:01-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1136118",
+      "title": "Zed 1.0",
+      "summary": "\n            High-performance, open source, multiplayer code editor\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/zed",
+      "published": "2026-04-30T09:34:46-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    }
+  ],
+  "count": 60
+}

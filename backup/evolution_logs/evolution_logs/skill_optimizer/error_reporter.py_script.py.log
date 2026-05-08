@@ -1,0 +1,19 @@
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/.hermes/evolution_logs/skill_optimizer/reporter.py", line 416, in <module>
+    run()
+    ~~~^^
+  File "/data/data/com.termux/files/home/.hermes/evolution_logs/skill_optimizer/reporter.py", line 400, in run
+    path, content = save_report(fmt)
+                    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/.hermes/evolution_logs/skill_optimizer/reporter.py", line 366, in save_report
+    content = format_cli_report()
+  File "/data/data/com.termux/files/home/.hermes/evolution_logs/skill_optimizer/reporter.py", line 184, in format_cli_report
+    plan = load_plan_summary()
+  File "/data/data/com.termux/files/home/.hermes/evolution_logs/skill_optimizer/reporter.py", line 158, in load_plan_summary
+    "total_signals": summary.get("total_signals", 0),
+                     ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'

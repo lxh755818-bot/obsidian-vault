@@ -1,0 +1,113 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-29T12:01:24.363801",
+  "scan_window_hours": 12,
+  "errors_found": 10,
+  "errors_closed": 0,
+  "errors_accepted": 10,
+  "errors_open": 0,
+  "reports": [
+    {
+      "error_id": "err_001",
+      "error_type": "generic",
+      "summary": "2026-04-29 00:58:23,483 ERROR gateway.run: Another gateway instance is already running (PID 25821, HERMES_HOME=/data/data/com.termux/files/home/.hermes). Use 'hermes gateway restart' to replace it, or",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "generic",
+      "summary": "2026-04-29 08:22:20,863 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7633860825447861443]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_003",
+      "error_type": "generic",
+      "summary": "2026-04-29 09:19:04,801 ERROR [cron_bf439e3dd7e6_20260429_090052] root: Invalid API response after 3 retries.",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_004",
+      "error_type": "generic",
+      "summary": "2026-04-29 10:11:47,908 ERROR gateway.run: Another gateway instance is already running (PID 15049, HERMES_HOME=/data/data/com.termux/files/home/.hermes). Use 'hermes gateway restart' to replace it, or",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_005",
+      "error_type": "generic",
+      "summary": "2026-04-29 10:30:15,809 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7633998850127023035]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_006",
+      "error_type": "generic",
+      "summary": "2026-04-29 10:39:47,552 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7634002910561111235]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_007",
+      "error_type": "generic",
+      "summary": "2026-04-29 10:48:18,001 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7634005555112545468]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_008",
+      "error_type": "generic",
+      "summary": "2026-04-29 10:49:07,870 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7634007651337800667]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_009",
+      "error_type": "generic",
+      "summary": "2026-04-29 11:03:30,082 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7634007838010019015]",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_010",
+      "error_type": "traceback_generic",
+      "summary": "Incomplete traceback (log truncation)",
+      "status": "accepted",
+      "solution": "",
+      "test_result": "n/a",
+      "test_duration_ms": 0
+    }
+  ],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio_unclosed_client_session": 0,
+    "asyncio_unclosed_connector": 0
+  },
+  "tracker_summary": {
+    "total_tracked": 46,
+    "closed": 19,
+    "accepted": 27,
+    "open": 0,
+    "in_progress": 0
+  }
+}

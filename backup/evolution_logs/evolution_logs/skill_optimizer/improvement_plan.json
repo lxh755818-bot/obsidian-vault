@@ -1,0 +1,52 @@
+{
+  "version": "v2",
+  "scanned_at": "2026-05-08T18:04:05.476572",
+  "window_hours": 48,
+  "total_signals": 1,
+  "plan": [
+    {
+      "skill": "feishu-agent-mention",
+      "score": 16.2,
+      "frequency": 3.0,
+      "impact": 3,
+      "auto_fix_potential": 1.8,
+      "decision": "new_skill",
+      "decision_label": "生成新技能",
+      "signal_count": 1,
+      "total_tests": 1,
+      "failed_tests": 1,
+      "failure_rate": 100.0,
+      "failure_types": {
+        "doc_fail": 1
+      },
+      "last_seen": "2026-05-08T18:03:31.012114",
+      "severity": "medium",
+      "avg_latency_ms": 0
+    }
+  ],
+  "summary": {
+    "deep_review_count": 0,
+    "new_skill_count": 1,
+    "add_rule_count": 0,
+    "archive_count": 0,
+    "top_priority": {
+      "skill": "feishu-agent-mention",
+      "score": 16.2,
+      "frequency": 3.0,
+      "impact": 3,
+      "auto_fix_potential": 1.8,
+      "decision": "new_skill",
+      "decision_label": "生成新技能",
+      "signal_count": 1,
+      "total_tests": 1,
+      "failed_tests": 1,
+      "failure_rate": 100.0,
+      "failure_types": {
+        "doc_fail": 1
+      },
+      "last_seen": "2026-05-08T18:03:31.012114",
+      "severity": "medium",
+      "avg_latency_ms": 0
+    }
+  }
+}

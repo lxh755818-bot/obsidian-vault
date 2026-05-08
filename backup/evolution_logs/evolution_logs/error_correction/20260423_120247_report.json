@@ -1,0 +1,54 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-23T12:02:47.084064",
+  "errors_found": 5,
+  "errors_closed": 0,
+  "errors_open": 5,
+  "reports": [
+    {
+      "error_id": "err_115",
+      "error_type": "MCPMethodNotFound",
+      "summary": "MCP baostock list_prompts 方法不存在 (2x)",
+      "status": "open",
+      "solution": "检查 baostock MCP server 的方法列表，更新调用方代码避免调用不存在的方法",
+      "test_result": "info",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_116",
+      "error_type": "FeishuEditMessageFailed",
+      "summary": "飞书编辑消息失败 (2x) - 消息已被删除或过期",
+      "status": "open",
+      "solution": "消息可能已删除或过期，属正常业务情况，无需修复",
+      "test_result": "not_fixable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_117",
+      "error_type": "PortConflict",
+      "summary": "API Server 端口 8642 被占用 (2x) - 当前未占用",
+      "status": "open",
+      "solution": "端口冲突已缓解，当前无进程占用 8642。如持续出现，检查启动顺序",
+      "test_result": "passed",
+      "test_duration_ms": 96
+    },
+    {
+      "error_id": "err_118",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (14x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件并确保只有一个 Hermes 实例运行：rm -f ~/.hermes/gateway*.pid && ps aux | grep hermes",
+      "test_result": "info",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_119",
+      "error_type": "LarkWebSocketDisconnect",
+      "summary": "飞书 WebSocket keepalive 超时断开 (2x)",
+      "status": "open",
+      "solution": "WebSocket keepalive 超时属正常断开，可为 Lark 平台添加自动重连逻辑",
+      "test_result": "not_fixable",
+      "test_duration_ms": 0
+    }
+  ]
+}

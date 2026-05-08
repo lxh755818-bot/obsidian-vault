@@ -1,0 +1,966 @@
+{
+  "date": "2026-04-29",
+  "entries": [
+    {
+      "id": "oai:arXiv.org:2604.22777v1",
+      "title": "An Intelligent Fault Diagnosis Method for General Aviation Aircraft Based on Multi-Fidelity Digital Twin and FMEA Knowledge Enhancement",
+      "summary": "arXiv:2604.22777v1 Announce Type: new \nAbstract: Fault diagnosis of general aviation aircraft faces challenges including scarce real fault data, diverse fault types, and weak fault signatures. This paper proposes an intelligent fault diagnosis framework based on multi-fidelity digital twin, integrat...",
+      "link": "https://arxiv.org/abs/2604.22777",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22934v1",
+      "title": "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
+      "summary": "arXiv:2604.22934v1 Announce Type: new \nAbstract: LLM-based agents for text-to-SQL often struggle with latency-performance trade-off, where performance improvements come at the cost of latency or vice versa. We reformulate text-to-SQL generation within the lens of software test coverage where the ori...",
+      "link": "https://arxiv.org/abs/2604.22934",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22951v1",
+      "title": "The Power of Power Law: Asymmetry Enables Compositional Reasoning",
+      "summary": "arXiv:2604.22951v1 Announce Type: new \nAbstract: Natural language data follows a power-law distribution, with most knowledge and skills appearing at very low frequency. While a common intuition suggests that reweighting or curating data towards a uniform distribution may help models better learn the...",
+      "link": "https://arxiv.org/abs/2604.22951",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22958v1",
+      "title": "On the Existence of an Inverse Solution for Preference-Based Reductions in Argumentation",
+      "summary": "arXiv:2604.22958v1 Announce Type: new \nAbstract: Preference-based argumentation frameworks (PAFs) extend Dung's approach to abstract argumentation (AAFs) by encoding preferences over arguments. Such preferences control the transformation of attacks into defeats, and different approaches to doing so ...",
+      "link": "https://arxiv.org/abs/2604.22958",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22979v1",
+      "title": "Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction",
+      "summary": "arXiv:2604.22979v1 Announce Type: new \nAbstract: We address Human Activity Recognition (HAR) utilizing Wi-Fi Channel State Information (CSI) under the joint requirements of causal interpretability, symbolic controllability, and direct operation on high-dimensional raw signals. Deep neural models ach...",
+      "link": "https://arxiv.org/abs/2604.22979",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23002v1",
+      "title": "FormalScience: Scalable Human-in-the-Loop Autoformalisation of Science with Agentic Code Generation in Lean",
+      "summary": "arXiv:2604.23002v1 Announce Type: new \nAbstract: Formalising informal mathematical reasoning into formally verifiable code is a significant challenge for large language models. In scientific fields such as physics, domain-specific machinery (\\textit{e.g.} Dirac notation, vector calculus) imposes add...",
+      "link": "https://arxiv.org/abs/2604.23002",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23027v1",
+      "title": "A Systematic Approach for Large Language Models Debugging",
+      "summary": "arXiv:2604.23027v1 Announce Type: new \nAbstract: Large language models (LLMs) have become central to modern AI workflows, powering applications from open-ended text generation to complex agent-based reasoning. However, debugging these models remains a persistent challenge due to their opaque and pro...",
+      "link": "https://arxiv.org/abs/2604.23027",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23049v1",
+      "title": "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
+      "summary": "arXiv:2604.23049v1 Announce Type: new \nAbstract: AI agents are increasingly deployed to execute tasks and make decisions within agentic workflows, introducing new requirements for safe and controlled autonomy. Prior work has established the importance of human oversight for ensuring transparency, ac...",
+      "link": "https://arxiv.org/abs/2604.23049",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23057v1",
+      "title": "Don't Make the LLM Read the Graph: Make the Graph Think",
+      "summary": "arXiv:2604.23057v1 Announce Type: new \nAbstract: We investigate whether explicit belief graphs improve LLM performance in cooperative multi-agent reasoning. Through 3,000+ controlled trials across four LLM families in the cooperative card game Hanabi, we establish four findings. First, integration a...",
+      "link": "https://arxiv.org/abs/2604.23057",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23072v1",
+      "title": "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis",
+      "summary": "arXiv:2604.23072v1 Announce Type: new \nAbstract: Large language model (LLM) agents are increasingly tasked with complex real-world analysis (e.g., in financial forecasting, scientific discovery), yet their reasoning suffers from stochastic instability and lacks a verifiable, compositional structure....",
+      "link": "https://arxiv.org/abs/2604.23072",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23090v1",
+      "title": "Towards Automated Ontology Generation from Unstructured Text: A Multi-Agent LLM Approach",
+      "summary": "arXiv:2604.23090v1 Announce Type: new \nAbstract: Automatically generating formal ontologies from unstructured natural language remains a central challenge in knowledge engineering. While large language models (LLMs) show promise, it remains unclear which architectural design choices drive generation...",
+      "link": "https://arxiv.org/abs/2604.23090",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23148v1",
+      "title": "PhySE: A Psychological Framework for Real-Time AR-LLM Social Engineering Attacks",
+      "summary": "arXiv:2604.23148v1 Announce Type: new \nAbstract: The emerging threat of AR-LLM-based Social Engineering (AR-LLM-SE) attacks (e.g. SEAR) poses a significant risk to real-world social interactions. In such an attack, a malicious actor uses Augmented Reality (AR) glasses to capture a target visual and ...",
+      "link": "https://arxiv.org/abs/2604.23148",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23178v1",
+      "title": "Judging the Judges: A Systematic Evaluation of Bias Mitigation Strategies in LLM-as-a-Judge Pipelines",
+      "summary": "arXiv:2604.23178v1 Announce Type: new \nAbstract: LLM-as-a-Judge has become the dominant paradigm for evaluating language model outputs, yet LLM judges exhibit systematic biases that compromise evaluation reliability. We present a comprehensive empirical study comparing nine debiasing strategies acro...",
+      "link": "https://arxiv.org/abs/2604.23178",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23194v1",
+      "title": "From Coarse to Fine: Self-Adaptive Hierarchical Planning for LLM Agents",
+      "summary": "arXiv:2604.23194v1 Announce Type: new \nAbstract: Large language model-based agents have recently emerged as powerful approaches for solving dynamic and multi-step tasks. Most existing agents employ planning mechanisms to guide long-term actions in dynamic environments. However, current planning appr...",
+      "link": "https://arxiv.org/abs/2604.23194",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23198v1",
+      "title": "StoryTR: Narrative-Centric Video Temporal Retrieval with Theory of Mind Reasoning",
+      "summary": "arXiv:2604.23198v1 Announce Type: new \nAbstract: Current video moment retrieval excels at action-centric tasks but struggles with narrative content. Models can see \\textit{what is happening} but fail to reason \\textit{why it matters}. This semantic gap stems from the lack of \\textbf{Theory of Mind (...",
+      "link": "https://arxiv.org/abs/2604.23198",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23210v1",
+      "title": "Discovering Agentic Safety Specifications from 1-Bit Danger Signals",
+      "summary": "arXiv:2604.23210v1 Announce Type: new \nAbstract: Can large language model agents discover hidden safety objectives through experience alone? We introduce EPO-Safe (Experiential Prompt Optimization for Safe Agents), a framework where an LLM iteratively generates action plans, receives sparse binary d...",
+      "link": "https://arxiv.org/abs/2604.23210",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23239v1",
+      "title": "AdaMamba: Adaptive Frequency-Gated Mamba for Long-Term Time Series Forecasting",
+      "summary": "arXiv:2604.23239v1 Announce Type: new \nAbstract: Accurate long-term time series forecasting (LTSF) requires the capture of complex long-range dependencies and dynamic periodic patterns. Recent advances in frequency-domain analysis offer a global perspective for uncovering temporal characteristics. H...",
+      "link": "https://arxiv.org/abs/2604.23239",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23270v1",
+      "title": "CAP-CoT: Cycle Adversarial Prompt for Improving Chain of Thoughts in LLM Reasoning",
+      "summary": "arXiv:2604.23270v1 Announce Type: new \nAbstract: Chain-of-Thought (CoT) prompting has emerged as a simple and effective way to elicit step-by-step solutions from large language models (LLMs). However, CoT reasoning can be unstable across runs on long, multi-step problems, leading to inconsistent ans...",
+      "link": "https://arxiv.org/abs/2604.23270",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23278v1",
+      "title": "Active Inference: A method for Phenotyping Agency in AI systems?",
+      "summary": "arXiv:2604.23278v1 Announce Type: new \nAbstract: The proliferation of agentic artificial intelligence has outpaced the conceptual tools needed to characterize agency in computational systems. Prevailing definitions mainly rely on autonomy and goal-directedness. Here, we argue for a minimal notion op...",
+      "link": "https://arxiv.org/abs/2604.23278",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23280v1",
+      "title": "AI Identity: Standards, Gaps, and Research Directions for AI Agents",
+      "summary": "arXiv:2604.23280v1 Announce Type: new \nAbstract: AI agents are now running real transactions, workflows, and sub-agent chains across organizational boundaries without continuous human supervision. This creates a problem no current infrastructure is equipped to solve: how do you identify, verify, and...",
+      "link": "https://arxiv.org/abs/2604.23280",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22778v1",
+      "title": "The Spectral Lifecycle of Transformer Training: Transient Compression Waves, Persistent Spectral Gradients, and the Q/K--V Asymmetry",
+      "summary": "arXiv:2604.22778v1 Announce Type: new \nAbstract: We present the first systematic study of weight matrix singular value spectra \\emph{during} transformer pretraining, tracking full SVD decompositions of every weight matrix at 25-step intervals across three model scales (30M--285M parameters). We disc...",
+      "link": "https://arxiv.org/abs/2604.22778",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22779v1",
+      "title": "KARL: Mitigating Hallucinations in LLMs via Knowledge-Boundary-Aware Reinforcement Learning",
+      "summary": "arXiv:2604.22779v1 Announce Type: new \nAbstract: Enabling large language models (LLMs) to appropriately abstain from answering questions beyond their knowledge is crucial for mitigating hallucinations. While existing reinforcement learning methods foster autonomous abstention, they often compromise ...",
+      "link": "https://arxiv.org/abs/2604.22779",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22781v1",
+      "title": "BiTA: Bidirectional Gated Recurrent Unit-Transformer Aggregator in a Temporal Graph Network Framework for Alert Prediction in Computer Networks",
+      "summary": "arXiv:2604.22781v1 Announce Type: new \nAbstract: Proactive alert prediction in computer networks is critical for mitigating evolving cyber threats and enabling timely defensive actions. Temporal Graph Neural Networks (TGNs) provide a principled framework for modeling time-evolving interactions; howe...",
+      "link": "https://arxiv.org/abs/2604.22781",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22782v1",
+      "title": "Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing",
+      "summary": "arXiv:2604.22782v1 Announce Type: new \nAbstract: Serving transformer language models with high throughput requires caching Key-Values (KVs) to avoid redundant computation during autoregressive generation. The memory footprint of KV caching is significant and heavily impacts serving costs. This work ...",
+      "link": "https://arxiv.org/abs/2604.22782",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22783v1",
+      "title": "Parameter Efficiency Is Not Memory Efficiency: Rethinking Fine-Tuning for On-Device LLM Adaptation",
+      "summary": "arXiv:2604.22783v1 Announce Type: new \nAbstract: Parameter-Efficient Fine-Tuning (PEFT) has become the standard for adapting large language models (LLMs). In this work we challenge the wide-spread assumption that parameter efficiency equates memory efficiency and on-device adaptability. We show that...",
+      "link": "https://arxiv.org/abs/2604.22783",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22784v1",
+      "title": "Learning Without Adversarial Training: A Physics-Informed Neural Network for Secure Power System State Estimation under False Data Injection Attacks",
+      "summary": "arXiv:2604.22784v1 Announce Type: new \nAbstract: State estimation is a cornerstone of power system control-center operations, and its robust operation is increasingly a cyber-physical security concern as modern grids become more digitalized and communication-intensive. Neural network-based approache...",
+      "link": "https://arxiv.org/abs/2604.22784",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22785v1",
+      "title": "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
+      "summary": "arXiv:2604.22785v1 Announce Type: new \nAbstract: Large language model (LLM) deployments increasingly rely on multi-agent architectures in which multiple models either compete through routing mechanisms or collaborate to produce a final answer. In both settings, the learning signal received by each a...",
+      "link": "https://arxiv.org/abs/2604.22785",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22786v1",
+      "title": "AutoCompress: Critical Layer Isolation for Efficient Transformer Compression",
+      "summary": "arXiv:2604.22786v1 Announce Type: new \nAbstract: We present AutoCompress, a transformer compression method motivated by an empirical finding: in small transformers, Layer 0 carries disproportionately high task-critical information, with an NTK-based importance score of 3.6 compared to a maximum of 0...",
+      "link": "https://arxiv.org/abs/2604.22786",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22787v1",
+      "title": "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
+      "summary": "arXiv:2604.22787v1 Announce Type: new \nAbstract: Africa's green industrialization imperative demands reliable infrastructure for monitoring air quality. We present a satellite-reanalysis PM2.5 fusion system trained on 2,068,901 records from 404 monitoring locations in 29 African countries (OpenAQ, 2...",
+      "link": "https://arxiv.org/abs/2604.22787",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22869v1",
+      "title": "Avionic Main Fuel Pump Simulation and Fault-Diagnosis Benchmark",
+      "summary": "arXiv:2604.22869v1 Announce Type: new \nAbstract: In many cyber-physical systems, especially in critical applications such as aeroplanes, data to train anomaly detection and diagnosis algorithms is lacking due to data protection issues and partial observability. To combat this inherent lack of data, ...",
+      "link": "https://arxiv.org/abs/2604.22869",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22870v1",
+      "title": "Towards Understanding the Expressive Power of GNNs with Global Readout",
+      "summary": "arXiv:2604.22870v1 Announce Type: new \nAbstract: We study the expressive power of message-passing aggregate-combine-readout graph neural networks (ACR-GNNs). Particularly, we focus on the first-order (FO) properties expressible by this formalism. While a tight logical characterisation remains a diff...",
+      "link": "https://arxiv.org/abs/2604.22870",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22873v1",
+      "title": "When Policies Cannot Be Retrained: A Unified Closed-Form View of Post-Training Steering in Offline Reinforcement Learning",
+      "summary": "arXiv:2604.22873v1 Announce Type: new \nAbstract: Offline reinforcement learning (RL) can learn effective policies from fixed datasets, but deployment objectives may change after training, and in many applications the trained actor cannot be retrained because of data, cost, or governance constraints....",
+      "link": "https://arxiv.org/abs/2604.22873",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22881v1",
+      "title": "MTServe: Efficient Serving for Generative Recommendation Models with Hierarchical Caches",
+      "summary": "arXiv:2604.22881v1 Announce Type: new \nAbstract: Generative recommendation (GR) offers superior modeling capabilities but suffers from prohibitive inference costs due to the repeated encoding of long user histories. While cross-request Key-Value (KV) cache reuse presents a significant optimization o...",
+      "link": "https://arxiv.org/abs/2604.22881",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22882v1",
+      "title": "Predicting Wind Loads on Container Ships in Harbor Environments through Multi-Fidelity Modeling",
+      "summary": "arXiv:2604.22882v1 Announce Type: new \nAbstract: Modern container ships face higher wind loads due to increased windage areas, making accurate predictions of wind loads essential for mooring design. Existing empirical models, largely developed for container ships with smaller windage areas and simpl...",
+      "link": "https://arxiv.org/abs/2604.22882",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22891v1",
+      "title": "Quantifying and Mitigating Self-Preference Bias of LLM Judges",
+      "summary": "arXiv:2604.22891v1 Announce Type: new \nAbstract: LLM-as-a-Judge has become a dominant approach in automated evaluation systems, playing critical roles in model alignment, leaderboard construction, quality control, and so on. However, the scalability and trustworthiness of this approach can be substa...",
+      "link": "https://arxiv.org/abs/2604.22891",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22892v1",
+      "title": "StackFeat RL: Reinforcement Learning over Iterative Dual Criterion Feature Selection for Stable Biomarker Discovery",
+      "summary": "arXiv:2604.22892v1 Announce Type: new \nAbstract: Feature selection in high-dimensional genomic data ($d \\gg n$) demands methods that are simultaneously accurate, sparse, and stable. Existing approaches either require manual threshold specification (mRMR, stability selection), produce unstable select...",
+      "link": "https://arxiv.org/abs/2604.22892",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22893v1",
+      "title": "Utility-Aware Data Pricing: Token-Level Quality and Empirical Training Gain for LLMs",
+      "summary": "arXiv:2604.22893v1 Announce Type: new \nAbstract: Traditional data valuation methods based on ``row-count $\\times$ quality coefficient'' paradigms fail to capture the nuanced, nonlinear contributions that data makes to Large Language Model (LLM) capabilities. This paper presents a dynamic data valuat...",
+      "link": "https://arxiv.org/abs/2604.22893",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22901v1",
+      "title": "Accelerating Frequency Domain Diffusion Models with Error-Feedback Event-Driven Caching",
+      "summary": "arXiv:2604.22901v1 Announce Type: new \nAbstract: Diffusion models achieve remarkable success in time series generation. However, slow inference limits their practical deployment. We propose E$^2$-CRF (Error-Feedback Event-Driven Cumulative Residual Feature caching) to accelerate frequency domain dif...",
+      "link": "https://arxiv.org/abs/2604.22901",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22909v1",
+      "title": "Deep Clustering for Climate: Analyzing Teleconnections through Learned Categorical States",
+      "summary": "arXiv:2604.22909v1 Announce Type: new \nAbstract: Understanding and representing complex climate variability is essential for both scientific analysis and predictive modeling. However, identifying meaningful climate regimes from raw variables is challenging, as they exhibit high noise and nonlinear d...",
+      "link": "https://arxiv.org/abs/2604.22909",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22948v1",
+      "title": "Score-Repellent Monte Carlo: Toward Efficient Non-Markovian Sampler with Constant Memory in General State Spaces",
+      "summary": "arXiv:2604.22948v1 Announce Type: new \nAbstract: History-dependent sampling can reduce long-run Monte Carlo variance by discouraging redundant revisits, but existing schemes typically encode history through empirical measure on finite state spaces, which is infeasible in high-dimensional discrete co...",
+      "link": "https://arxiv.org/abs/2604.22948",
+      "published": "Tue, 28 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "summary": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.",
+      "link": "https://openai.com/index/openai-on-aws",
+      "published": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "summary": "OpenAI is available at FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling secure AI adoption for U.S. federal agencies.",
+      "link": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "published": "Mon, 27 Apr 2026 14:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "summary": "OpenAI and Microsoft announce an amended agreement that simplifies the partnership, adds long-term clarity, and supports continued AI innovation at scale.",
+      "link": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "published": "Mon, 27 Apr 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "title": "An open-source spec for orchestration: Symphony",
+      "summary": "Learn how Symphony, an open-source spec for Codex orchestration, turns issue trackers into always-on agent systems—boosting engineering output and reducing context switching.",
+      "link": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/choco",
+      "title": "Choco automates food distribution with AI agents",
+      "summary": "How Choco used OpenAI APIs to streamline food distribution, boost productivity, and unlock growth—an in-depth customer story on real-world AI impact.",
+      "link": "https://openai.com/index/choco",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-principles",
+      "title": "Our principles",
+      "summary": "Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+      "link": "https://openai.com/index/our-principles",
+      "published": "Sun, 26 Apr 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "summary": "",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/what-is-codex",
+      "title": "What is Codex?",
+      "summary": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
+      "link": "https://openai.com/academy/what-is-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-how-to-start",
+      "title": "How to get started with Codex",
+      "summary": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/codex-how-to-start",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-settings",
+      "title": "Codex settings",
+      "summary": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.",
+      "link": "https://openai.com/academy/codex-settings",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/working-with-codex",
+      "title": "Working with Codex",
+      "summary": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/working-with-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-plugins-and-skills",
+      "title": "Plugins and skills",
+      "summary": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.",
+      "link": "https://openai.com/academy/codex-plugins-and-skills",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
+      "link": "https://openai.com/academy/codex-automations",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "summary": "Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000.",
+      "link": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "published": "Thu, 23 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "title": "Making ChatGPT better for clinicians",
+      "summary": "OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research.",
+      "link": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "published": "Wed, 22 Apr 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "summary": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+      "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "title": "Introducing workspace agents in ChatGPT",
+      "summary": "Workspace agents in ChatGPT are Codex-powered agents that automate complex workflows, run in the cloud, and help teams scale work across tools securely.",
+      "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/workspace-agents",
+      "title": "Workspace agents",
+      "summary": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations.",
+      "link": "https://openai.com/academy/workspace-agents",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134399",
+      "title": "Kinhub",
+      "summary": "\n            Scalable coaching that drives real business impact\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/kinhub",
+      "published": "2026-04-28T07:46:39-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130458",
+      "title": "Flitch",
+      "summary": "\n            Turn your data into insights\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/flitch",
+      "published": "2026-04-23T00:36:04-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1047888",
+      "title": "Clera",
+      "summary": "\n            An AI agent matching candidates to the right roles.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/clera",
+      "published": "2025-12-08T15:56:57-08:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133772",
+      "title": "Lovable mobile app",
+      "summary": "\n            Your ideas don't wait for you to sit down at a desk\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/lovable",
+      "published": "2026-04-27T14:13:00-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1127371",
+      "title": "Voice Agents",
+      "summary": "\n            Turn expertise into 24/7 client-facing AI voice agents\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/mindpal-ai",
+      "published": "2026-04-19T07:20:10-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1097491",
+      "title": "Actian VectorAI DB",
+      "summary": "\n            The portable vector database for AI agents beyond the cloud\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/actian",
+      "published": "2026-03-13T05:38:47-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133654",
+      "title": "Curflow",
+      "summary": "\n            Draw a gesture for your Mac to execute\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/curflow",
+      "published": "2026-04-27T11:17:20-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132742",
+      "title": "OrcaSheets AI Reports",
+      "summary": "\n            Query data to build dashboards and generate detailed reports\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/orcasheets",
+      "published": "2026-04-26T05:14:45-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1129671",
+      "title": "Social Fetch",
+      "summary": "\n            Pull real-time data from any social platform via API.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/social-fetch",
+      "published": "2026-04-22T00:55:12-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133782",
+      "title": "Devin for Terminal",
+      "summary": "\n            A CLI agent that keeps working when you close your laptop\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/devin-1-2-by-congition",
+      "published": "2026-04-27T14:38:47-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133276",
+      "title": "SimCam",
+      "summary": "\n             Test camera features directly in the iOS simulator\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/simcam-2",
+      "published": "2026-04-27T02:19:07-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132040",
+      "title": "WUPHF by Nex.ai",
+      "summary": "\n            AI employees who build their own knowledge base\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/wuphf-2",
+      "published": "2026-04-25T02:07:15-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1124245",
+      "title": "SureThing.io",
+      "summary": "\n            Autonomous agent that communicates results like a human\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/surething-io",
+      "published": "2026-04-15T02:23:43-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133877",
+      "title": "Blueprint",
+      "summary": "\n            One-shot bigger coding tasks\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/imbue-7",
+      "published": "2026-04-27T18:50:07-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133332",
+      "title": "Kōan",
+      "summary": "\n            See your AI agents think. Reasoning, tool calls & decisions \n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/koan-agentic-observability-platform",
+      "published": "2026-04-27T03:34:38-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1129910",
+      "title": "Not Pink",
+      "summary": "\n            A shared bucket list with active scheduling and planning\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/not-pink",
+      "published": "2026-04-22T06:19:37-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133645",
+      "title": "Doza Assist",
+      "summary": "\n            Open-source local AI that learns how you edit video\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/doza-assist",
+      "published": "2026-04-27T10:58:03-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132342",
+      "title": "Markdown Editor For Notion Lovers",
+      "summary": "\n            A clean Markdown editor with a smooth, block-based UX\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/markdown-editor-for-notion-lovers",
+      "published": "2026-04-25T12:00:43-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133454",
+      "title": "Colir",
+      "summary": "\n            Gradients that don't look like defaults\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/colir",
+      "published": "2026-04-27T05:52:49-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1094962",
+      "title": "MacWiFi",
+      "summary": "\n            Know if your internet is flaky before your next call\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/macwifi",
+      "published": "2026-03-10T21:55:38-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    }
+  ],
+  "count": 80
+}

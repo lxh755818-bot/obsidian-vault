@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-04-19T14:09:18.748410",
+  "total_gaps": 3,
+  "by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 3,
+    "low": 0
+  },
+  "gaps": [
+    {
+      "gap_id": "skill-coverage-deployment",
+      "category": "skill",
+      "title": "No skill for deployment",
+      "description": "Hermes has no skill covering deployment-related tasks.",
+      "severity": "medium",
+      "evidence": [
+        "Required tags ['deployment', 'ci-cd', 'docker', 'kubernetes'] not found in any skill"
+      ],
+      "suggested_action": "Create skill with tags: ['deployment', 'ci-cd', 'docker', 'kubernetes']",
+      "estimated_effort": "2h",
+      "status": "open"
+    },
+    {
+      "gap_id": "skill-coverage-data",
+      "category": "skill",
+      "title": "No skill for data",
+      "description": "Hermes has no skill covering data-related tasks.",
+      "severity": "medium",
+      "evidence": [
+        "Required tags ['data', 'database', 'sql', 'migration'] not found in any skill"
+      ],
+      "suggested_action": "Create skill with tags: ['data', 'database', 'sql', 'migration']",
+      "estimated_effort": "2h",
+      "status": "open"
+    },
+    {
+      "gap_id": "integration-memory-observer",
+      "category": "integration",
+      "title": "Memory compression not integrated into Observer",
+      "description": "TokenCompactor exists but is not called during session lifecycle.",
+      "severity": "medium",
+      "evidence": [
+        "compressor.py exists but observer.py doesn't reference it"
+      ],
+      "suggested_action": "Call TokenCompactor.compress() in observer finalize hook",
+      "estimated_effort": "30min",
+      "status": "open"
+    }
+  ]
+}

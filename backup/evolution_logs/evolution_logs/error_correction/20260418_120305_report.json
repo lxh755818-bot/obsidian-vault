@@ -1,0 +1,64 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-18T12:03:05.990232",
+  "errors_found": 997,
+  "errors_closed": 0,
+  "errors_open": 6,
+  "reports": [
+    {
+      "error_id": "err_005",
+      "error_type": "MissingEventProcessor",
+      "summary": "bot_p2p_chat_entered_v1 processor not found (944 occurrences)",
+      "status": "open",
+      "solution": "在 gateway/platforms/feishu.py 的 _build_event_handler() 中添加 .register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(lambda data: None)",
+      "test_result": "not_tested",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_006",
+      "error_type": "NetworkError",
+      "summary": "飞书服务器连接失败/超时 (35 occurrences)",
+      "status": "open",
+      "solution": "网络临时问题，飞书服务可能暂时不可用。当前已有重试机制，无需代码修复。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_007",
+      "error_type": "InvalidInput",
+      "summary": "用户提供了无效图片路径 (4 occurrences)",
+      "status": "open",
+      "solution": "用户输入问题，已有清晰错误提示，无需代码修复。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_008",
+      "error_type": "NetworkTimeout",
+      "summary": "图片下载连接超时 (2 occurrences)",
+      "status": "open",
+      "solution": "网络超时问题，已有超时处理机制，无需修复。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_009",
+      "error_type": "HTTP404",
+      "summary": "外部图片URL返回404 (2 occurrences)",
+      "status": "open",
+      "solution": "外部URL失效，非代码问题，无需修复。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_010",
+      "error_type": "NetworkError",
+      "summary": "飞书消息发送失败 (0 occurrences)",
+      "status": "open",
+      "solution": "网络连接问题，已有重试机制，无需代码修复。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    }
+  ],
+  "analysis_duration_ms": 0
+}

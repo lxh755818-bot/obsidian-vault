@@ -1,0 +1,27 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-22T12:02:19.091067",
+  "errors_found": 2,
+  "errors_closed": 0,
+  "errors_open": 2,
+  "reports": [
+    {
+      "error_id": "err_021",
+      "error_type": "FeishuEditTimeout",
+      "summary": "飞书消息编辑API连接超时 (6次): open.feishu.cn连接超时",
+      "status": "accepted",
+      "solution": "err_021状态为closed，但最近12小时出现6次新实例。这是飞书服务器连接不稳定导致的暂时性错误，非代码bug。建议监控：如果频率突然增加需排查网络。",
+      "test_result": "error",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_026/err_101",
+      "error_type": "FeishuWSLoopExit",
+      "summary": "飞书WebSocket连接异常断开 (6次): keepalive ping timeout / no close frame",
+      "status": "accepted",
+      "solution": "err_026/err_101状态为accepted，属于已知的飞书WebSocket长连接不稳定问题。最近12小时出现6次，conn_id不同（76312362366, 76313736133），均为服务器端主动断开。",
+      "test_result": "error",
+      "test_duration_ms": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-04-28 09:18
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🔴 通过率: 12.5%  |  通过: 2  |  失败: 14  |  退化: 4
+
+  技能明细:
+  🔴 pytorch-fsdp: 0.0% | avg 0ms
+  🔴 trl-fine-tuning: 0.0% | avg 0ms
+  🔴 mlops/training/unsloth: 0.0% | avg 0ms
+  🔴 xiaoa-persona-system: 0.0% | avg 0ms
+  🔴 mlops/xiaoa-persona-system: 0.0% | avg 0ms
+  🔴 note-taking/obsidian: 0.0% | avg 0ms
+  🔴 english-learning-resources: 0.0% | avg 0ms
+  🔴 google-workspace: 0.0% | avg 0ms
+  🔴 productivity/linear/SKILL: 0.0% | avg 0ms
+  🔴 unsloth: 50.0% | avg 0ms
+  🟢 mlops/training/pytorch-fsdp: 100.0% | avg 0ms
+
+───────────────────────────────────────────────────────
+  📋 待审批修复方案: 6 个
+    → mlops_training_unsloth_fix_v2.json
+    → mlops_xiaoa-persona-system_fix_v2.json
+    → xiaoa-persona-system_fix_v2.json
+    → peft_diag_v2.json
+    → skill-cycle-optimizer_diag_v2.json
+    → productivity_linear_SKILL_fix_v2.json
+═══════════════════════════════════════════════════════

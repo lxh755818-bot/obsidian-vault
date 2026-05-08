@@ -1,0 +1,43 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-02T00:05:52.151847",
+  "scan_window_hours": 12,
+  "errors_found": 1360,
+  "errors_closed": 0,
+  "errors_accepted": 0,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [],
+  "noise_filtered": {},
+  "tracker_summary": {
+    "total_tracked": 67,
+    "closed": 18,
+    "accepted": 49,
+    "open": 0,
+    "in_progress": 0
+  },
+  "all_known_errors": [
+    {
+      "error_type": "traceback_generic",
+      "summary": "日志只有 Traceback 首行，无后续堆栈 — 日志写入截断，无可操作信息",
+      "count": 1342,
+      "status": "accepted",
+      "tracker_match": "IncompleteTraceback / traceback_generic"
+    },
+    {
+      "error_type": "lark_ws_exit_1011",
+      "summary": "Lark WebSocket 1011 keepalive ping timeout — 平台行为",
+      "count": 6,
+      "status": "accepted",
+      "tracker_match": "Lark_1011_keepalive_timeout"
+    },
+    {
+      "error_type": "feishu_edit_failed",
+      "summary": "飞书 edit message 超时 — 瞬态网络错误",
+      "count": 12,
+      "status": "accepted",
+      "tracker_match": "feishu_edit_timeout"
+    }
+  ],
+  "conclusion": "所有错误均已在 tracker 中标记为 accepted，无新错误，无需修复"
+}

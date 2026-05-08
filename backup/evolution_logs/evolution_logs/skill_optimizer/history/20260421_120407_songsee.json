@@ -1,0 +1,36 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-21T12:04:07.776817",
+  "current_index": 46,
+  "total_skills": 109,
+  "current": {
+    "skill": "songsee",
+    "category": "media/songsee",
+    "type": "cli",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "songsee command not found"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "依赖缺失: songsee 命令未安装。安装: `go install github.com/steipete/songsee/cmd/songsee@latest`",
+      "建议标记为 manual_only，因为需要本地 Go 环境"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 0,
+    "action": "依赖缺失，CLI 命令未安装"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "researched": [
+    {
+      "topic": "Superpowers",
+      "researched_at": "2026-04-19T01:05:00Z",
+      "depth": "full",
+      "findings_summary": "Superpowers\u662fAI Coding Agent\u5de5\u7a0b\u5316\u6846\u67b6\uff0c\u4e0d\u662f\u4ee3\u7801\u751f\u6210\u5de5\u5177; \u901a\u8fc714\u4e2a\u6280\u80fd\u5f3a\u5236AI\u9075\u5faa\u8f6f\u4ef6\u5de5\u7a0b\u65b9\u6cd5\u8bba\uff08brainstorm\u2192plan\u2192TDD\u2192debug\u2192verify\uff09; \u6700\u65b0v5.0.7\u652f\u6301Copilot CLI\uff0c\u4f18\u5316\u4e86OpenCode\u96c6\u6210",
+      "quality_score": 17,
+      "status": "reported"
+    },
+    {
+      "topic": "Everything Claude Code",
+      "researched_at": "2026-04-18T17:31:42.648118+00:00",
+      "depth": "full",
+      "findings_summary": "",
+      "quality_score": 15,
+      "status": "reported"
+    },
+    {
+      "topic": "claude-mem",
+      "researched_at": "2026-04-19T01:50:00Z",
+      "depth": "full",
+      "findings_summary": "Claude-Mem\u662fClaude Code\u751f\u6001\u6700\u6838\u5fc3\u7684\u8bb0\u5fc6\u589e\u5f3a\u63d2\u4ef6\uff0c59.5k star\uff0c1,727\u6b21commit\uff0c2026\u5e742\u6708GitHub Trending\u7b2c\u4e00; \u6838\u5fc3\u6280\u672f\uff1a7\u4e2a\u751f\u547d\u5468\u671f\u94a9\u5b50 + Claude Agent SDK\u538b\u7f29 + SQLite FTS5/Chroma\u53cc\u5b58\u50a8 + PM2\u670d\u52a1; v9\u65b0\u589eKnowledge Agent\uff1a\u652f\u6301\u4ece\u89c2\u6d4b\u5386\u53f2\u6784\u5efa\u53ef\u67e5\u8be2AI\u5927\u8111\uff0c\u652f\u63011M token\u4e0a\u4e0b\u6587\u7a97\u53e3\uff0c\u4ee3\u8868\u8bb0\u5fc6\u7cfb\u7edf\u6f14\u8fdb\u65b9\u5411",
+      "quality_score": 17,
+      "status": "reported"
+    },
+    {
+      "topic": "GenericAgent",
+      "researched_at": "2026-04-19T02:10:00Z",
+      "depth": "full",
+      "findings_summary": "GenericAgent\u662f\u6781\u7b80\u81ea\u6211\u8fdb\u5316Agent\u6846\u67b6\uff0c2026\u5e744\u670816\u65e5GitHub Trending\u7b2c\u4e00\uff1b\u4e3b\u6253\u8f7b\u91cf\u7ea7\u81ea\u8fdb\u5316\u6982\u5ff5\uff0c\u4e0eHermes\u7684\u81ea\u6211\u4f18\u5316\u95ed\u73af\u5b58\u5728\u7ade\u4e89\uff1bStars\u589e\u957f\u8fc5\u901f\u4f46\u751f\u6001\u5c1a\u4e0d\u6210\u719f",
+      "quality_score": 14,
+      "status": "reported"
+    },
+    {
+      "topic": "finalize-core",
+      "researched_at": "2026-04-19T11:30:00Z",
+      "depth": "shallow",
+      "findings_summary": "Finalize AI\u5f00\u6e90\u6846\u67b6\uff0c\u57fa\u4e8eNode.js/Electron\u751f\u6001\uff1b\u51fa\u73b0\u57282026-04\u8fd1\u671f\u65b0 entrant\uff0c\u5b9a\u4f4dAI\u52a9\u624b\u5f00\u53d1\u5de5\u5177\uff1b\u9700\u8fdb\u4e00\u6b65\u6df1\u5ea6\u8c03\u7814\u4ee5\u8bc4\u4f30\u5bf9Hermes\u7684\u7ade\u4e89\u5173\u7cfb",
+      "quality_score": 5,
+      "status": "pending_deep"
+    },
+    {
+      "topic": "Voicebox",
+      "researched_at": "2026-04-19T02:24:00Z",
+      "depth": "full",
+      "findings_summary": "jamiepine/voicebox is a rising open-source project (~19k stars, +894/day) providing local voice cloning as ElevenLabs alternative; Meta's original Voicebox (2023) was a research model, never open-sourced - different project entirely; Voicebox targets creators/producers, not developers - different market from Hermes",
+      "quality_score": 14,
+      "status": "reported"
+    },
+    {
+      "topic": "browser-use",
+      "researched_at": "2026-04-19T11:30:00Z",
+      "depth": "shallow",
+      "findings_summary": "AI\u6d4f\u89c8\u5668\u81ea\u52a8\u5316\u6846\u67b6\uff0c2026-04 trending topic\uff1b\u8ba9AI agent\u64cd\u63a7\u6d4f\u89c8\u5668\u5b8c\u6210\u590d\u6742\u4efb\u52a1\uff1b\u4e0eHermes\u7684\u5de5\u5177\u8c03\u7528\u80fd\u529b\u5b58\u5728\u534f\u540c\u7a7a\u95f4\uff0c\u975e\u76f4\u63a5\u7ade\u4e89",
+      "quality_score": 6,
+      "status": "pending_deep"
+    },
+    {
+      "topic": "openclaw/openclaw",
+      "researched_at": "2026-05-07T20:03:18.887089",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: GitHub\u661f\u738b\uff0c\u8d85\u8d8aLinux"
+    },
+    {
+      "topic": "deer-flow (bytedance)",
+      "researched_at": "2026-05-07T20:03:18.887104",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: 2026\u5e74\u6700\u706b\u65b0\u6846\u67b6\uff0c24h\u51b2\u4e0aTrending\u7b2c\u4e00"
+    },
+    {
+      "topic": "agency-agents",
+      "researched_at": "2026-05-07T20:03:18.887108",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: 7\u5929\u72c2\u98d92.3\u4e07\u661f\uff0c\u5468\u589e\u957f\u699c\u7b2c\u4e00"
+    },
+    {
+      "topic": "WiFi DensePose",
+      "researched_at": "2026-05-07T20:03:18.887111",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: \u6bcf\u65e5+155\u661f\uff0c\u7a7f\u5899\u4eba\u4f53\u611f\u77e5"
+    },
+    {
+      "topic": "huggingface/ml-intern",
+      "researched_at": "2026-05-07T20:03:18.887114",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: \u81ea\u4e3b\u7814\u7a76/\u8bad\u7ec3/\u53d1\u5e03ML\u6a21\u578b"
+    },
+    {
+      "topic": "MiniMax MMX-CLI",
+      "researched_at": "2026-05-07T20:03:18.887117",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: 2026-04-09\u53d1\u5e03\uff0c\u5168\u6a21\u6001Agent\u547d\u4ee4\u884c\u5de5\u5177"
+    },
+    {
+      "topic": "DeerFlow 2.0 (\u5b57\u8282\u8df3\u52a8\uff0c2026\u5e742\u6708)",
+      "researched_at": "2026-05-07T20:03:18.887119",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: "
+    },
+    {
+      "topic": "agency-agents (2026\u5e743\u6708)",
+      "researched_at": "2026-05-07T20:03:18.887122",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: "
+    },
+    {
+      "topic": "MiniMax MMX-CLI (2026\u5e744\u67089\u65e5)",
+      "researched_at": "2026-05-07T20:03:18.887124",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: "
+    },
+    {
+      "topic": "Hermes Agent v0.12 (2026\u5e744\u670830\u65e5)",
+      "researched_at": "2026-05-07T20:03:18.887127",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Rising: "
+    },
+    {
+      "topic": "Mastra\uff0823.3k\u661f\uff09\u4f5c\u4e3aTypeScript\u539f\u751fAgent\u6846\u67b6\uff0c\u4e0eOpenClaw/Hermes\u5f62\u6210\u4e09\u89d2\u7ade\u4e89",
+      "researched_at": "2026-05-07T20:03:18.887129",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Mastra\uff0823.3k\u661f\uff09\u4f5c\u4e3aTypeScript\u539f\u751fAgent\u6846\u67b6\uff0c\u4e0eOpenClaw/Hermes\u5f62\u6210\u4e09\u89d2\u7ade\u4e89"
+    },
+    {
+      "topic": "Hermes\u66f4\u65b0_v0.12.0 \u53d1\u5e03\uff082026-04-3",
+      "researched_at": "2026-05-07T20:03:18.887132",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Hermes\u65b0\u529f\u80fd: v0.12.0 \u53d1\u5e03\uff082026-04-30\uff09"
+    },
+    {
+      "topic": "Hermes\u66f4\u65b0_\u652f\u6301\u98de\u4e66/\u4f01\u4e1a\u5fae\u4fe1\u96c6\u6210",
+      "researched_at": "2026-05-07T20:03:18.887134",
+      "depth": "scheduled",
+      "findings_summary": "\u5f85\u6267\u884c: Hermes\u65b0\u529f\u80fd: \u652f\u6301\u98de\u4e66/\u4f01\u4e1a\u5fae\u4fe1\u96c6\u6210"
+    }
+  ],
+  "pending": [
+    {
+      "topic": "DeerFlow",
+      "reason": "Super Agent harness, #1 GitHub Trending Feb 28 2026 after v2 launch, extensible skills architecture",
+      "added_at": "2026-04-20T00:08:16.142683"
+    },
+    {
+      "topic": "OpenClaw",
+      "reason": "Fastest GitHub project ever - 100k stars in 2 days, multi-platform (WhatsApp/Telegram/Slack/Discord/WeChat/Feishu)",
+      "added_at": "2026-04-20T00:08:16.142703"
+    },
+    {
+      "topic": "AgentKit",
+      "reason": "Financial wallet for AI Agents - every agent deserves a wallet",
+      "added_at": "2026-04-20T00:08:16.142712"
+    }
+  ]
+}

@@ -1,0 +1,966 @@
+{
+  "date": "2026-04-30",
+  "entries": [
+    {
+      "id": "oai:arXiv.org:2604.22777v1",
+      "title": "An Intelligent Fault Diagnosis Method for General Aviation Aircraft Based on Multi-Fidelity Digital Twin and FMEA Knowledge Enhancement",
+      "summary": "arXiv:2604.22777v1 Announce Type: new \nAbstract: Fault diagnosis of general aviation aircraft faces challenges including scarce real fault data, diverse fault types, and weak fault signatures. This paper proposes an intelligent fault diagnosis framework based on multi-fidelity digital twin, integrat...",
+      "link": "https://arxiv.org/abs/2604.22777",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22934v1",
+      "title": "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
+      "summary": "arXiv:2604.22934v1 Announce Type: new \nAbstract: LLM-based agents for text-to-SQL often struggle with latency-performance trade-off, where performance improvements come at the cost of latency or vice versa. We reformulate text-to-SQL generation within the lens of software test coverage where the ori...",
+      "link": "https://arxiv.org/abs/2604.22934",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22951v1",
+      "title": "The Power of Power Law: Asymmetry Enables Compositional Reasoning",
+      "summary": "arXiv:2604.22951v1 Announce Type: new \nAbstract: Natural language data follows a power-law distribution, with most knowledge and skills appearing at very low frequency. While a common intuition suggests that reweighting or curating data towards a uniform distribution may help models better learn the...",
+      "link": "https://arxiv.org/abs/2604.22951",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22958v1",
+      "title": "On the Existence of an Inverse Solution for Preference-Based Reductions in Argumentation",
+      "summary": "arXiv:2604.22958v1 Announce Type: new \nAbstract: Preference-based argumentation frameworks (PAFs) extend Dung's approach to abstract argumentation (AAFs) by encoding preferences over arguments. Such preferences control the transformation of attacks into defeats, and different approaches to doing so ...",
+      "link": "https://arxiv.org/abs/2604.22958",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.22979v1",
+      "title": "Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction",
+      "summary": "arXiv:2604.22979v1 Announce Type: new \nAbstract: We address Human Activity Recognition (HAR) utilizing Wi-Fi Channel State Information (CSI) under the joint requirements of causal interpretability, symbolic controllability, and direct operation on high-dimensional raw signals. Deep neural models ach...",
+      "link": "https://arxiv.org/abs/2604.22979",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23002v1",
+      "title": "FormalScience: Scalable Human-in-the-Loop Autoformalisation of Science with Agentic Code Generation in Lean",
+      "summary": "arXiv:2604.23002v1 Announce Type: new \nAbstract: Formalising informal mathematical reasoning into formally verifiable code is a significant challenge for large language models. In scientific fields such as physics, domain-specific machinery (\\textit{e.g.} Dirac notation, vector calculus) imposes add...",
+      "link": "https://arxiv.org/abs/2604.23002",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23027v1",
+      "title": "A Systematic Approach for Large Language Models Debugging",
+      "summary": "arXiv:2604.23027v1 Announce Type: new \nAbstract: Large language models (LLMs) have become central to modern AI workflows, powering applications from open-ended text generation to complex agent-based reasoning. However, debugging these models remains a persistent challenge due to their opaque and pro...",
+      "link": "https://arxiv.org/abs/2604.23027",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23049v1",
+      "title": "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
+      "summary": "arXiv:2604.23049v1 Announce Type: new \nAbstract: AI agents are increasingly deployed to execute tasks and make decisions within agentic workflows, introducing new requirements for safe and controlled autonomy. Prior work has established the importance of human oversight for ensuring transparency, ac...",
+      "link": "https://arxiv.org/abs/2604.23049",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23057v1",
+      "title": "Don't Make the LLM Read the Graph: Make the Graph Think",
+      "summary": "arXiv:2604.23057v1 Announce Type: new \nAbstract: We investigate whether explicit belief graphs improve LLM performance in cooperative multi-agent reasoning. Through 3,000+ controlled trials across four LLM families in the cooperative card game Hanabi, we establish four findings. First, integration a...",
+      "link": "https://arxiv.org/abs/2604.23057",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23072v1",
+      "title": "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis",
+      "summary": "arXiv:2604.23072v1 Announce Type: new \nAbstract: Large language model (LLM) agents are increasingly tasked with complex real-world analysis (e.g., in financial forecasting, scientific discovery), yet their reasoning suffers from stochastic instability and lacks a verifiable, compositional structure....",
+      "link": "https://arxiv.org/abs/2604.23072",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23090v1",
+      "title": "Towards Automated Ontology Generation from Unstructured Text: A Multi-Agent LLM Approach",
+      "summary": "arXiv:2604.23090v1 Announce Type: new \nAbstract: Automatically generating formal ontologies from unstructured natural language remains a central challenge in knowledge engineering. While large language models (LLMs) show promise, it remains unclear which architectural design choices drive generation...",
+      "link": "https://arxiv.org/abs/2604.23090",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23148v1",
+      "title": "PhySE: A Psychological Framework for Real-Time AR-LLM Social Engineering Attacks",
+      "summary": "arXiv:2604.23148v1 Announce Type: new \nAbstract: The emerging threat of AR-LLM-based Social Engineering (AR-LLM-SE) attacks (e.g. SEAR) poses a significant risk to real-world social interactions. In such an attack, a malicious actor uses Augmented Reality (AR) glasses to capture a target visual and ...",
+      "link": "https://arxiv.org/abs/2604.23148",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23178v1",
+      "title": "Judging the Judges: A Systematic Evaluation of Bias Mitigation Strategies in LLM-as-a-Judge Pipelines",
+      "summary": "arXiv:2604.23178v1 Announce Type: new \nAbstract: LLM-as-a-Judge has become the dominant paradigm for evaluating language model outputs, yet LLM judges exhibit systematic biases that compromise evaluation reliability. We present a comprehensive empirical study comparing nine debiasing strategies acro...",
+      "link": "https://arxiv.org/abs/2604.23178",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23194v1",
+      "title": "From Coarse to Fine: Self-Adaptive Hierarchical Planning for LLM Agents",
+      "summary": "arXiv:2604.23194v1 Announce Type: new \nAbstract: Large language model-based agents have recently emerged as powerful approaches for solving dynamic and multi-step tasks. Most existing agents employ planning mechanisms to guide long-term actions in dynamic environments. However, current planning appr...",
+      "link": "https://arxiv.org/abs/2604.23194",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23198v1",
+      "title": "StoryTR: Narrative-Centric Video Temporal Retrieval with Theory of Mind Reasoning",
+      "summary": "arXiv:2604.23198v1 Announce Type: new \nAbstract: Current video moment retrieval excels at action-centric tasks but struggles with narrative content. Models can see \\textit{what is happening} but fail to reason \\textit{why it matters}. This semantic gap stems from the lack of \\textbf{Theory of Mind (...",
+      "link": "https://arxiv.org/abs/2604.23198",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23210v1",
+      "title": "Discovering Agentic Safety Specifications from 1-Bit Danger Signals",
+      "summary": "arXiv:2604.23210v1 Announce Type: new \nAbstract: Can large language model agents discover hidden safety objectives through experience alone? We introduce EPO-Safe (Experiential Prompt Optimization for Safe Agents), a framework where an LLM iteratively generates action plans, receives sparse binary d...",
+      "link": "https://arxiv.org/abs/2604.23210",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23239v1",
+      "title": "AdaMamba: Adaptive Frequency-Gated Mamba for Long-Term Time Series Forecasting",
+      "summary": "arXiv:2604.23239v1 Announce Type: new \nAbstract: Accurate long-term time series forecasting (LTSF) requires the capture of complex long-range dependencies and dynamic periodic patterns. Recent advances in frequency-domain analysis offer a global perspective for uncovering temporal characteristics. H...",
+      "link": "https://arxiv.org/abs/2604.23239",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23270v1",
+      "title": "CAP-CoT: Cycle Adversarial Prompt for Improving Chain of Thoughts in LLM Reasoning",
+      "summary": "arXiv:2604.23270v1 Announce Type: new \nAbstract: Chain-of-Thought (CoT) prompting has emerged as a simple and effective way to elicit step-by-step solutions from large language models (LLMs). However, CoT reasoning can be unstable across runs on long, multi-step problems, leading to inconsistent ans...",
+      "link": "https://arxiv.org/abs/2604.23270",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23278v1",
+      "title": "Active Inference: A method for Phenotyping Agency in AI systems?",
+      "summary": "arXiv:2604.23278v1 Announce Type: new \nAbstract: The proliferation of agentic artificial intelligence has outpaced the conceptual tools needed to characterize agency in computational systems. Prevailing definitions mainly rely on autonomy and goal-directedness. Here, we argue for a minimal notion op...",
+      "link": "https://arxiv.org/abs/2604.23278",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.23280v1",
+      "title": "AI Identity: Standards, Gaps, and Research Directions for AI Agents",
+      "summary": "arXiv:2604.23280v1 Announce Type: new \nAbstract: AI agents are now running real transactions, workflows, and sub-agent chains across organizational boundaries without continuous human supervision. This creates a problem no current infrastructure is equipped to solve: how do you identify, verify, and...",
+      "link": "https://arxiv.org/abs/2604.23280",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.AI",
+      "tags": [
+        "AI",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24766v1",
+      "title": "GCA-BULF: A Bottom-Up Framework for Short-Term Load Forecasting Using Grouped Critical Appliances",
+      "summary": "arXiv:2604.24766v1 Announce Type: new \nAbstract: With the rise of time-of-use and tiered electricity pricing, energy consumers are encouraged to adopt peak-shifting strategies by automatically controlling high-power appliances. These help lower energy costs while enhancing the power grid's stability...",
+      "link": "https://arxiv.org/abs/2604.24766",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24767v1",
+      "title": "Automated detection of pediatric congenital heart disease from phonocardiograms using deep and handcrafted feature fusion",
+      "summary": "arXiv:2604.24767v1 Announce Type: new \nAbstract: Congenital heart disease (CHD) is the most common type of birth defect, impacting about 1% of live births worldwide. Echocardiography, the gold-standard diagnostic method, is costly and inaccessible in low-resource settings. Diagnosis is delayed due t...",
+      "link": "https://arxiv.org/abs/2604.24767",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24768v1",
+      "title": "Comparative Study of Bending Analysis using Physics-Informed Neural Networks and Numerical Dynamic Deflection in Perforated nanobeam",
+      "summary": "arXiv:2604.24768v1 Announce Type: new \nAbstract: In this chapter, we investigate the bending behavior of a perforated nanobeam subjected to sinusoidal loading using an efficient and computationally robust Physics-Informed Functional Link Constrained Framework with Domain Mapping (DFL-TFC) method. Ou...",
+      "link": "https://arxiv.org/abs/2604.24768",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24788v1",
+      "title": "Liquid Neural Network Models for Natural Gas Spot Price Time-Series Forecasting",
+      "summary": "arXiv:2604.24788v1 Announce Type: new \nAbstract: Natural gas is undoubtedly an essential component of the global energy system. Accurate short-term forecasting of natural gas price is challenging due to pronounced volatility driven by seasonal demand patterns, geopolitical developments, and shifting...",
+      "link": "https://arxiv.org/abs/2604.24788",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24801v1",
+      "title": "Architecture Determines Observability in Transformers",
+      "summary": "arXiv:2604.24801v1 Announce Type: new \nAbstract: Autoregressive transformers make confident errors, but activation monitoring can catch them only if the model preserves an internal signal that output confidence does not expose. This preservation is determined by architecture and training recipe. We ...",
+      "link": "https://arxiv.org/abs/2604.24801",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24803v1",
+      "title": "Query-Efficient Quantum Approximate Optimization via Graph-Conditioned Trust Regions",
+      "summary": "arXiv:2604.24803v1 Announce Type: new \nAbstract: In low-depth implementations of the Quantum Approximate Optimization Algorithm (QAOA), the dominant cost is often the number of objective evaluations rather than circuit depth. We introduce a graph-conditioned trust-region method for reducing this que...",
+      "link": "https://arxiv.org/abs/2604.24803",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24804v1",
+      "title": "Intrinsic Mutual Information as a Modulator for Preference Optimization",
+      "summary": "arXiv:2604.24804v1 Announce Type: new \nAbstract: Offline preference optimization methods, such as Direct Preference Optimization (DPO), offer significant advantages in aligning Large Language Models (LLMs) with human values. However, achieving optimal performance with these methods typically involve...",
+      "link": "https://arxiv.org/abs/2604.24804",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24805v1",
+      "title": "minAction.net: Energy-First Neural Architecture Design -- From Biological Principles to Systematic Validation",
+      "summary": "arXiv:2604.24805v1 Announce Type: new \nAbstract: Modern machine learning optimizes for accuracy without explicitly accounting for internal computational cost, even though physical and biological systems operate under intrinsic energy constraints. We evaluate energy-aware learning across 2,203 experi...",
+      "link": "https://arxiv.org/abs/2604.24805",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24809v1",
+      "title": "Nautile-370M: Spectral Memory Meets Attention in a Small Reasoning Model",
+      "summary": "arXiv:2604.24809v1 Announce Type: new \nAbstract: We present Nautile-370M, a 371-million-parameter small language model designed for efficient reasoning under strict parameter and inference budgets. Nautile-370M uses a hybrid backbone in which two SeqCond Attention (SCA) layers, a linear-time spectra...",
+      "link": "https://arxiv.org/abs/2604.24809",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24810v1",
+      "title": "A Comparative Analysis on the Performance of Upper Confidence Bound Algorithms in Adaptive Deep Neural Networks",
+      "summary": "arXiv:2604.24810v1 Announce Type: new \nAbstract: Edge computing environments impose strict constraints on energy consumption and latency, making the deployment of deep neural networks a significant challenge. Therefore, smart and adaptive inference strategies that dynamically balance computational c...",
+      "link": "https://arxiv.org/abs/2604.24810",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24811v1",
+      "title": "Time-varying Interaction Graph ODE for Dynamic Graph Representation Learning",
+      "summary": "arXiv:2604.24811v1 Announce Type: new \nAbstract: Graph neural Ordinary Differential Equations (ODE) combine neural ODE with the message passing mechanism of Graph Neural Networks (GNN), providing a continuous-time modeling method for graph representation learning. However, in dynamic graph scenarios...",
+      "link": "https://arxiv.org/abs/2604.24811",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24818v1",
+      "title": "Heterogeneous Variational Inference for Markov Degradation Hazard Models: Discretized Mixture with Interpretable Clusters",
+      "summary": "arXiv:2604.24818v1 Announce Type: new \nAbstract: Bayesian finite mixture models can identify discrete risk clusters (low-risk vs. high-risk equipment), but face three critical bottlenecks: (1) insufficient degradation signals from coarse state discretization, (2) unstable cluster identification when...",
+      "link": "https://arxiv.org/abs/2604.24818",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24824v1",
+      "title": "Negative Ontology of True Target for Machine Learning: Towards Evaluation and Learning under Democratic Supervision",
+      "summary": "arXiv:2604.24824v1 Announce Type: new \nAbstract: This article philosophically examines how shifts in assumptions regarding the existence and non-existence of the true target (TT) give rise to new perspectives and insights for machine learning (ML)-based predictive modeling and, correspondingly, prop...",
+      "link": "https://arxiv.org/abs/2604.24824",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24827v1",
+      "title": "Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity",
+      "summary": "arXiv:2604.24827v1 Announce Type: new \nAbstract: Closed-source frontier labs do not disclose parameter counts, and the standard alternative -- inference economics -- carries $2\\times$+ uncertainty from hardware, batching, and serving-stack assumptions external to the model. We exploit a tighter intr...",
+      "link": "https://arxiv.org/abs/2604.24827",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24832v1",
+      "title": "On the Trainability of Masked Diffusion Language Models via Blockwise Locality",
+      "summary": "arXiv:2604.24832v1 Announce Type: new \nAbstract: Masked diffusion language models (MDMs) have recently emerged as a promising alternative to standard autoregressive large language models (AR-LLMs), yet their optimization can be substantially less stable. We study blockwise MDMs and compare them with...",
+      "link": "https://arxiv.org/abs/2604.24832",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24878v1",
+      "title": "Transformer Approximations from ReLUs",
+      "summary": "arXiv:2604.24878v1 Announce Type: new \nAbstract: We provide a systematic recipe for translating ReLU approximation results to softmax attention mechanism. This recipe covers many common approximation targets. Importantly, it yields target-specific, economic resource bounds beyond universal approxima...",
+      "link": "https://arxiv.org/abs/2604.24878",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24909v1",
+      "title": "Contrastive Image-Metadata Pre-Training for Materials Transmission Electron Microscopy",
+      "summary": "arXiv:2604.24909v1 Announce Type: new \nAbstract: The vast majority of transmission electron microscopy (TEM) data never gets published and ends up on a backup drive until deleted to free up space. These left-over datasets are rich in detail and variation, often paired with automatically saved metada...",
+      "link": "https://arxiv.org/abs/2604.24909",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24911v1",
+      "title": "Learning with Embedded Linear Equality Constraints via Variational Bayesian Inference",
+      "summary": "arXiv:2604.24911v1 Announce Type: new \nAbstract: Machine Learning is becoming more prevalent in science and engineering, but many approaches do not provide meaningful uncertainty estimates and predictions may also violate known physical knowledge. We propose a Bayesian framework to embed linear rela...",
+      "link": "https://arxiv.org/abs/2604.24911",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24913v1",
+      "title": "Generative diffusion models for spatiotemporal influenza forecasting",
+      "summary": "arXiv:2604.24913v1 Announce Type: new \nAbstract: Forecasting infectious disease incidence can provide important information to guide public health planning, yet is difficult because epidemic dynamics are complex. Current mechanistic and statistical approaches often struggle to capture multimodal unc...",
+      "link": "https://arxiv.org/abs/2604.24913",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2604.24936v1",
+      "title": "A Unifying Framework for Unsupervised Concept Extraction",
+      "summary": "arXiv:2604.24936v1 Announce Type: new \nAbstract: Techniques for concept extraction, such as sparse autoencoders and transcoders, aim to extract high-level symbolic concepts from low-level nonsymbolic representations. When these extracted concepts are used for downstream tasks such as model steering ...",
+      "link": "https://arxiv.org/abs/2604.24936",
+      "published": "Wed, 29 Apr 2026 00:00:00 -0400",
+      "source": "Arxiv CS.LG",
+      "tags": [
+        "ML",
+        "论文"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "title": "Cybersecurity in the Intelligence Age",
+      "summary": "OpenAI outlines a five-part action plan for strengthening cybersecurity in the Intelligence Age, focused on democratizing AI-powered cyber defense and protecting critical systems.",
+      "link": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "published": "Wed, 29 Apr 2026 04:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-commitment-to-community-safety",
+      "title": "Our commitment to community safety",
+      "summary": "Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts.",
+      "link": "https://openai.com/index/our-commitment-to-community-safety",
+      "published": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "summary": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.",
+      "link": "https://openai.com/index/openai-on-aws",
+      "published": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "summary": "OpenAI is available at FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling secure AI adoption for U.S. federal agencies.",
+      "link": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "published": "Mon, 27 Apr 2026 14:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "summary": "OpenAI and Microsoft announce an amended agreement that simplifies the partnership, adds long-term clarity, and supports continued AI innovation at scale.",
+      "link": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "published": "Mon, 27 Apr 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "title": "An open-source spec for orchestration: Symphony",
+      "summary": "Learn how Symphony, an open-source spec for Codex orchestration, turns issue trackers into always-on agent systems—boosting engineering output and reducing context switching.",
+      "link": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/choco",
+      "title": "Choco automates food distribution with AI agents",
+      "summary": "How Choco used OpenAI APIs to streamline food distribution, boost productivity, and unlock growth—an in-depth customer story on real-world AI impact.",
+      "link": "https://openai.com/index/choco",
+      "published": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-principles",
+      "title": "Our principles",
+      "summary": "Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+      "link": "https://openai.com/index/our-principles",
+      "published": "Sun, 26 Apr 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "summary": "",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "published": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-how-to-start",
+      "title": "How to get started with Codex",
+      "summary": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/codex-how-to-start",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/what-is-codex",
+      "title": "What is Codex?",
+      "summary": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.",
+      "link": "https://openai.com/academy/what-is-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-plugins-and-skills",
+      "title": "Plugins and skills",
+      "summary": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.",
+      "link": "https://openai.com/academy/codex-plugins-and-skills",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/working-with-codex",
+      "title": "Working with Codex",
+      "summary": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.",
+      "link": "https://openai.com/academy/working-with-codex",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-settings",
+      "title": "Codex settings",
+      "summary": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.",
+      "link": "https://openai.com/academy/codex-settings",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.",
+      "link": "https://openai.com/academy/codex-automations",
+      "published": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "summary": "Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000.",
+      "link": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "published": "Thu, 23 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "title": "Making ChatGPT better for clinicians",
+      "summary": "OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research.",
+      "link": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "published": "Wed, 22 Apr 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "summary": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+      "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "published": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1104980",
+      "title": "Plurai",
+      "summary": "\n            Vibe-train evals and guardrails tailored to your use case\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/plurai",
+      "published": "2026-03-23T02:57:44-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132023",
+      "title": "Open Wearables",
+      "summary": "\n            Open infrastructure for wearable-powered health products.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/open-wearables",
+      "published": "2026-04-25T01:36:06-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132498",
+      "title": "Snapr",
+      "summary": "\n            Screenshot, record, annotate & edit video in on app\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/snapr-5",
+      "published": "2026-04-25T19:52:42-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134390",
+      "title": "Picsart CLI",
+      "summary": "\n            Picsart's power right from your AI chat box\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/picsart",
+      "published": "2026-04-28T07:31:08-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134824",
+      "title": "Plannotator",
+      "summary": "\n            Annotate any doc, URL, or folder - send feedback to agents \n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/plannotator",
+      "published": "2026-04-28T22:30:31-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134816",
+      "title": "Compact Message Composer by CometChat",
+      "summary": "\n            Everything users expect from modern chat. Out of the box. \n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/cometchat",
+      "published": "2026-04-28T22:06:49-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134435",
+      "title": "noirdoc",
+      "summary": "\n            PII guard for Claude Code to keep client data out of context\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/noirdoc",
+      "published": "2026-04-28T08:32:08-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134261",
+      "title": "ZenTrack",
+      "summary": "\n            Notes, money, and health. Sorted.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/zentrack-finances-streaks-health",
+      "published": "2026-04-28T04:45:55-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130658",
+      "title": "UXPin Forge",
+      "summary": "\n            Generate UI from your design system, not around it\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/uxpin",
+      "published": "2026-04-23T05:16:07-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134459",
+      "title": "Redesign by Nodewave",
+      "summary": "\n            Free and open‑source, stop designing. Describe.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/redesign-by-nodewave",
+      "published": "2026-04-28T09:19:16-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134646",
+      "title": "Dreambase Data Agent Skills",
+      "summary": "\n            Analytical skills for data agents running on Supabase\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/dreambase-ai",
+      "published": "2026-04-28T14:32:44-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1128135",
+      "title": "CodeHealth MCP Server by CodeScene",
+      "summary": "\n            Keep AI-generated code healthy and maintainable\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/codescene-codehealth-mcp-server",
+      "published": "2026-04-20T07:08:53-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134040",
+      "title": "Gro v2",
+      "summary": "\n            Spot signals, trigger outreach - turn posts into pipeline\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/gro-2",
+      "published": "2026-04-28T00:10:55-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1133514",
+      "title": "Netlify Database",
+      "summary": "\n            Ship data-driven apps without breaking flow\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/netlify",
+      "published": "2026-04-27T07:16:09-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1134436",
+      "title": "Venture Factory AI",
+      "summary": "\n            Your full venture strategy, built in minutes.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/venture-factory-ai",
+      "published": "2026-04-28T08:33:54-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1130700",
+      "title": "KarmaBox",
+      "summary": "\n            Run your own Claude Code in your pocket.\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/karmabox-2",
+      "published": "2026-04-23T06:23:14-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1089286",
+      "title": "MintLocke",
+      "summary": "\n            Autopilot for your crypto and tokenized portfolio\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/mintlocke",
+      "published": "2026-03-03T09:32:59-08:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132742",
+      "title": "OrcaSheets AI Reports",
+      "summary": "\n            Query data to build dashboards and generate detailed reports\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/orcasheets",
+      "published": "2026-04-26T05:14:45-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1126840",
+      "title": "Jitera",
+      "summary": "\n            Shared context that turns AI into your teammate\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/jitera",
+      "published": "2026-04-18T08:41:52-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1132342",
+      "title": "Markdown Editor For Notion Lovers",
+      "summary": "\n            A clean Markdown editor with a smooth, block-based UX\n          \n          \n            Discussion\n            |\n            Link\n          ",
+      "link": "https://www.producthunt.com/products/markdown-editor-for-notion-lovers",
+      "published": "2026-04-25T12:00:43-07:00",
+      "source": "Product Hunt",
+      "tags": [
+        "产品",
+        "趋势"
+      ]
+    }
+  ],
+  "count": 80
+}

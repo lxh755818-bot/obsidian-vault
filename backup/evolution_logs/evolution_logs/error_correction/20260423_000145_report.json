@@ -1,0 +1,57 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-23T00:01:45.956573",
+  "errors_found": 5,
+  "errors_closed": 0,
+  "errors_open": 3,
+  "errors_in_progress": 2,
+  "reports": [
+    {
+      "error_id": "err_04aacc10fd69eb9f",
+      "error_type": "mcp_method_not_found",
+      "summary": "MCP baostock/list_resources method not found",
+      "status": "open",
+      "solution": "检查 baostock MCP server 实现：list_resources 和 list_prompts 方法可能未在 server 中暴露。考虑在调用前使用 MCP list_tools 检查可用方法，或升级 baostock MCP server 版本。",
+      "test_result": "analysis_only",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_83c024c1ad4f4406",
+      "error_type": "mcp_method_not_found",
+      "summary": "MCP baostock/list_prompts method not found",
+      "status": "open",
+      "solution": "同 err_04aacc10fd69eb9f，检查 baostock MCP server 实现和版本。",
+      "test_result": "analysis_only",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_ab50656a932216c3",
+      "error_type": "lark_ws_disconnect",
+      "summary": "Lark WebSocket keepalive ping timeout (sent 1011 internal error)",
+      "status": "in_progress",
+      "solution": "建议在 gateway/platforms/feishu.py 中添加 WebSocket 重连指数退避策略：检测到 ping timeout 后，先等待 2s 再重连，若失败则逐步增加等待时间(4s, 8s, 16s)，最多重试 5 次。当前实现可能缺乏主动重连逻辑。",
+      "test_result": "fix_proposed",
+      "test_duration_ms": 0,
+      "gateway_reconnect_keywords": {}
+    },
+    {
+      "error_id": "err_3bd3ed7ae5e8d9bd",
+      "error_type": "lark_ws_disconnect",
+      "summary": "Lark WebSocket no close frame received",
+      "status": "in_progress",
+      "solution": "同 err_ab50656a932216c3，添加指数退避重连策略。当前连接因服务端关闭但客户端未收到 close frame，可能是网络闪断或 Feishu 服务端问题。",
+      "test_result": "fix_proposed",
+      "test_duration_ms": 0,
+      "gateway_reconnect_keywords": {}
+    },
+    {
+      "error_id": "err_7152ce68f4e1871f",
+      "error_type": "feishu_edit_message",
+      "summary": "Feishu message edit failed (message_id: om_x100b51b871fcb4bcb1088e6d3601...)",
+      "status": "open",
+      "solution": "消息编辑失败通常是因为消息已过期或已被删除。建议在编辑消息前先检查消息是否存在，或捕获异常后记录日志而非报错。可在 gateway/platforms/feishu.py 的 edit_message 逻辑中添加幂等处理。",
+      "test_result": "analysis_only",
+      "test_duration_ms": 0
+    }
+  ]
+}

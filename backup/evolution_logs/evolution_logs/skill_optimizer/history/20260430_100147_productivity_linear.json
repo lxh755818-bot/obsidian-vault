@@ -1,0 +1,35 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-30T10:01:47.031595",
+  "current_index": 132,
+  "total_skills": 171,
+  "current": {
+    "skill": "productivity/linear",
+    "category": "productivity",
+    "type": "api",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "LINEAR_API_KEY not configured"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "Configure LINEAR_API_KEY to enable live testing"
+    ],
+    "status": "warning"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 1,
+    "action": "API key not configured"
+  }
+}

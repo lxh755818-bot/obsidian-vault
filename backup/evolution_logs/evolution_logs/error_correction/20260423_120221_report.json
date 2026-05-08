@@ -1,0 +1,99 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-23T12:02:21.068330",
+  "errors_found": 9,
+  "errors_closed": 0,
+  "errors_open": 9,
+  "reports": [
+    {
+      "error_id": "err_106",
+      "error_type": "MCPMethodNotFound",
+      "summary": "MCP baostock list_prompts 方法不存在 (2x)",
+      "status": "open",
+      "solution": "检查 baostock MCP server 的方法列表，不调用不存在的方法",
+      "test_result": "info",
+      "test_output": "需要更新调用方代码，不调用不存在的 list_prompts 方法",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_107",
+      "error_type": "Unknown",
+      "summary": "2026-04-23 00:18:02,141 ERROR gateway.platforms.feishu: [Feishu] Failed to edit message om_x100b51bb725740a4b2ae2eee103b",
+      "status": "open",
+      "solution": "需要人工分析",
+      "test_result": "not_fixable",
+      "test_output": "",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_108",
+      "error_type": "PortConflict",
+      "summary": "API Server 端口 8642 被占用 (2x)",
+      "status": "open",
+      "solution": "检查并杀死占用端口 8642 的进程：lsof -i :8642",
+      "test_result": "passed",
+      "test_output": "Port 8642 not in use",
+      "test_duration_ms": 96
+    },
+    {
+      "error_id": "err_109",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (2x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件：rm -f ~/.hermes/gateway*.pid",
+      "test_result": "info",
+      "test_output": "PID files exist: ['gateway.pid']",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_110",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (2x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件：rm -f ~/.hermes/gateway*.pid",
+      "test_result": "info",
+      "test_output": "PID files exist: ['gateway.pid']",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_111",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (2x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件：rm -f ~/.hermes/gateway*.pid",
+      "test_result": "info",
+      "test_output": "PID files exist: ['gateway.pid']",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_112",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (6x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件：rm -f ~/.hermes/gateway*.pid",
+      "test_result": "info",
+      "test_output": "PID files exist: ['gateway.pid']",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_113",
+      "error_type": "GatewayStartupConflict",
+      "summary": "Gateway 启动冲突 - PID 文件竞争 (4x)",
+      "status": "open",
+      "solution": "清理残留 PID 文件：rm -f ~/.hermes/gateway*.pid",
+      "test_result": "info",
+      "test_output": "PID files exist: ['gateway.pid']",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_114",
+      "error_type": "LarkWebSocketDisconnect",
+      "summary": "飞书 WebSocket 连接断开 (2x)",
+      "status": "open",
+      "solution": "WebSocket keepalive 超时，添加重连逻辑",
+      "test_result": "not_fixable",
+      "test_output": "",
+      "test_duration_ms": 0
+    }
+  ]
+}

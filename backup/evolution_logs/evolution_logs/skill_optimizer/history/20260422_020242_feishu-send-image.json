@@ -1,0 +1,35 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-22T02:02:42.084308",
+  "current_index": 53,
+  "total_skills": 118,
+  "current": {
+    "skill": "feishu-send-image",
+    "category": "messaging/feishu-send-image",
+    "type": "sandbox",
+    "metrics": {
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": null
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "warning",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": true
+    },
+    "vs_last": 0,
+    "suggestions": [
+      "FEISHU_APP_ID/APP_SECRET 未配置，运行时需从 ~/.hermes/.env 加载"
+    ],
+    "status": "warning"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 1,
+    "action": "FEISHU creds 从 ~/.hermes/.env 读取，非环境变量"
+  }
+}

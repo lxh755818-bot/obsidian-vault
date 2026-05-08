@@ -1,0 +1,75 @@
+{
+  "collected_at": "2026-05-07T22:06:54.268794",
+  "collection_status": "complete",
+  "hermes": {
+    "stars": "60K+",
+    "position_trend": "rising",
+    "recent_changes": [
+      "v0.12.0 released (2026-04-30): Full command/flag reference manual published",
+      "v0.6.0 (2026-03-30): Multi-instance profiles, MCP server mode, Docker, Feishu/WeCom integration",
+      "Self-evolution loop remains core differentiator vs OpenClaw/AutoGPT/CrewAI"
+    ]
+  },
+  "ecosystem": {
+    "rising_stars": [
+      {
+        "name": "openclaw/openclaw",
+        "trend": "+212k stars/month",
+        "lang": "TypeScript",
+        "category": "AI Assistant"
+      },
+      {
+        "name": "anthropics/skills",
+        "trend": "memory/context framework",
+        "lang": "Python",
+        "category": "Skills"
+      },
+      {
+        "name": "openai/skills",
+        "trend": "skills framework",
+        "lang": "Python",
+        "category": "Skills"
+      },
+      {
+        "name": " NevaMind-AI/memU",
+        "trend": "memory framework",
+        "lang": "Python",
+        "category": "Memory"
+      },
+      {
+        "name": "github/gh-aw",
+        "trend": "Agentic workflow via GitHub Actions",
+        "lang": "Go",
+        "category": "DevOps"
+      }
+    ],
+    "falling": [],
+    "new_entrants": [
+      {
+        "name": "openclaw",
+        "trend": "AI personal assistant",
+        "stars": "300K+",
+        "note": "still dominant"
+      },
+      {
+        "name": "Microsoft Agent Framework",
+        "trend": "enterprise agent",
+        "note": "trending on GitHub Apr 2026"
+      }
+    ],
+    "trending_topics": [
+      "AI Agent self-evolution / built-in learning loop",
+      "Skills framework (anthropics/skills, openai/skills)",
+      "Persistent memory architectures",
+      "Multi-platform messaging (Feishu, WeCom, Telegram)",
+      "Agentic workflow automation (GitHub Actions)"
+    ]
+  },
+  "insights": [
+    "Hermes Agent ( NousResearch, 60K+ stars) differentiates on self-evolution vs OpenClaw's IDE depth (300K+ stars)",
+    "Skills frameworks (anthropics/skills, openai/skills) are becoming a standard pattern — consider aligning skill authoring format",
+    "Memory/context management (memU, skills) is a hot research area — GapAnalyzer should flag skill memory gaps",
+    "Multi-instance profiles (v0.6.0) + MCP server mode signal enterprise-ready direction",
+    "TypeScript dominates agent framework implementations (50% of trending repos)"
+  ]
+}

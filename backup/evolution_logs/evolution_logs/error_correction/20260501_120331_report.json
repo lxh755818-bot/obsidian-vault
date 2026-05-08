@@ -1,0 +1,83 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-01T12:03:31.537970",
+  "scan_window_hours": 12,
+  "errors_found": 66,
+  "errors_closed": 0,
+  "errors_accepted": 5,
+  "errors_open": 0,
+  "reports": [
+    {
+      "error_id": "err_134",
+      "error_type": "minimax_model_dump_error",
+      "summary": "API call failed after 3 retries. 'dict' object has no attribute 'model_dump' (52 occurrences)",
+      "status": "accepted",
+      "solution": "MiniMax API returns raw dict instead of Pydantic model; downstream fallback handles it; known external issue",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 52
+    },
+    {
+      "error_id": "err_132",
+      "error_type": "Lark_no_close_frame",
+      "summary": "Lark: receive message loop exit, err: no close frame received or sent (1 occurrence)",
+      "status": "accepted",
+      "solution": "WebSocket normal close by peer; platform-level behavior",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    },
+    {
+      "error_id": "err_067",
+      "error_type": "build_anthropic_kwargs_drop_context",
+      "summary": "Non-retryable client error: build_anthropic_kwargs() got an unexpected keyword argument 'drop_context_1m_beta' (11 occurrences)",
+      "status": "accepted",
+      "solution": "Provider (MiniMax) does not support 'drop_context_1m_beta' parameter; external API compatibility issue",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 11
+    },
+    {
+      "error_id": "err_105",
+      "error_type": "gateway_instance_conflict",
+      "summary": "Another gateway instance is already running (PID 20894) (1 occurrence)",
+      "status": "accepted",
+      "solution": "Operational issue — user had multiple gateway instances; closed error reappeared → accepted",
+      "test_result": "error_reappeared",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    },
+    {
+      "error_id": "err_138",
+      "error_type": "feishu_edit_timeout",
+      "summary": "Failed to edit message: HTTPSConnectionPool connection to open.feishu.cn timed out (1 occurrence)",
+      "status": "accepted",
+      "solution": "Network timeout to Feishu API; transient network issue",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    }
+  ],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio_unclosed_client_session": 0,
+    "asyncio_unclosed_connector": 0
+  },
+  "tracker_summary": {
+    "total_tracked": 67,
+    "closed": 18,
+    "accepted": 49,
+    "open": 0,
+    "in_progress": 0
+  },
+  "new_errors_accepted": [
+    "build_anthropic_kwargs_drop_context"
+  ],
+  "error_type_counts": {
+    "minimax_model_dump_error": 52,
+    "Lark_no_close_frame": 1,
+    "build_anthropic_kwargs_drop_context": 11,
+    "gateway_instance_conflict": 1,
+    "feishu_edit_timeout": 1
+  }
+}

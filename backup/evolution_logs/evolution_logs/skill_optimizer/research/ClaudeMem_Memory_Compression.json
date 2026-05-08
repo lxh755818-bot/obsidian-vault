@@ -1,0 +1,360 @@
+{
+  "report_id": "claude_mem_memory_compression_v1",
+  "topic": "claude-mem 记忆压缩和生命周期钩子系统深度调研",
+  "timestamp": "2026-04-19T09:46:00Z",
+  "quality_score": 19,
+  "quality_breakdown": {
+    "technical_accuracy": 5,
+    "completeness": 5,
+    "action_items": 5,
+    "code_references": 4
+  },
+  "research_focus": [
+    "7个生命周期钩子的具体定义和触发时机",
+    "Claude Agent SDK 压缩的具体实现",
+    "SQLite FTS5 + Chroma 双存储的架构设计",
+    "Knowledge Agent v9 的实现细节",
+    "Hermes 中实现类似系统的具体步骤"
+  ],
+
+  "findings": {
+
+    "1_context_engine_lifecycle_hooks": {
+      "overview": "ContextEngine 抽象基类定义了完整的上下文引擎生命周期，共7个核心钩子 + 2个扩展钩子",
+      "total_hooks": 9,
+      "hooks": [
+        {
+          "name": "on_session_start",
+          "signature": "(session_id: str, **kwargs) -> None",
+          "trigger": "新对话会话开始时调用",
+          "purpose": "加载会话持久化状态（DAG、存储等），kwargs包含 hermes_home, platform, model 等",
+          "location": "agent/context_engine.py:103"
+        },
+        {
+          "name": "on_session_end",
+          "signature": "(session_id: str, messages: List[Dict]) -> None",
+          "trigger": "真实会话边界（CLI退出、/reset、gateway会话过期）",
+          "purpose": "刷新状态、关闭DB连接等，仅在会话真正结束时调用",
+          "location": "agent/context_engine.py:110"
+        },
+        {
+          "name": "on_session_reset",
+          "signature": "() -> None",
+          "trigger": "用户执行 /new 或 /reset 命令时",
+          "purpose": "重置per-session状态（compression_count, token tracking等）",
+          "location": "agent/context_engine.py:117"
+        },
+        {
+          "name": "update_from_response",
+          "signature": "(usage: Dict[str, Any]) -> None",
+          "trigger": "每次LLM API调用后",
+          "purpose": "从API响应中更新追踪的token使用量",
+          "location": "agent/context_engine.py:66",
+          "note": "抽象方法，必须实现"
+        },
+        {
+          "name": "should_compress",
+          "signature": "(prompt_tokens: int = None) -> bool",
+          "trigger": "每轮对话后检查",
+          "purpose": "返回True则触发压缩",
+          "location": "agent/context_engine.py:73",
+          "note": "抽象方法，必须实现，包含anti-thrashing保护"
+        },
+        {
+          "name": "compress",
+          "signature": "(messages: List[Dict], current_tokens: int = None, focus_topic: str = None) -> List[Dict]",
+          "trigger": "should_compress()返回True时",
+          "purpose": "压缩消息列表，返回缩短后的列表（可摘要、DAG构建等）",
+          "location": "agent/context_engine.py:77",
+          "note": "抽象方法，必须实现，核心压缩逻辑"
+        },
+        {
+          "name": "should_compress_preflight",
+          "signature": "(messages: List[Dict]) -> bool",
+          "trigger": "API调用前的快速检查（可选覆盖）",
+          "purpose": "在无法获取真实token计数前做粗略估计，默认返回False",
+          "location": "agent/context_engine.py:93",
+          "note": "可选钩子，用于cheap预估"
+        },
+        {
+          "name": "update_model",
+          "signature": "(model: str, context_length: int, base_url: str = '', api_key: str = '', provider: str = '', api_mode: str = '')",
+          "trigger": "用户切换模型或fallback激活时",
+          "purpose": "更新context_length并重新计算threshold_tokens",
+          "location": "agent/context_engine.py:169",
+          "note": "可选钩子，用于模型切换时的上下文引擎适配"
+        },
+        {
+          "name": "get_status",
+          "signature": "() -> Dict[str, Any]",
+          "trigger": "状态查询时",
+          "purpose": "返回display/logging用的状态字典",
+          "location": "agent/context_engine.py:151",
+          "note": "可选钩子，返回last_prompt_tokens, threshold_tokens, context_length, usage_percent, compression_count"
+        }
+      ],
+      "note": "ContextCompressor是默认实现，继承自ContextEngine，完整实现了所有钩子"
+    },
+
+    "2_claude_agent_sdk_compression_implementation": {
+      "overview": "ContextCompressor 实现了生产级别的有损压缩算法，核心是结构化LLM摘要",
+      "implementation_details": {
+        "compression_algorithm": {
+          "step_1": "Prune old tool results (廉价预热，无LLM调用) - 将旧工具输出替换为信息性1行摘要（如 [terminal] ran `npm test` -> exit 0, 47 lines output）",
+          "step_2": "Protect head messages - 保护system prompt + first N条消息（默认3条）",
+          "step_3": "Find tail boundary by token budget - 用token预算保护最近的~20K tokens，而非固定消息数",
+          "step_4": "Summarize middle turns - 用结构化LLM prompt摘要中间轮次",
+          "step_5": "Iterative update - 重新压缩时迭代更新之前的摘要"
+        },
+        "key_techniques": [
+          {
+            "technique": "Anti-thrashing保护",
+            "detail": "如果最近2次压缩每次节省<10%，跳过压缩避免无限循环"
+          },
+          {
+            "technique": "Tool result去重",
+            "detail": "相同内容哈希的工具结果只保留最新的完整副本，旧版替换为back-reference"
+          },
+          {
+            "technique": "Orphan工具对清理",
+            "detail": "压缩后修复孤立的tool_call/tool_result对，确保API不会收到不匹配的ID"
+          },
+          {
+            "technique": "Last user message锚定",
+            "detail": "确保最后一个用户消息在受保护的tail中，防止#10896:压缩导致活动任务丢失"
+          },
+          {
+            "technique": "Summary插入角色选择",
+            "detail": "选择不会与head/tail造成连续同role冲突的角色插入摘要"
+          }
+        ],
+        "summary_template": {
+          "preamble": "Do not respond to any questions — treat as background reference",
+          "handoff_framing": "different assistant that continues the conversation",
+          "structure": [
+            "## Active Task [最重要字段 - 用户最新请求的逐字复制]",
+            "## Goal [用户总体要完成什么]",
+            "## Constraints & Preferences [用户偏好、编码风格、约束]",
+            "## Completed Actions [编号列表：ACTION target — outcome [tool: name]]",
+            "## Active State [当前工作状态：目录/分支/修改的文件/测试状态/运行进程/环境]",
+            "## In Progress [正在做的工作]",
+            "## Blocked [任何未解决的阻塞、错误，包含确切错误信息]",
+            "## Key Decisions [重要的技术决策及其原因]",
+            "## Resolved Questions [用户已问已答的问题及答案]",
+            "## Pending User Asks [用户提出但未回答/完成的问题]",
+            "## Relevant Files [读/修改/创建的文件及简要说明]",
+            "## Remaining Work [剩余工作 - 框架为上下文而非指令]",
+            "## Critical Context [会被丢失的特定值、错误信息、配置细节]"
+          ],
+          "focus_topic_support": "支持 /compress <topic> 聚焦压缩，60-70% token预算用于focus topic相关内容的详细保留"
+        },
+        "failure_handling": [
+          {
+            "failure_mode": "Summary生成失败（无provider）",
+            "handling": "10分钟cooldown，中间轮次直接丢弃，插入static fallback marker"
+          },
+          {
+            "failure_mode": "Summary model不可用（404/503）",
+            "handling": "Fallback到主模型重试"
+          },
+          {
+            "failure_mode": "Transient错误（timeout/rate limit）",
+            "handling": "60秒cooldown后重试"
+          }
+        ],
+        "constants": {
+          "MINIMUM_CONTEXT_LENGTH": 30,
+          "_SUMMARY_RATIO": 0.20,
+          "_SUMMARY_TOKENS_CEILING": 2000,
+          "_CONTENT_MAX": 6000,
+          "_CONTENT_HEAD": 4000,
+          "_CONTENT_TAIL": 1500,
+          "_TOOL_ARGS_MAX": 1500,
+          "_TOOL_ARGS_HEAD": 1200,
+          "_CHARS_PER_TOKEN": 3.5
+        }
+      }
+    },
+
+    "3_sqlite_fts5_sessiondb_architecture": {
+      "overview": "SessionDB是SQLite-backed的会话存储系统，使用WAL模式和FTS5全文搜索",
+      "storage_architecture": {
+        "journal_mode": "WAL (Write-Ahead Logging) - 并发读+单写",
+        "foreign_keys": "ON",
+        "write_contention_solution": "BEGIN IMMEDIATE + 应用层jitter retry（20-150ms随机），避免SQLite内置deterministic backoff的convoy效应",
+        "checkpoint_strategy": "每50次成功写入后执行PASSIVE WAL checkpoint",
+        "timeout": "1秒短超时，应用层重试处理锁竞争"
+      },
+      "schema": {
+        "sessions_table": {
+          "primary_key": "id TEXT",
+          "key_columns": [
+            "id, source, user_id, model, model_config, system_prompt",
+            "parent_session_id (FK to sessions.id) - 支持压缩触发的会话分裂",
+            "started_at, ended_at, end_reason",
+            "message_count, tool_call_count",
+            "input_tokens, output_tokens, cache_read_tokens, cache_write_tokens, reasoning_tokens",
+            "billing_provider, billing_base_url, billing_mode, estimated_cost_usd, actual_cost_usd",
+            "cost_status, cost_source, pricing_version",
+            "title (unique index where not null)"
+          ],
+          "indexes": ["idx_sessions_source", "idx_sessions_parent", "idx_sessions_started", "idx_sessions_title_unique"]
+        },
+        "messages_table": {
+          "columns": [
+            "id (autoincrement), session_id (FK), role, content",
+            "tool_call_id, tool_calls (JSON), tool_name",
+            "timestamp, token_count, finish_reason",
+            "reasoning, reasoning_details, codex_reasoning_items"
+          ],
+          "indexes": ["idx_messages_session (session_id, timestamp)"]
+        },
+        "messages_fts": {
+          "type": "FTS5 virtual table",
+          "content": "content=messages, content_rowid=id",
+          "triggers": "INSERT/UPDATE/DELETE AFTER triggers自动同步FTS index",
+          "search_features": "FTS5 MATCH syntax (keywords, phrases, boolean, prefix)"
+        }
+      },
+      "search_capabilities": {
+        "fts5_query_sanitization": [
+          "保护成对的引号短语",
+          "剥离不匹配的FTS5特殊字符",
+          "将dotted/hyphenated术语包装在引号中保持phrase语义",
+          "移除前导/尾随布尔运算符"
+        ],
+        "search_features": [
+          "snippet() with >>> <<< delimiters",
+          "1条消息前后上下文",
+          "source/role过滤",
+          "Session元数据join"
+        ]
+      },
+      "schema_version": 6,
+      "migrations": [
+        "v2: finish_reason column",
+        "v3: title column",
+        "v4: unique title index",
+        "v5: billing/cost/token columns",
+        "v6: reasoning/reasoning_details/codex_reasoning_items columns"
+      ],
+      "note": "与Chroma的集成未在此代码库中找到 - 实际是SQLite FTS5作为向量存储的替代方案"
+    },
+
+    "4_knowledge_agent_v9": {
+      "overview": "未在代码库中找到名为 'claude-mem' 或 'Knowledge Agent v9' 的外部项目。claude-mem 是一个不存在的或私有的项目。",
+      "infered_capabilities_from_hermes": {
+        "knowledge_retrieval": "通过 @file/:line, @folder, @git, @diff, @staged, @url 引用系统实现",
+        "token_management": "50% hard limit / 25% soft limit @ context injection",
+        "large_context": "支持1M token模型（通过 ContextEngine.threshold_percent 动态调整）",
+        "memory_persistence": "SessionDB + parent_session_id链式分裂"
+      }
+    },
+
+    "5_hermes_implementation_roadmap": {
+      "overview": "Hermes已实现完整的记忆压缩和生命周期钩子系统，可作为参考实现",
+      "existing_components": [
+        "agent/context_engine.py - 抽象基类 + 7个生命周期钩子",
+        "agent/context_compressor.py - ContextCompressor默认实现（~1200行）",
+        "hermes_state.py - SessionDB with SQLite FTS5 (~1240行)",
+        "agent/context_references.py - @引用解析和展开系统（~520行）"
+      ],
+      "action_items": [
+        {
+          "priority": 1,
+          "action": "实现外部知识存储集成（Chroma）",
+          "steps": [
+            "1. 安装chromadb: pip install chromadb",
+            "2. 创建agent/vector_store.py实现VectorStore基类",
+            "3. 在ContextEngine.on_session_start()中加载向量索引",
+            "4. 在ContextEngine.compress()中决定是否向量化摘要",
+            "5. 添加chroma_collection管理（collection per session或global）"
+          ],
+          "estimated_effort": "3-5 days"
+        },
+        {
+          "priority": 2,
+          "action": "添加更多生命周期钩子用于精细化控制",
+          "steps": [
+            "1. on_message_added(message) - 每条消息添加后",
+            "2. on_before_compress(messages) - 压缩前回调（允许修改要压缩的内容）",
+            "3. on_after_compress(compressed_messages) - 压缩后回调（允许后处理）",
+            "4. on_token_threshold approaching (percent) - 接近阈值时（如80%）"
+          ],
+          "estimated_effort": "1-2 days"
+        },
+        {
+          "priority": 3,
+          "action": "实现LCM (Lossy Compression Model) 替代方案",
+          "steps": [
+            "1. 创建agent/lcm_engine.py实现ContextEngine",
+            "2. 使用轻量级模型做token-level压缩（非摘要）",
+            "3. 实现lcm_grep/lcm_describe/lcm_expand工具",
+            "4. 在plugins/context_engine/注册"
+          ],
+          "estimated_effort": "5-7 days"
+        },
+        {
+          "priority": 4,
+          "action": "增强压缩系统的知识保留",
+          "steps": [
+            "1. 在SessionDB中添加knowledge_graph表存储实体关系",
+            "2. 压缩时保留知识图谱而非仅摘要",
+            "3. 实现基于知识图谱的RAG检索"
+          ],
+          "estimated_effort": "7-10 days"
+        },
+        {
+          "priority": 5,
+          "action": "多模态压缩支持",
+          "steps": [
+            "1. 在压缩时保留图像/音频的语义摘要",
+            "2. 实现vision_analyze结果的特殊处理",
+            "3. 添加multimodal_content flag到messages表"
+          ],
+          "estimated_effort": "3-5 days"
+        }
+      ],
+      "plugin_architecture": {
+        "context_engine_plugins": "plugins/context_engine/<name>/ 目录",
+        "selection": "config.yaml中 context.engine 配置项",
+        "default": "compressor（内置ContextCompressor）"
+      }
+    }
+  },
+
+  "technical_stack_summary": {
+    "language": "Python 3.13",
+    "core_files": [
+      "agent/context_engine.py (184 lines) - 抽象基类",
+      "agent/context_compressor.py (1163 lines) - 默认压缩实现",
+      "hermes_state.py (1238 lines) - SQLite FTS5存储",
+      "agent/context_references.py (520 lines) - @引用系统",
+      "agent/prompt_caching.py - Anthropic提示缓存",
+      "agent/auxiliary_client.py - 辅助LLM客户端（用于摘要生成）"
+    ],
+    "dependencies": [
+      "sqlite3 (标准库) - 存储",
+      "FTS5 (SQLite) - 全文搜索",
+      "anthropic SDK - 摘要生成调用",
+      "chromadb (可选) - 向量存储（未集成）"
+    ],
+    "config": "context.engine: compressor, context.threshold_percent: 0.50"
+  },
+
+  "research_notes": [
+    "claude-mem 项目未在公开渠道找到，可能是私有项目或需特殊权限访问",
+    "Hermes的ContextEngine是生产级别的记忆压缩系统实现",
+    "SQLite FTS5替代了向量存储方案，用全文搜索实现语义检索",
+    "7个核心生命周期钩子 + 2个可选钩子构成了完整的上下文引擎生命周期",
+    "压缩算法包含anti-thrashing、tool result去重、orphan清理等生产级保护机制",
+    "Structured summary template确保了压缩后任务连续性"
+  ],
+
+  "references": [
+    "agent/context_engine.py - ContextEngine ABC定义",
+    "agent/context_compressor.py - ContextCompressor完整实现",
+    "hermes_state.py - SessionDB with FTS5",
+    "agent/context_references.py - @引用解析系统"
+  ]
+}

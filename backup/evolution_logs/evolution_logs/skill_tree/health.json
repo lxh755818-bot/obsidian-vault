@@ -1,0 +1,17 @@
+{
+  "productivity/powerpoint/powerpoint": {
+    "skill_name": "productivity/powerpoint/powerpoint",
+    "invocation_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "avg_latency_ms": 0.0,
+    "total_latency_ms": 0.0,
+    "last_invoked": "2026-05-01T00:01:34.507796",
+    "last_success": "2026-05-01T00:01:34.507816",
+    "last_failure": null,
+    "tags": [],
+    "category": "productivity/powerpoint",
+    "success_rate": 1.0,
+    "health_score": 0.703
+  }
+}

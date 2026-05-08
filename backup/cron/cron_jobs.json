@@ -1,0 +1,146 @@
+[
+  {
+    "job_id": "15648e08dcef",
+    "name": "日志纠错自进化",
+    "skill": "log-error-correction",
+    "schedule": "0 */12 * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "c8aa6fff81e5",
+    "name": "记忆系统定期检查",
+    "skill": null,
+    "schedule": "0 */2 * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "c4e54e72b2f8",
+    "name": "技能循环优化",
+    "skill": "skill-cycle-optimizer",
+    "schedule": "0 */2 * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "bf439e3dd7e6",
+    "name": "每日A股选股简报",
+    "skill": null,
+    "schedule": "0 9 * * *",
+    "repeat": "forever",
+    "deliver": "feishu",
+    "enabled": true
+  },
+  {
+    "job_id": "97c91bb78597",
+    "name": "GitHub kk 协作轮询",
+    "skill": null,
+    "schedule": "*/30 * * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "b92a71a42a9f",
+    "name": "每日记忆守护Janitor",
+    "skill": null,
+    "schedule": "0 3 * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "021cac06ed16",
+    "name": "memory-decay",
+    "skill": null,
+    "schedule": "0 22 * * *",
+    "repeat": "forever",
+    "deliver": "local",
+    "enabled": true
+  },
+  {
+    "job_id": "3ae27e06fe03",
+    "name": "AI进化日报",
+    "skill": null,
+    "schedule": "0 4 * * *",
+    "repeat": "forever",
+    "deliver": "feishu",
+    "enabled": true
+  },
+  {
+    "job_id": "c105a216b890",
+    "name": "EvoMap Heartbeat",
+    "skill": null,
+    "schedule": "*/30 * * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": false
+  },
+  {
+    "job_id": "d3f39fdec937",
+    "name": "EvoMap Validator",
+    "skill": null,
+    "schedule": "*/30 * * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "0e75575ec593",
+    "name": "hermes-dojo-daily",
+    "skill": null,
+    "schedule": "0 9 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "e705cd5a128e",
+    "name": "memory-palace-daily",
+    "skill": null,
+    "schedule": "0 9 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "a1cf5beb8d51",
+    "name": "memory-palace-autobind",
+    "skill": null,
+    "schedule": "0 */4 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "605c6119c321",
+    "name": "daily-distill",
+    "skill": null,
+    "schedule": "0 4 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "239d9b6caaf9",
+    "name": "ASVP Telemetry 每2小时上报",
+    "skill": null,
+    "schedule": "0 */2 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  },
+  {
+    "job_id": "AUTO_BACKUP",
+    "name": "每日GitHub备份",
+    "skill": null,
+    "schedule": "0 3 * * *",
+    "repeat": "forever",
+    "deliver": "origin",
+    "enabled": true
+  }
+]

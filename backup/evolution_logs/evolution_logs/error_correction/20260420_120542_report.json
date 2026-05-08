@@ -1,0 +1,31 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-20T12:05:42.435337",
+  "errors_found": 2,
+  "errors_closed": 0,
+  "errors_open": 2,
+  "reports": [
+    {
+      "error_id": "err_72412",
+      "error_type": "WebSocketError",
+      "summary": "ERROR Lark: receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=<ID>]",
+      "status": "open",
+      "solution": "待分析",
+      "test_result": "pending",
+      "test_duration_ms": 0,
+      "count": 2,
+      "first_seen": "2026-04-20T08:29:59"
+    },
+    {
+      "error_id": "err_90158",
+      "error_type": "Unknown",
+      "summary": "ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=<ID>]",
+      "status": "open",
+      "solution": "待分析",
+      "test_result": "pending",
+      "test_duration_ms": 0,
+      "count": 2,
+      "first_seen": "2026-04-20T12:03:36"
+    }
+  ]
+}

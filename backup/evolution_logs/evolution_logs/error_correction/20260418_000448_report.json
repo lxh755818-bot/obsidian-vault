@@ -1,0 +1,47 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-18T00:04:48.179495",
+  "errors_found": 36,
+  "errors_closed": 1,
+  "errors_open": 3,
+  "errors_in_progress": 0,
+  "reports": [
+    {
+      "error_id": "err_001",
+      "error_type": "FeishuEventProcessorNotFound",
+      "summary": "飞书事件处理器未找到: im.chat.access_event.bot_p2p_chat_entered_v1 (机器人进入私聊事件)",
+      "status": "closed",
+      "solution": "lark SDK 支持注册该事件处理器。修复方案：在 feishu.py 的 _build_event_handler 中添加 .register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(lambda data: None)",
+      "test_result": "passed",
+      "test_duration_ms": 25915,
+      "applied_fix": "Added register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(lambda data: None) to _build_event_handler in feishu.py"
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "HTTPConnectionPoolError",
+      "summary": "urllib3 连接池请求失败",
+      "status": "open",
+      "solution": "HTTP 连接池问题，可能是目标服务限流、网络问题或连接被对端关闭。这是网络层问题，偶发可忽略。",
+      "test_result": "not_tested",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_003",
+      "error_type": "HTTPConnectionPoolError",
+      "summary": "urllib3 连接池请求失败",
+      "status": "open",
+      "solution": "HTTP 连接池问题，可能是目标服务限流、网络问题或连接被对端关闭。这是网络层问题，偶发可忽略。",
+      "test_result": "not_tested",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_004",
+      "error_type": "FeishuMessageReplyAPIError",
+      "summary": "飞书消息回复 API (im.v1.message.reply) 调用失败",
+      "status": "open",
+      "solution": "消息回复 API 调用失败，可能是原消息已删除或网络问题。",
+      "test_result": "not_tested",
+      "test_duration_ms": 0
+    }
+  ]
+}

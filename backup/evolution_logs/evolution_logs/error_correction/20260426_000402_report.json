@@ -1,0 +1,71 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-26T00:04:02.133448",
+  "cutoff": "2026-04-25T12:04:01.963402",
+  "errors_found": 5,
+  "errors_closed": 0,
+  "errors_open": 0,
+  "errors_accepted": 5,
+  "reports": [
+    {
+      "error_id": "err_001",
+      "error_type": "lark_ws_loop_exit",
+      "summary": "Lark WebSocket receive message loop 异常退出",
+      "root_cause": "飞书平台 WebSocket keepalive 超时或网络闪断，SDK 自动重连",
+      "status": "accepted",
+      "solution": "属平台正常行为。Lark SDK 有自动重连机制。建议关注频繁断连（>10次/小时），可能是网络问题。",
+      "fixable": false,
+      "test_result": "not_tested",
+      "test_duration_ms": 0,
+      "count": 8
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "feishu_connection_failed",
+      "summary": "飞书服务器连接失败 (Max retries exceeded)",
+      "root_cause": "网络到 open.feishu.cn 不稳定或飞书服务端暂时不可用",
+      "status": "accepted",
+      "solution": "属网络抖动，SDK 会自动重试。不需要代码修复。如果频繁出现(>5次/小时)，检查网络/DNS配置。",
+      "fixable": false,
+      "test_result": "not_tested",
+      "test_duration_ms": 0,
+      "count": 4
+    },
+    {
+      "error_id": "err_003",
+      "error_type": "feishu_connection_failed",
+      "summary": "飞书服务器连接失败 (Max retries exceeded)",
+      "root_cause": "网络到 open.feishu.cn 不稳定或飞书服务端暂时不可用",
+      "status": "accepted",
+      "solution": "属网络抖动，SDK 会自动重试。不需要代码修复。如果频繁出现(>5次/小时)，检查网络/DNS配置。",
+      "fixable": false,
+      "test_result": "not_tested",
+      "test_duration_ms": 0,
+      "count": 6
+    },
+    {
+      "error_id": "err_004",
+      "error_type": "asyncio_unclosed_session",
+      "summary": "asyncio 未关闭的 client session (连接失败后资源泄漏)",
+      "root_cause": "Feishu adapter connect() 失败后，aiohttp ClientSession 未完全释放",
+      "status": "accepted",
+      "solution": "已知问题。gateway/run.py _safe_adapter_disconnect 已处理，但边缘情况下仍有泄漏。影响有限，属平台重连过程中的临时现象。",
+      "fixable": false,
+      "test_result": "not_tested",
+      "test_duration_ms": 0,
+      "count": 12
+    },
+    {
+      "error_id": "err_005",
+      "error_type": "asyncio_unclosed_connector",
+      "summary": "asyncio 未关闭的 connector (连接失败后资源泄漏)",
+      "root_cause": "与 Unclosed client session 同一来源，Feishu 连接失败时 aiohttp connector 未关闭",
+      "status": "accepted",
+      "solution": "同 asyncio_unclosed_session，属已知边缘情况，不影响主功能",
+      "fixable": false,
+      "test_result": "not_tested",
+      "test_duration_ms": 0,
+      "count": 12
+    }
+  ]
+}

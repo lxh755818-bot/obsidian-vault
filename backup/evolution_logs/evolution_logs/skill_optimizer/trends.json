@@ -1,0 +1,560 @@
+{
+  "records": [
+    {
+      "skill": "finishing-a-development-branch",
+      "category": "software-development/finishing-a-development-branch",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "timestamp": "2026-05-02T20:01:31.217425",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "timestamp": "2026-05-02T22:01:19.083111",
+      "skill": "hermes-agent-skill-authoring",
+      "category": "software-development/hermes-agent-skill-authoring",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 1,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "skill": "node-inspect-debugger",
+      "category": "software-development/node-inspect-debugger",
+      "type": "sandbox",
+      "timestamp": "2026-05-03T00:01:54.435866",
+      "latency_ms": 0,
+      "success": true,
+      "status": "healthy",
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "skill": "office-hours",
+      "category": "software-development/office-hours",
+      "timestamp": "2026-05-03T02:01:55",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-03T04:05:09.906800",
+      "skill": "plan",
+      "category": "software-development/plan",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "perf_stable": "stable",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "error_rate_pct": 0
+      }
+    },
+    {
+      "skill": "python-debugpy",
+      "category": "software-development/python-debugpy",
+      "timestamp": "2026-05-04T12:01:26",
+      "success": true,
+      "latency_ms": 0,
+      "status": "healthy",
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "skill": "qa",
+      "category": "software-development/qa",
+      "timestamp": "2026-05-04T14:01:44.609163",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-04T16:02:41.698408",
+      "skill": "receiving-code-review",
+      "category": "software-development/receiving-code-review",
+      "type": "sandbox",
+      "latency_ms": 1,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "perf_stable": "stable",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "skill": "requesting-code-review",
+      "category": "software-development/requesting-code-review",
+      "type": "code_gen",
+      "timestamp": "2026-05-04T18:08:03.102360",
+      "latency_ms": 1,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 1,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "skill": "review",
+      "category": "software-development/review",
+      "timestamp": "2026-05-04T20:01:32.900758",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      },
+      "perf_stable": "stable",
+      "error_rate_pct": 0
+    },
+    {
+      "timestamp": "2026-05-04T22:02:40.591095",
+      "skill": "review",
+      "category": "software-development/review",
+      "type": "sandbox",
+      "latency_ms": 1,
+      "success": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 1,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "skill": "skill-authoring",
+      "category": "software-development/skill-authoring",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "timestamp": "2026-05-05T20:01:29.097344",
+      "doc_complete": "pass",
+      "dep_available": "pass",
+      "perf_stable": "stable",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "perf_audit": "pass",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-05T22:02:27.551284",
+      "skill": "spike",
+      "category": "software-development/spike",
+      "type": "sandbox",
+      "latency_ms": 1,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "perf_stable": "pass",
+        "output_valid": "pass",
+        "error_rate": "pass",
+        "load_time_ms": 1
+      }
+    },
+    {
+      "skill": "subagent-driven-development",
+      "category": "software-development/subagent-driven-development",
+      "timestamp": "2026-05-06T08:01:24.259525",
+      "latency_ms": 0,
+      "success": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 15,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "timestamp": "2026-05-06T10:03:41.902500",
+      "skill": "systematic-debugging",
+      "category": "software-development/systematic-debugging",
+      "type": "sandbox",
+      "latency_ms": 2,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 2,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-07T02:01:34.293487",
+      "skill": "test-driven-development",
+      "category": "software-development/test-driven-development",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-07T02:01:47.067675",
+      "skill": "test-driven-development",
+      "category": "software-development/test-driven-development",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "skill": "writing-plans",
+      "category": "software-development/writing-plans",
+      "type": "file_parser",
+      "timestamp": "2026-05-07T08:09:23.046123",
+      "latency_ms": 1,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 1,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-07T10:02:11.115935",
+      "skill": "hermes-dashboard-web-ui",
+      "category": "system/hermes-dashboard-web-ui",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "timestamp": "2026-05-07T12:03:45.095303",
+      "skill": "system/hermes-gateway-debug",
+      "category": "system/hermes-gateway-debug",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable"
+      }
+    },
+    {
+      "skill": "system/hermes-memory-landscape",
+      "category": "system/hermes-memory-landscape",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "timestamp": "2026-05-07T14:01:33.237986",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "perf_stable": "stable",
+        "error_rate_pct": 0.0
+      }
+    },
+    {
+      "skill": "http-post-from-execute-code",
+      "category": "tooling/http-post-from-execute-code",
+      "timestamp": "2026-05-07T16:01:19.278585",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "doc_info": {
+          "has_name": true,
+          "has_description": true,
+          "has_body": true,
+          "name": "http-post-from-execute-code",
+          "description": "Use Python urllib via execute_code tool instead of..."
+        },
+        "dep_available": "pass",
+        "dep_notes": [
+          "sandbox type - no dep check needed"
+        ],
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true,
+        "perf_audit": "pass"
+      }
+    },
+    {
+      "skill": "xiaoa-persona-system",
+      "category": "xiaoa-persona-system",
+      "type": "sandbox",
+      "timestamp": "2026-05-07T18:05:25.095571",
+      "latency_ms": 0,
+      "success": true,
+      "status": "healthy",
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "skill": "yuanbao",
+      "timestamp": "2026-05-07T20:01:15.476758",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": "pass"
+      }
+    },
+    {
+      "skill": "agent-world-registration",
+      "category": ".archive/agent-world-registration",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "status": "healthy",
+      "timestamp": "2026-05-07T22:01:40.628828",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-08T08:05:13.566271",
+      "skill": "append-to-kk-comm-file",
+      "category": ".archive/append-to-kk-comm-file",
+      "type": "sandbox",
+      "latency_ms": 1,
+      "success": true,
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      },
+      "error": ""
+    },
+    {
+      "skill": "bot-to-bot-github-polling",
+      "category": ".archive/bot-to-bot-github-polling",
+      "type": "sandbox",
+      "timestamp": "2026-05-08T10:06:06.380760",
+      "latency_ms": 1,
+      "success": true,
+      "status": "healthy",
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 1,
+        "error_rate_pct": 0.0,
+        "perf_stable": "stable",
+        "output_valid": true
+      }
+    },
+    {
+      "timestamp": "2026-05-08T12:03:40.268061",
+      "skill": ".archive/daily-distill",
+      "category": ".archive/daily-distill",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": "",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      },
+      "status": "healthy"
+    },
+    {
+      "skill": ".archive/evomap-asset-publisher",
+      "timestamp": "2026-05-08T14:01:45.420613",
+      "latency_ms": 0,
+      "success": true,
+      "status": "healthy",
+      "audit": {
+        "doc_complete": "pass",
+        "dep_available": "pass",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": true
+      },
+      "type": "sandbox",
+      "category": ".archive/evomap-asset-publisher"
+    },
+    {
+      "timestamp": "2026-05-08T18:03:31.012114",
+      "skill": "feishu-agent-mention",
+      "category": ".archive/feishu-agent-mention",
+      "type": "sandbox",
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "No frontmatter - could not parse YAML block",
+      "audit": {
+        "doc_complete": "fail",
+        "dep_available": "n/a",
+        "load_time_ms": 0,
+        "error_rate_pct": 0,
+        "perf_stable": "stable",
+        "output_valid": false
+      },
+      "status": "degraded"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-05-03 04:06
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🟢 通过率: 90.5%  |  ✅ 通过: 19  |  ❌ 非预期失败: 1  |  ⚠️ 预期环境失败: 0  |  🔶退化: 3
+
+  技能明细:
+  🔴 notion: 0.0% ❌1 | avg 0ms
+  🟢 productivity/maps/maps: 100.0% | avg 1.0ms
+  🟢 nano-pdf: 100.0% | avg 23.0ms
+  🟢 ocr-and-documents: 100.0% | avg 0ms
+  🟢 productivity/powerpoint/SKILL: 100.0% | avg 0ms
+  🟢 red-teaming/godmode: 100.0% | avg 1.0ms
+  🟢 research/ai-memory-systems-github-research: 100.0% | avg 0ms
+  🟢 arxiv: 100.0% | avg 0ms
+  🟢 llm-wiki: 100.0% | avg 0ms
+  🟢 research/polymarket: 100.0% | avg 0ms
+  🟢 research-paper-writing: 100.0% | avg 2.0ms
+  🟢 smart-home/openhue: 100.0% | avg 0ms
+  🟢 xitter: 100% | avg 0ms
+  🟢 xurl: 100.0% | avg 0ms
+  🟢 brainstorming: 100.0% | avg 0ms
+  🟢 debugging-hermes-tui-commands: 100.0% | avg 1.0ms
+  🟢 finishing-a-development-branch: 100.0% | avg 0ms
+  🟢 hermes-agent-skill-authoring: 100.0% | avg 0ms
+  🟢 node-inspect-debugger: 100.0% | avg 0ms
+  🟢 office-hours: 100.0% | avg 0ms
+  🟢 plan: 100.0% | avg 0ms
+
+───────────────────────────────────────────────────────
+  📋 待审批修复方案: 1 个
+    → xitter_fix_v2.json
+═══════════════════════════════════════════════════════

@@ -1,0 +1,93 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-26T12:02:25.434288",
+  "errors_found": 7,
+  "errors_closed": 1,
+  "errors_open": 6,
+  "reports": [
+    {
+      "error_id": "feishu_lark_connect_failed",
+      "error_type": "NetworkError",
+      "summary": "飞书Lark SDK连接open.feishu.cn失败 (HTTPSConnectionPool Max retries exceeded)",
+      "status": "open",
+      "solution": "已知问题: feishu_connection (42 occurrences)",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 336,
+      "first_seen": "2026-04-26T00:26:14",
+      "tracker_status": "accepted"
+    },
+    {
+      "error_id": "feishu_send_error",
+      "error_type": "NetworkError",
+      "summary": "飞书Gateway发送消息失败 (HTTPSConnectionPool to open.feishu.cn)",
+      "status": "closed",
+      "solution": "已关闭: 跟踪ID err_010",
+      "test_result": "passed",
+      "test_duration_ms": 0,
+      "occurrences": 318,
+      "first_seen": "2026-04-26T00:26:04",
+      "tracker_status": "closed"
+    },
+    {
+      "error_id": "api_call_failed_3_retries",
+      "error_type": "APIError",
+      "summary": "API调用失败 (3次重试后) - Feishu连接问题导致cron任务无法交付",
+      "status": "open",
+      "solution": "已知问题: MiniMax API连接错误 (cron job, multiple times)",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 218,
+      "first_seen": "2026-04-26T00:26:00",
+      "tracker_status": "open"
+    },
+    {
+      "error_id": "cron_delivery_error",
+      "error_type": "DeliveryError",
+      "summary": "Cron任务投递失败 (Feishu发送失败导致) - 依赖feishu_lark_connect_failed",
+      "status": "open",
+      "solution": "已知问题: MiniMax API连接错误 (cron job, multiple times)",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 158,
+      "first_seen": "2026-04-26T00:26:07",
+      "tracker_status": "open"
+    },
+    {
+      "error_id": "asyncio_unclosed_client_session",
+      "error_type": "ResourceWarning",
+      "summary": "asyncio未关闭client session - Lark连接失败后的副产品",
+      "status": "open",
+      "solution": "需进一步分析",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 278,
+      "first_seen": "2026-04-26T00:04:48",
+      "tracker_status": null
+    },
+    {
+      "error_id": "asyncio_unclosed_connector",
+      "error_type": "ResourceWarning",
+      "summary": "asyncio未关闭connector - Lark连接失败后的副产品",
+      "status": "open",
+      "solution": "需进一步分析",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 38,
+      "first_seen": "2026-04-26T00:04:48",
+      "tracker_status": null
+    },
+    {
+      "error_id": "lark_receive_loop_exit",
+      "error_type": "WebSocketError",
+      "summary": "飞书Lark WebSocket接收循环异常退出 (keepalive ping timeout)",
+      "status": "open",
+      "solution": "已知问题: lark_loop_exit (5 occurrences)",
+      "test_result": "error",
+      "test_duration_ms": 0,
+      "occurrences": 2,
+      "first_seen": "2026-04-26T00:25:58",
+      "tracker_status": "accepted"
+    }
+  ]
+}

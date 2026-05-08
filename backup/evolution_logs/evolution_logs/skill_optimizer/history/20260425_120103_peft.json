@@ -1,0 +1,49 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-25T12:01:03.183023",
+  "current_index": 88,
+  "total_skills": 127,
+  "current": {
+    "skill": "peft",
+    "category": "mlops/training/peft",
+    "type": "sandbox",
+    "name": "peft-fine-tuning",
+    "description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use",
+    "tags": [
+      "Fine-Tuning",
+      "PEFT",
+      "LoRA",
+      "QLoRA",
+      "Parameter-Efficient",
+      "Adapters",
+      "Low-Rank",
+      "Memory Optimization",
+      "Multi-Adapter"
+    ],
+    "metrics": {
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": ""
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "pass",
+      "load_time_ms": 0,
+      "error_rate_pct": 50.0,
+      "perf_stable": "stable",
+      "output_valid": true
+    },
+    "vs_last": {
+      "delta_pct": 0.0,
+      "prev_latency_ms": 0
+    },
+    "suggestions": [],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 2,
+    "audit_warnings": 1,
+    "action": "所有审核通过"
+  }
+}

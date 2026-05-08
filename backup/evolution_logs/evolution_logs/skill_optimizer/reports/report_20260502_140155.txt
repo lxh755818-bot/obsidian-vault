@@ -1,0 +1,31 @@
+═══════════════════════════════════════════════════════
+  🏋️  HERMES DOJO 日报 — 2026-05-02 14:01
+═══════════════════════════════════════════════════════
+
+  📊 整体健康度（过去48小时）
+  🟡 通过率: 80.0%  |  ✅ 通过: 16  |  ❌ 非预期失败: 2  |  ⚠️ 预期环境失败: 1  |  🔶退化: 5
+
+  技能明细:
+  🔴 notion: 0.0% ❌2 | avg 12.0ms
+  🟢 linear: 100% ⚠️1 | avg 0ms
+  🟢 maps: 100.0% | avg 1.0ms
+  🟢 productivity/nano-pdf/nano-pdf: 100.0% | avg 0ms
+  🟢 ocr-and-documents: 100.0% | avg 1.0ms
+  🟢 productivity/powerpoint/powerpoint: 100.0% | avg 0ms
+  🟢 productivity/maps/maps: 100.0% | avg 1.0ms
+  🟢 nano-pdf: 100.0% | avg 23.0ms
+  🟢 productivity/powerpoint/SKILL: 100.0% | avg 0ms
+  🟢 red-teaming/godmode: 100.0% | avg 1.0ms
+  🟢 research/ai-memory-systems-github-research: 100.0% | avg 0ms
+  🟢 arxiv: 100.0% | avg 0ms
+  🟢 llm-wiki: 100.0% | avg 0ms
+  🟢 research/polymarket: 100.0% | avg 0ms
+  🟢 research-paper-writing: 100.0% | avg 2.0ms
+  🟢 smart-home/openhue: 100.0% | avg 0ms
+  🟢 xitter: 100% | avg 0ms
+  🟢 xurl: 100.0% | avg 0ms
+
+───────────────────────────────────────────────────────
+  📋 待审批修复方案: 1 个
+    → xitter_fix_v2.json
+═══════════════════════════════════════════════════════

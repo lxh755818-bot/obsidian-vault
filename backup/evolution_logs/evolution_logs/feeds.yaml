@@ -1,0 +1,58 @@
+# RSS Feeds Configuration
+# 进化系统信息输入源
+
+feeds:
+  - name: Arxiv CS.AI
+    url: https://arxiv.org/rss/cs.AI
+    tags: ["AI", "论文"]
+    enabled: true
+
+  - name: Arxiv CS.LG
+    url: https://arxiv.org/rss/cs.LG
+    tags: ["ML", "论文"]
+    enabled: true
+
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    tags: ["AI", "大模型"]
+    enabled: true
+
+  - name: DeepMind Blog
+    url: https://deepmind.com/blog/feed/basic
+    tags: ["AI", "研究"]
+    enabled: true
+
+  - name: Product Hunt
+    url: https://producthunt.com/feed
+    tags: ["产品", "趋势"]
+    enabled: true
+
+  # 以下源暂时不可用（404）
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/rss.xml
+    tags: ["AI", "工具"]
+    enabled: false
+
+  - name: Simon Willison
+    url: https://simonwillison.net/atom.xml
+    tags: ["AI", "Python"]
+    enabled: false
+
+  - name: Lil'Log
+    url: https://lilianweng.github.io/atom.xml
+    tags: ["AI", "系统"]
+    enabled: false
+
+  - name: Gwern
+    url: https://www.gwern.net/news.xml
+    tags: ["AI", "深度分析"]
+    enabled: false
+
+# GitHub Trending
+github:
+  - repo: facebook/react
+    language: JavaScript
+    enabled: true
+  - repo: microsoft/typescript
+    language: TypeScript
+    enabled: true

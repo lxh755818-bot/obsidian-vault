@@ -1,0 +1,50 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-08T01:06:11",
+  "scan_window_hours": 12,
+  "errors_found": 178,
+  "errors_closed": 0,
+  "errors_accepted": 0,
+  "errors_open": 0,
+  "reports": [],
+  "open_errors_checked": [],
+  "noise_filtered": {},
+  "category_breakdown": {
+    "lark_ws_no_close": {
+      "groups": 79,
+      "occurrences": 158
+    },
+    "lark_connect_timeout": {
+      "groups": 2,
+      "occurrences": 4
+    },
+    "lark_connect_error": {
+      "groups": 5,
+      "occurrences": 10
+    },
+    "lark_ws_1011": {
+      "groups": 2,
+      "occurrences": 4
+    },
+    "unknown": {
+      "groups": 1,
+      "occurrences": 2
+    }
+  },
+  "tracker_summary": {
+    "total_tracked": 73,
+    "closed": 18,
+    "accepted": 55,
+    "open": 0,
+    "in_progress": 0
+  },
+  "notes": [
+    "All 178 error occurrences in the 12h window are already tracked as accepted.",
+    "lark_ws_no_close (158 occ): Platform normal behavior - Lark WebSocket no close frame received. Tracked as err_047/err_070/err_132.",
+    "lark_connect_error (10 occ): Feishu.cn connection errors (SSL, connection abort). Tracked as err_133/err_141/err_142.",
+    "lark_connect_timeout (4 occ): WebSocket connection timeout. Tracked as err_071/err_137.",
+    "lark_ws_1011 (4 occ): Lark 1011 keepalive timeout. Tracked as err_070/err_131.",
+    "minimax_api_retry_exhaustion (2 occ): MiniMax API connection abort after 3 retries. Tracked as err_135/err_142.",
+    "No actionable errors requiring code fixes."
+  ]
+}

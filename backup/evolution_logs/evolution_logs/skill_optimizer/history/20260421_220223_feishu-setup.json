@@ -1,0 +1,38 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-21T22:02:23",
+  "current_index": 51,
+  "total_skills": 114,
+  "current": {
+    "skill": "feishu-setup",
+    "category": "messaging/feishu-setup",
+    "type": "integration",
+    "metrics": {
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": null
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "improved",
+      "output_valid": true
+    },
+    "vs_last": {
+      "delta_pct": -100.0,
+      "last_latency": 18
+    },
+    "suggestions": [
+      "依赖不可用: FEISHU_APP_ID not set, FEISHU_APP_SECRET not set"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 0,
+    "action": "依赖不可用: FEISHU_APP_ID not set, FEISHU_APP_SECRET not set"
+  }
+}

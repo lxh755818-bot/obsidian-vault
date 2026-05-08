@@ -1,0 +1,35 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-30T14:02:12.356371",
+  "current_index": 134,
+  "total_skills": 173,
+  "current": {
+    "skill": "linear",
+    "category": "productivity/linear",
+    "type": "api",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "LINEAR_API_KEY not set"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "LINEAR_API_KEY 未配置，标记为 manual_only"
+    ],
+    "status": "warning"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 1,
+    "action": "LINEAR_API_KEY 未配置，标记为 manual_only"
+  }
+}

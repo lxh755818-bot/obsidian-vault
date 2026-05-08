@@ -1,0 +1,83 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-25T00:02:05.013224",
+  "errors_found": 7,
+  "errors_closed": 0,
+  "errors_open": 5,
+  "errors_in_progress": 1,
+  "errors_accepted": 2,
+  "reports": [
+    {
+      "error_id": "err_119",
+      "error_type": "WebSocketKeepaliveTimeout",
+      "summary": "飞书 WebSocket keepalive 超时断开 (12x in last 12h) - Lark SDK 平台行为，通过代理/负载均衡时正常",
+      "status": "accepted",
+      "solution": "无需修复。Lark WebSocket SDK 在通过代理/负载均衡时自然会出现 keepalive 超时断开，属正常平台行为。SDK 会自动重连。如需改善可添加应用层重连逻辑，但平台层面无法避免。",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_025",
+      "error_type": "APIConnectionError",
+      "summary": "MiniMax API连接错误 - 最近12小时无新记录，可能已自行恢复",
+      "status": "open",
+      "solution": "继续监控。如持续出现，检查 API endpoint 和网络连通性",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_103",
+      "error_type": "MCPToolFailure",
+      "summary": "MCP tool minimax/understand_image 调用失败 - 最近12小时无新记录",
+      "status": "in_progress",
+      "solution": "检查 MCP server 状态和网络连通性",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_115",
+      "error_type": "MCPMethodNotFound",
+      "summary": "MCP baostock list_prompts 方法不存在 - 最近12小时无新记录",
+      "status": "open",
+      "solution": "检查 baostock MCP server 方法列表，更新调用方代码",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_116",
+      "error_type": "MessageNotFound",
+      "summary": "飞书编辑消息失败(消息已被删除或过期) - 最近12小时无新记录",
+      "status": "open",
+      "solution": "属正常业务情况，消息可能已被用户删除或过期，无需代码修复",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_117",
+      "error_type": "PortConflict",
+      "summary": "API Server 端口8642被占用 - 最近12小时无新记录",
+      "status": "open",
+      "solution": "端口冲突已缓解，当前无进程占用8642。如持续出现，检查启动顺序",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_118",
+      "error_type": "PIDFileConflict",
+      "summary": "Gateway 启动冲突(PID文件竞争) - 最近12小时无新记录",
+      "status": "open",
+      "solution": "清理残留 PID 文件并确保只有一个 Hermes 实例运行",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "error_type": "WebSocketCloseFrameTimeout",
+      "summary": "Lark WebSocket 连接正常断开(no close frame) - 12次/12h，属平台正常行为",
+      "status": "accepted",
+      "solution": "无需修复，属 Lark 平台正常行为",
+      "test_result": "not_applicable",
+      "test_duration_ms": 0
+    }
+  ]
+}

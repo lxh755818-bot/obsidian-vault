@@ -1,0 +1,62 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-20T00:05:43.590144",
+  "time_window_hours": 12,
+  "cutoff": "2026-04-19T12:05:43.508265",
+  "errors_found": 10,
+  "unique_errors": 5,
+  "errors_closed": 0,
+  "errors_open": 0,
+  "reports": [
+    {
+      "error_id": "err_021",
+      "error_type": "feishu_error",
+      "summary": "2026-04-19 12:31:07,724 ERROR gateway.platforms.feishu: [Feishu] Failed to edit message om_x100b5171d01694a0c2e337c7eb04bfb: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded ",
+      "status": "accepted",
+      "source": "agent.log:5222",
+      "timestamp": "2026-04-19T12:31:07",
+      "solution": "Already tracked - no new action",
+      "test_result": "n/a"
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "bad_request",
+      "summary": "2026-04-19 12:45:18,052 ERROR [20260419_124517_477f76] root: Non-retryable client error: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': 'invalid params, invalid ",
+      "status": "open",
+      "source": "agent.log:5321",
+      "timestamp": "2026-04-19T12:45:18",
+      "solution": "Already tracked - no new action",
+      "test_result": "n/a"
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "bad_request",
+      "summary": "2026-04-19 13:17:07,621 ERROR [20260419_131706_743d1a] root: Non-retryable client error: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': 'invalid params, invalid ",
+      "status": "open",
+      "source": "agent.log:5345",
+      "timestamp": "2026-04-19T13:17:07",
+      "solution": "Already tracked - no new action",
+      "test_result": "n/a"
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "bad_request",
+      "summary": "2026-04-19 17:01:50,762 ERROR [20260419_170150_2f6118] root: Non-retryable client error: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': 'invalid params, invalid ",
+      "status": "open",
+      "source": "agent.log:5502",
+      "timestamp": "2026-04-19T17:01:50",
+      "solution": "Already tracked - no new action",
+      "test_result": "n/a"
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "bad_request",
+      "summary": "2026-04-19 17:10:34,687 ERROR [20260419_171033_0bbc17] root: Non-retryable client error: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': 'invalid params, invalid ",
+      "status": "open",
+      "source": "agent.log:5527",
+      "timestamp": "2026-04-19T17:10:34",
+      "solution": "Already tracked - no new action",
+      "test_result": "n/a"
+    }
+  ]
+}

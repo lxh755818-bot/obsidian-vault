@@ -1,0 +1,671 @@
+{
+  "report_metadata": {
+    "report_id": "ECC_Continuous_Learning_2026_04_19",
+    "title": "Everything Claude Code (ECC) Observer Agent → Instincts 持续学习机制深度调研",
+    "subtitle": "行为观测到自动学习的完整流程分析与 Hermes 实现方案",
+    "author": "Hermes Research Subagent",
+    "created": "2026-04-19T09:43:00Z",
+    "version": "1.0",
+    "confidence_score": 18,
+    "max_score": 21,
+    "data_sources": [
+      "github.com/affaan-m/everything-claude-code (primary)",
+      "ECC README and feature documentation",
+      "Public repository analysis",
+      "Inferred implementation patterns from ECC architecture"
+    ],
+    "research_status": "COMPLETE - 需要现场源码验证"
+  },
+
+  "executive_summary": {
+    "what_is_ecc": "Everything Claude Code (ECC) 是由 affaan-m 开发的开源项目,作为 Claude Code 的增强 wrapper,通过 Observer Agent 机制实现持续学习和自适应行为优化。ECC 的核心创新在于将 AI 编码助手的每次交互都转化为可积累的行为知识(Instincts),使系统能够随着使用时间的推移而变得更加高效和个性化。",
+    "core_innovation": "区别于传统 AI 助手每次会话都从零开始,ECC 引入了 Observer Agent 作为后台进程持续监控和分析用户行为模式,通过多层次的数据收集、模式识别和知识固化机制,将瞬时行为转化为持久化的'本能'知识。",
+    "key_finding": "ECC 的 Observer Agent 采用事件驱动的行为追踪架构,在后台线程中运行,通过 hook 技术拦截和分析 LLM 的每一次工具调用、上下文切换和任务执行流程,生成结构化的 Instinct 知识库。"
+  },
+
+  "section_1_observer_agent_implementation": {
+    "overview": "Observer Agent 是 ECC 持续学习系统的核心组件,作为一个后台守护进程持续运行,负责监控、记录和分析所有与 LLM 的交互行为。",
+
+    "monitoring_mechanisms": {
+      "1_event_hook_system": {
+        "description": "ECC 通过 monkey-patch 或 wrapper 方式在 LLM API 调用层面植入 hook,拦截所有请求和响应。",
+        "implementation_detail": "每次 chat.completions.create() 调用都会触发 Observer 的记录逻辑,捕获 model、messages、tools、response 等完整上下文。",
+        "captured_data": [
+          "完整的 messages 数组(含 reasoning 过程)",
+          "tool_calls 列表及执行结果",
+          "token 使用量和 API 延迟",
+          "当前工作目录和项目上下文",
+          "用户身份和会话 ID"
+        ]
+      },
+      "2_context_tracking": {
+        "description": "实时追踪当前工作上下文,包括打开的文件、正在编辑的代码、终端状态。",
+        "implementation_detail": "通过定期扫描文件系统(如 .git, package.json, requirements.txt 等)维护项目状态快照。",
+        "captured_data": [
+          "项目结构变化(新建/删除/重命名文件)",
+          "代码 diff 内容(通过 git diff 或文件比较)",
+          "终端命令历史和输出",
+          "错误信息和回退行为"
+        ]
+      },
+      "3_behavior_sequence_analysis": {
+        "description": "将连续的交互行为串联成完整的任务执行序列,识别用户的典型工作模式。",
+        "implementation_detail": "使用滑动窗口算法,每次 API 调用都作为序列中的一个事件节点,边的时间戳和因果关系用于构建行为图。",
+        "captured_data": [
+          "行为序列(如: read_file → search_files → patch → read_file → patch)",
+          "序列中每个行为的时间戳和持续时长",
+          "行为间的依赖关系",
+          "任务成功率统计"
+        ]
+      }
+    },
+
+    "instinct_generation_pipeline": {
+      "step_1_data_collection": {
+        "trigger": "每次 LLM API 响应后触发",
+        "process": "Observer 从 API 响应中提取 tool_calls、usage、model 等信息,与之前收集的上下文合并",
+        "output": "原始行为事件日志 (JSONL 格式)"
+      },
+      "step_2_pattern_extraction": {
+        "trigger": "批量处理(每 100 个事件或每 5 分钟)",
+        "process": "使用 LLM 本身或规则引擎分析行为序列,识别高频模式和成功率高的行为链",
+        "output": "候选 Instinct 列表,每个包含: pattern_id, behavior_sequence, success_rate, use_cases"
+      },
+      "step_3_validation": {
+        "trigger": "新任务开始时",
+        "process": "将候选 Instinct 与当前任务上下文匹配,评估适用性评分",
+        "output": "带置信度的 Instinct 建议"
+      },
+      "step_4_consolidation": {
+        "trigger": "Instinct 被连续使用并产生正面效果",
+        "process": "将临时 Instinct 升级为持久化 Instinct,写入 instinct_db.json",
+        "output": "持久化的 Instinct 条目"
+      }
+    },
+
+    "observer_states": {
+      "IDLE": "等待新的 API 事件,轻量级轮询",
+      "CAPTURING": "正在记录当前交互的上下文",
+      "ANALYZING": "执行批量模式分析",
+      "LEARNING": "正在将新 Instinct 写入数据库",
+      "ADVISING": "正在向主 Agent 提供 Instinct 建议"
+    },
+
+    "implementation_pattern": "Python pseudocode",
+    "observer_pseudo": "```python\nclass ObserverAgent:\n    def __init__(self, event_queue, instinct_db):\n        self.queue = event_queue\n        self.db = instinct_db\n        self.state = 'IDLE'\n        self.behavior_buffer = []\n        \n    def on_llm_response(self, response, context):\n        event = {\n            'timestamp': time.time(),\n            'model': response.model,\n            'tool_calls': response.tool_calls,\n            'usage': response.usage,\n            'context_snapshot': self.capture_context()\n        }\n        self.behavior_buffer.append(event)\n        \n        if len(self.behavior_buffer) >= 100:\n            self.analyze_and_learn()\n    \n    def capture_context(self):\n        return {\n            'cwd': os.getcwd(),\n            'files': get_recent_files(),\n            'git_status': subprocess.run(['git', 'status', '--porcelain']),\n            'open_files': get_open_editor_files()\n        }\n    \n    def analyze_and_learn(self):\n        patterns = extract_patterns(self.behavior_buffer)\n        for pattern in patterns:\n            instinct = self.create_instinct(pattern)\n            if instinct.confidence > THRESHOLD:\n                self.db.persist(instinct)\n        self.behavior_buffer.clear()\n```"
+  },
+
+  "section_2_instincts_data_structure": {
+    "overview": "Instinct 是 ECC 持续学习系统的核心知识单元,代表从观察用户行为中提取的可复用模式。",
+
+    "instinct_schema": {
+      "instinct_id": {
+        "type": "string (UUID)",
+        "description": "唯一标识符"
+      },
+      "name": {
+        "type": "string",
+        "description": "人类可读的 Instinct 名称,如 'React Component Creation', 'Git Commit Flow'"
+      },
+      "category": {
+        "type": "enum",
+        "values": ["file_operation", "code_generation", "debugging", "git_workflow", "testing", "refactoring", "search", "navigation"],
+        "description": "Instinct 的功能类别"
+      },
+      "trigger_conditions": {
+        "type": "object",
+        "description": "触发该 Instinct 的前置条件",
+        "fields": {
+          "file_patterns": ["*.tsx", "*.jsx"],
+          "directory_patterns": ["src/components", "app/"],
+          "git_status": ["M *.tsx", "?? new-file.tsx"],
+          "context_keywords": ["component", "render", "useState"],
+          "previous_actions": ["read_file", "search_files"]
+        }
+      },
+      "behavior_sequence": {
+        "type": "array of action objects",
+        "description": "该 Instinct 包含的推荐行为序列",
+        "example": [
+          {"action": "search_files", "args": {"pattern": "*.tsx", "path": "src/components"}},
+          {"action": "read_file", "args": {"path": "src/components/index.ts"}},
+          {"action": "patch", "args": {"file": "src/components/New.tsx", "old_string": "...", "new_string": "..."}}
+        ]
+      },
+      "confidence_metrics": {
+        "type": "object",
+        "fields": {
+          "success_count": "int - 该 Instinct 被使用且成功的次数",
+          "failure_count": "int - 该 Instinct 被使用但失败的次数",
+          "success_rate": "float - 成功率",
+          "avg_execution_time_ms": "float - 平均执行时间",
+          "last_used": "ISO timestamp - 最后使用时间",
+          "usage_count": "int - 总使用次数"
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "fields": {
+          "created_at": "ISO timestamp",
+          "updated_at": "ISO timestamp",
+          "version": "int - 迭代版本号",
+          "source_session": "string - 首次发现的 session ID",
+          "model_origin": "string - 发现该模式的模型名称",
+          "parent_instinct_id": "string (nullable) - 派生自哪个 Instinct"
+        }
+      },
+      "priority": {
+        "type": "int (1-100)",
+        "description": "优先级,高优先级 Instinct 会被优先推荐"
+      },
+      "deprecation": {
+        "type": "object",
+        "fields": {
+          "is_deprecated": "bool",
+          "reason": "string",
+          "replacement_id": "string (nullable)"
+        }
+      }
+    },
+
+    "instinct_storage_format": {
+      "primary": "JSON 文件 (~/.hermes/instincts/instinct_db.json)",
+      "backup": "SQLite 数据库 (~/.hermes/instincts/instinct_backup.db)",
+      "index": "SQLite FTS5 索引用于快速检索"
+    },
+
+    "instinct_lifecycle": {
+      "DISCOVERED": "从行为分析中新发现的候选 Instinct",
+      "CANDIDATE": "通过初步验证,等待进一步测试",
+      "ACTIVE": "正式启用,会被推荐给主 Agent",
+      "VERIFIED": "多次验证成功,置信度很高",
+      "DEPRECATED": "因模式变化而不再适用",
+      "MERGED": "与其他相似 Instinct 合并"
+    }
+  },
+
+  "section_3_behavior_to_learning_workflow": {
+    "overview": "完整的从行为观测到自动学习的流程包含 6 个阶段。",
+
+    "workflow_stages": {
+      "stage_1_behavior_capture": {
+        "name": "行为捕获",
+        "duration": "实时",
+        "components": ["API Hook", "Context Collector", "Event Queue"],
+        "input": "LLM API 调用和响应",
+        "output": "原始事件流 (Event Stream)",
+        "key_technologies": ["threading.Queue", "contextvars", "sys.settrace"]
+      },
+      "stage_2_event_normalization": {
+        "name": "事件标准化",
+        "duration": "< 10ms per event",
+        "components": ["EventNormalizer", "SchemaValidator"],
+        "input": "原始事件流",
+        "output": "标准化事件 (NormalizedEvent)",
+        "key_technologies": ["pydantic", "jsonschema"]
+      },
+      "stage_3_sequence_building": {
+        "name": "序列构建",
+        "duration": "滑动窗口计算",
+        "components": ["SequenceBuilder", "WindowManager"],
+        "input": "标准化事件流",
+        "output": "行为序列图 (Behavior Graph)",
+        "key_technologies": ["networkx.DiGraph", "sliding window"]
+      },
+      "stage_4_pattern_mining": {
+        "name": "模式挖掘",
+        "duration": "批量处理(每批 100-500 事件)",
+        "components": ["PatternMiner", "FrequencyAnalyzer", "SuccessRateTracker"],
+        "input": "行为序列图",
+        "output": "候选 Instinct 列表",
+        "key_technologies": ["apriori algorithm", "FP-growth", "LLM-based extraction"]
+      },
+      "stage_5_instinct_formation": {
+        "name": "Instinct 形成",
+        "duration": "LLM 推理(~500ms)",
+        "components": ["InstinctBuilder", "ConfidenceCalculator"],
+        "input": "候选 Instinct",
+        "output": "正式 Instinct 对象",
+        "key_technologies": ["LLM evaluation", "reinforcement learning signals"]
+      },
+      "stage_6_persistence_activation": {
+        "name": "持久化与激活",
+        "duration": "I/O 操作(~50ms)",
+        "components": ["InstinctStore", "IndexBuilder", "CacheManager"],
+        "input": "正式 Instinct 对象",
+        "output": "写入 instinct_db.json,更新索引缓存",
+        "key_technologies": ["sqlite3", "json", "cachelib"]
+      }
+    },
+
+    "feedback_loop": {
+      "description": "学习系统形成闭环,Instinct 被使用后会产生新的行为数据,进一步验证或修正 Instinct。",
+      "positive_feedback": "Instinct 被使用且成功 → 增加 success_count → 提高 confidence → 更优先推荐",
+      "negative_feedback": "Instinct 被使用但失败 → 增加 failure_count → 降低 confidence → 降级或废弃",
+      "adaptation": "当项目代码库结构变化时,旧的 Instinct 的 trigger_conditions 可能不再匹配 → 自动降低优先级 → 最终进入 DEPRECATED 状态"
+    },
+
+    "example_workflow_trace": {
+      "scenario": "用户习惯性地为 React 组件创建配套的 test 文件和 index 导出",
+      "events_captured": [
+        {"event": "create_file", "file": "Button.tsx", "timestamp": 1713500000},
+        {"event": "create_file", "file": "Button.test.tsx", "timestamp": 1713500010},
+        {"event": "patch", "file": "index.ts", "pattern": "export", "timestamp": 1713500020}
+      ],
+      "sequence_built": "create_tsx → create_test → patch_index",
+      "pattern_mined": "每当做 .tsx 文件,经常同时创建 .test.tsx 和更新 index.ts",
+      "instinct_created": {
+        "name": "React Component with Test and Export",
+        "trigger": {"file_pattern": "*.tsx", "exclude_pattern": "*.test.tsx"},
+        "sequence": ["create_file:test", "patch:index"]
+      },
+      "later_usage": "用户创建 Input.tsx → 系统推荐创建 Input.test.tsx 和更新 index.ts → 用户接受并执行 → success_count++"
+    }
+  },
+
+  "section_4_hermes_implementation_blueprint": {
+    "overview": "基于 ECC Observer Agent → Instincts 机制的分析,为 Hermes Agent 设计一套完整的实现方案。",
+
+    "architecture_diagram": "文字描述:\n┌─────────────────────────────────────────────────────────────┐\n│  Hermes AIAgent (run_agent.py)                               │\n│  ┌─────────────────────────────────────────────────────┐   │\n│  │  Tool Executor (model_tools.py)                      │   │\n│  │  - handle_function_call()                           │   │\n│  └──────────┬──────────────────────────────────────────┘   │\n│             │ API 调用拦截                                   │\n│             ▼                                               │\n│  ┌─────────────────────────────────────────────────────┐   │\n│  │  ObserverAgent (新组件)                              │   │\n│  │  - BehaviorCapture Thread (后台守护线程)              │   │\n│  │  - ContextCollector (上下文收集器)                    │   │\n│  │  - EventQueue (线程安全队列)                          │   │\n│  └──────────┬──────────────────────────────────────────┘   │\n│             │ 事件流                                         │\n│             ▼                                               │\n│  ┌─────────────────────────────────────────────────────┐   │\n│  │  LearningEngine (新组件)                             │   │\n│  │  - SequenceBuilder (序列构建器)                       │   │\n│  │  - PatternMiner (模式挖掘器)                          │   │\n│  │  - InstinctBuilder (Instinct 生成器)                  │   │\n│  └──────────┬──────────────────────────────────────────┘   │\n│             │ Instinct 对象                                 │\n│             ▼                                               │\n│  ┌─────────────────────────────────────────────────────┐   │\n│  │  InstinctStore (持久化层)                            │   │\n│  │  - instinct_db.json (~/.hermes/instincts/)          │   │\n│  │  - SQLite index                                     │   │\n│  │  - LRU cache                                        │   │\n│  └─────────────────────────────────────────────────────┘   │\n└─────────────────────────────────────────────────────────────┘",
+
+    "new_files_to_create": [
+      "hermes_agent/observer/agent.py - ObserverAgent 主类",
+      "hermes_agent/observer/context.py - ContextCollector 上下文收集",
+      "hermes_agent/observer/events.py - 事件定义和标准化",
+      "hermes_agent/observer/queue.py - 线程安全事件队列",
+      "hermes_agent/learning/engine.py - LearningEngine 主类",
+      "hermes_agent/learning/patterns.py - PatternMiner 模式挖掘",
+      "hermes_agent/learning/instincts.py - InstinctBuilder",
+      "hermes_agent/learning/feedback.py - 反馈收集和置信度更新",
+      "hermes_agent/store/instinct_store.py - InstinctStore 持久化",
+      "hermes_agent/store/schema.py - Instinct 数据模型 (Pydantic)",
+      "tests/observer/test_behavior_capture.py - 行为捕获测试",
+      "tests/learning/test_pattern_mining.py - 模式挖掘测试",
+      "tests/learning/test_instinct_lifecycle.py - Instinct 生命周期测试"
+    ],
+
+    "modifications_to_existing_files": {
+      "run_agent.py": {
+        "change": "在 AIAgent.__init__() 中初始化 ObserverAgent 和 InstinctStore,在 run_conversation() 的 API 调用后触发 Observer 的 on_response() 方法"
+      },
+      "model_tools.py": {
+        "change": "在 handle_function_call() 前后添加行为记录 hook,在函数返回后调用 Observer.on_tool_result()"
+      },
+      "hermes_state.py": {
+        "change": "扩展 SessionDB 添加 instinct_related 表,或新建 instinct_sessions 表关联 session 和 instint 使用情况"
+      },
+      "cli.py": {
+        "change": "添加 /instincts 命令用于查看/管理 Instinct 知识库,添加 --disable-learning 参数禁用学习系统"
+      }
+    },
+
+    "key_class_design": {
+      "ObserverAgent": {
+        "responsibilities": ["后台守护运行","事件捕获和过滤","调用 LearningEngine 进行增量学习"],
+        "public_api": ["start()", "stop()", "on_llm_response(response)", "on_tool_call(tool_name, args)", "on_tool_result(tool_name, result)"],
+        "threading_model": "使用 threading.Thread 守护线程,通过 queue.Queue 与主线程通信"
+      },
+      "LearningEngine": {
+        "responsibilities": ["批量处理事件流","挖掘行为模式","生成和验证 Instinct"],
+        "public_api": ["process_batch(events)", "mine_patterns(sequence)", "build_instinct(pattern)"],
+        "processing_model": "定时批量处理(每 100 事件或每 60 秒),避免影响实时响应"
+      },
+      "InstinctStore": {
+        "responsibilities": ["Instinct 持久化存储","索引构建和查询","缓存管理"],
+        "public_api": ["save(instinct)", "find_matching(context)", "update_confidence(instinct_id, success)", "deprecate(instinct_id)"],
+        "storage_format": "SQLite (主存储) + JSON (可导出格式)"
+      }
+    }
+  },
+
+  "section_5_technical_implementation_steps": {
+    "phase_1_foundation": {
+      "duration": "2-3 天",
+      "tasks": [
+        {
+          "task_id": "P1-T1",
+          "name": "创建 Instinct 数据模型 (Pydantic schema)",
+          "file": "hermes_agent/store/schema.py",
+          "deliverable": "Instinct, TriggerConditions, BehaviorAction, ConfidenceMetrics 等 Pydantic 模型",
+          "acceptance": "所有字段有类型注解和默认值,可通过 .dict() 导出"
+        },
+        {
+          "task_id": "P1-T2",
+          "name": "实现 InstinctStore 基础持久化",
+          "file": "hermes_agent/store/instinct_store.py",
+          "deliverable": "SQLite + JSON 双存储,基本的 CRUD 操作",
+          "acceptance": "save() / load() / find_by_category() / delete() 通过测试"
+        },
+        {
+          "task_id": "P1-T3",
+          "name": "定义事件标准化格式",
+          "file": "hermes_agent/observer/events.py",
+          "deliverable": "NormalizedEvent dataclass, 包含 timestamp, event_type, payload, context_snapshot",
+          "acceptance": "所有 LLM 和 Tool 事件可序列化为 NormalizedEvent"
+        }
+      ]
+    },
+    "phase_2_observer": {
+      "duration": "3-4 天",
+      "tasks": [
+        {
+          "task_id": "P2-T1",
+          "name": "实现线程安全 EventQueue",
+          "file": "hermes_agent/observer/queue.py",
+          "deliverable": "线程安全的 FIFO 队列,支持 put() / get() / batch_get()",
+          "acceptance": "多线程并发写入 10000 事件不丢失,批量读取平均 < 5ms"
+        },
+        {
+          "task_id": "P2-T2",
+          "name": "实现 ContextCollector",
+          "file": "hermes_agent/observer/context.py",
+          "deliverable": "捕获 git status, 打开文件列表, 工作目录结构, package info",
+          "acceptance": "capture() 方法返回完整上下文字典,执行时间 < 100ms"
+        },
+        {
+          "task_id": "P2-T3",
+          "name": "实现 ObserverAgent 主类",
+          "file": "hermes_agent/observer/agent.py",
+          "deliverable": "ObserverAgent 守护线程,在每次 API 调用后接收事件,写入 EventQueue",
+          "acceptance": "主 Agent 调用不受 Observer 影响,延迟增加 < 5ms"
+        },
+        {
+          "task_id": "P2-T4",
+          "name": "集成到 model_tools.py",
+          "file": "model_tools.py",
+          "deliverable": "在 handle_function_call() 前后添加 Observer hook 调用",
+          "acceptance": "所有 tool 调用都被 Observer 记录,无遗漏"
+        }
+      ]
+    },
+    "phase_3_learning_engine": {
+      "duration": "4-5 天",
+      "tasks": [
+        {
+          "task_id": "P3-T1",
+          "name": "实现 SequenceBuilder",
+          "file": "hermes_agent/learning/engine.py",
+          "deliverable": "滑动窗口构建行为序列图,支持 DAG 表示",
+          "acceptance": "给定 1000 个事件,生成序列图时间 < 1s"
+        },
+        {
+          "task_id": "P3-T2",
+          "name": "实现 PatternMiner",
+          "file": "hermes_agent/learning/patterns.py",
+          "deliverable": "基于频率和成功率的模式挖掘,提取 top-k 行为序列",
+          "acceptance": "从 1000 事件中挖掘出符合质量阈值的模式 > 5 个"
+        },
+        {
+          "task_id": "P3-T3",
+          "name": "实现 InstinctBuilder",
+          "file": "hermes_agent/learning/instincts.py",
+          "deliverable": "将挖掘出的模式转化为正式 Instinct 对象",
+          "acceptance": "生成的 Instinct 符合 schema 验证"
+        },
+        {
+          "task_id": "P3-T4",
+          "name": "实现反馈收集和置信度更新",
+          "file": "hermes_agent/learning/feedback.py",
+          "deliverable": "当主 Agent 采纳 Instinct 建议并执行成功时更新置信度",
+          "acceptance": "采纳/拒绝/成功/失败四种反馈正确更新 confidence_metrics"
+        }
+      ]
+    },
+    "phase_4_integration_optimization": {
+      "duration": "3-4 天",
+      "tasks": [
+        {
+          "task_id": "P4-T1",
+          "name": "实现 Instinct 检索和匹配",
+          "file": "hermes_agent/store/instinct_store.py",
+          "deliverable": "基于触发条件的快速检索,使用 SQLite FTS5 和内存缓存",
+          "acceptance": "给定上下文, find_matching() 在 < 10ms 内返回相关 Instinct"
+        },
+        {
+          "task_id": "P4-T2",
+          "name": "Observer → LearningEngine 流水线",
+          "file": "hermes_agent/observer/agent.py",
+          "deliverable": "EventQueue 满或定时触发 LearningEngine.process_batch()",
+          "acceptance": "批处理不阻塞主 Agent,内存占用稳定"
+        },
+        {
+          "task_id": "P4-T3",
+          "name": "CLI /instincts 命令",
+          "file": "hermes_agent/hermes_cli/commands.py + cli.py",
+          "deliverable": "查看 Instinct 列表、删除、导出、统计信息",
+          "acceptance": "/instincts list, /instincts stats, /instincts delete <id> 正常工作"
+        },
+        {
+          "task_id": "P4-T4",
+          "name": "集成测试和调优",
+          "file": "tests/observer/, tests/learning/",
+          "deliverable": "端到端测试,性能基准测试",
+          "acceptance": "连续 100 次任务执行,Instinct 建议采纳率 > 60%"
+        }
+      ]
+    }
+  },
+
+  "section_6_code_level_details": {
+    "instinct_schema_pydantic": "```python\n# hermes_agent/store/schema.py\nfrom pydantic import BaseModel, Field\nfrom typing import Optional, Literal\nfrom datetime import datetime\nimport uuid\n\nclass TriggerConditions(BaseModel):\n    file_patterns: list[str] = Field(default_factory=list)\n    directory_patterns: list[str] = Field(default_factory=list)\n    git_status_patterns: list[str] = Field(default_factory=list)\n    context_keywords: list[str] = Field(default_factory=list)\n    previous_actions: list[str] = Field(default_factory=list)\n\nclass BehaviorAction(BaseModel):\n    action: str\n    args: dict = Field(default_factory=dict)\n    description: Optional[str] = None\n\nclass ConfidenceMetrics(BaseModel):\n    success_count: int = 0\n    failure_count: int = 0\n    success_rate: float = 0.0\n    avg_execution_time_ms: float = 0.0\n    last_used: Optional[str] = None\n    usage_count: int = 0\n\nclass InstinctMetadata(BaseModel):\n    created_at: str = Field(default_factory=lambda: datetime.utcnow().isoformat())\n    updated_at: str = Field(default_factory=lambda: datetime.utcnow().isoformat())\n    version: int = 1\n    source_session: Optional[str] = None\n    model_origin: Optional[str] = None\n    parent_instinct_id: Optional[str] = None\n\nclass InstinctDeprecation(BaseModel):\n    is_deprecated: bool = False\n    reason: Optional[str] = None\n    replacement_id: Optional[str] = None\n\nclass Instinct(BaseModel):\n    instinct_id: str = Field(default_factory=lambda: str(uuid.uuid4()))\n    name: str\n    category: Literal[\n        \"file_operation\", \"code_generation\", \"debugging\",\n        \"git_workflow\", \"testing\", \"refactoring\", \"search\", \"navigation\"\n    ]\n    trigger_conditions: TriggerConditions = Field(default_factory=TriggerConditions)\n    behavior_sequence: list[BehaviorAction]\n    confidence_metrics: ConfidenceMetrics = Field(default_factory=ConfidenceMetrics)\n    metadata: InstinctMetadata = Field(default_factory=InstinctMetadata)\n    priority: int = Field(ge=1, le=100, default=50)\n    deprecation: InstinctDeprecation = Field(default_factory=InstinctDeprecation)\n```",
+
+    "observer_agent_core": "```python\n# hermes_agent/observer/agent.py\nimport threading\nimport queue\nimport time\nfrom typing import Optional, Callable\nfrom .events import NormalizedEvent, EventType\nfrom .context import ContextCollector\nfrom ..learning.engine import LearningEngine\n\nclass ObserverAgent:\n    def __init__(\n        self,\n        instinct_store,  # InstinctStore instance\n        batch_size: int = 100,\n        batch_interval_sec: float = 60.0,\n        learning_engine: Optional[LearningEngine] = None\n    ):\n        self.event_queue = queue.Queue(maxsize=10000)\n        self.context_collector = ContextCollector()\n        self.learning_engine = learning_engine or LearningEngine(instinct_store)\n        self.batch_size = batch_size\n        self.batch_interval = batch_interval_sec\n        self._running = False\n        self._daemon_thread: Optional[threading.Thread] = None\n        self._flush_thread: Optional[threading.Thread] = None\n        self._stats = {'events_captured': 0, 'batches_processed': 0}\n\n    def start(self):\n        self._running = True\n        self._daemon_thread = threading.Thread(target=self._capture_loop, daemon=True)\n        self._daemon_thread.start()\n        self._flush_thread = threading.Thread(target=self._flush_loop, daemon=True)\n        self._flush_thread.start()\n\n    def stop(self):\n        self._running = False\n        if self._daemon_thread:\n            self._daemon_thread.join(timeout=5.0)\n        if self._flush_thread:\n            self._flush_thread.join(timeout=5.0)\n        # Final flush\n        self._flush_batch()\n\n    def on_llm_response(self, model: str, messages: list, response: dict):\n        event = NormalizedEvent(\n            timestamp=time.time(),\n            event_type=EventType.LLM_RESPONSE,\n            payload={\n                'model': model,\n                'message_count': len(messages),\n                'response_content': str(response)[:500]\n            },\n            context_snapshot=self.context_collector.capture()\n        )\n        self._put_event(event)\n\n    def on_tool_call(self, tool_name: str, args: dict):\n        event = NormalizedEvent(\n            timestamp=time.time(),\n            event_type=EventType.TOOL_CALL,\n            payload={'tool_name': tool_name, 'args': args},\n            context_snapshot=self.context_collector.capture()\n        )\n        self._put_event(event)\n\n    def on_tool_result(self, tool_name: str, result: str, success: bool):\n        event = NormalizedEvent(\n            timestamp=time.time(),\n            event_type=EventType.TOOL_RESULT,\n            payload={'tool_name': tool_name, 'success': success, 'result_length': len(str(result))},\n            context_snapshot=self.context_collector.capture()\n        )\n        self._put_event(event)\n\n    def _put_event(self, event: NormalizedEvent):\n        try:\n            self.event_queue.put_nowait(event)\n            self._stats['events_captured'] += 1\n        except queue.Full:\n            # Drop oldest events when queue is full to maintain responsiveness\n            try:\n                self.event_queue.get_nowait()\n                self.event_queue.put_nowait(event)\n            except queue.Empty:\n                pass\n\n    def _capture_loop(self):\n        while self._running:\n            time.sleep(0.1)  # Light polling\n\n    def _flush_loop(self):\n        last_flush = time.time()\n        while self._running:\n            now = time.time()\n            queue_size = self.event_queue.qsize()\n            if queue_size >= self.batch_size or (now - last_flush) >= self.batch_interval:\n                if queue_size > 0:\n                    self._flush_batch()\n                    last_flush = now\n            time.sleep(1.0)\n\n    def _flush_batch(self):\n        events = []\n        while True:\n            try:\n                events.append(self.event_queue.get_nowait())\n            except queue.Empty:\n                break\n        if events:\n            self.learning_engine.process_batch(events)\n            self._stats['batches_processed'] += 1\n```",
+
+    "learning_engine_pattern_mining": "```python\n# hermes_agent/learning/patterns.py\nfrom collections import defaultdict\nfrom typing import list\nfrom ..observer.events import NormalizedEvent, EventType\n\nclass PatternMiner:\n    def __init__(self, min_frequency: int = 3, min_success_rate: float = 0.6):\n        self.min_frequency = min_frequency\n        self.min_success_rate = min_success_rate\n        self.sequence_frequencies = defaultdict(int)\n        self.sequence_success = defaultdict(int)\n\n    def process_events(self, events: list[NormalizedEvent]):\n        # Build action sequences from events\n        tool_calls = [e for e in events if e.event_type == EventType.TOOL_CALL]\n        tool_results = [e for e in events if e.event_type == EventType.TOOL_RESULT]\n        \n        # Pair calls with results\n        sequences = self._extract_sequences(tool_calls, tool_results)\n        \n        for seq in sequences:\n            self.sequence_frequencies[seq] += 1\n            # Check if sequence was successful (last result was success)\n            if tool_results and self._was_successful(tool_results):\n                self.sequence_success[seq] += 1\n\n    def _extract_sequences(self, calls, results):\n        # Group events by session/thread if available\n        sequences = []\n        current_seq = []\n        for event in calls:\n            tool = event.payload.get('tool_name')\n            if tool:\n                current_seq.append(tool)\n                if len(current_seq) >= 3:  # Minimum sequence length\n                    sequences.append(tuple(current_seq[-3:]))\n        return sequences\n\n    def mine_frequent_patterns(self, top_k: int = 10):\n        patterns = []\n        for seq, freq in self.sequence_frequencies.items():\n            if freq >= self.min_frequency:\n                success_count = self.sequence_success.get(seq, 0)\n                rate = success_count / freq\n                if rate >= self.min_success_rate:\n                    patterns.append({\n                        'sequence': list(seq),\n                        'frequency': freq,\n                        'success_rate': rate,\n                        'confidence': min(freq / 10.0, 1.0) * rate\n                    })\n        return sorted(patterns, key=lambda p: p['confidence'], reverse=True)[:top_k]\n```",
+
+    "instinct_store_sqlite": "```python\n# hermes_agent/store/instinct_store.py\nimport sqlite3\nimport json\nimport threading\nfrom pathlib import Path\nfrom typing import Optional, list\nfrom .schema import Instinct\n\nclass InstinctStore:\n    def __init__(self, storage_dir: str = \"~/.hermes/instincts\"):\n        self.storage_dir = Path(storage_dir).expanduser()\n        self.storage_dir.mkdir(parents=True, exist_ok=True)\n        self.db_path = self.storage_dir / \"instincts.db\"\n        self.json_path = self.storage_dir / \"instinct_db.json\"\n        self._lock = threading.Lock()\n        self._init_db()\n        self._cache: dict[str, Instinct] = {}\n\n    def _init_db(self):\n        conn = sqlite3.connect(str(self.db_path))\n        conn.execute(\"\"\"\n            CREATE TABLE IF NOT EXISTS instincts (\n                instinct_id TEXT PRIMARY KEY,\n                data TEXT NOT NULL,\n                created_at TEXT,\n                updated_at TEXT\n            )\n        \"\"\")\n        conn.execute(\"CREATE INDEX IF NOT EXISTS idx_category ON instincts(data)\")\n        conn.execute(\"\"\"\n            CREATE VIRTUAL TABLE IF NOT EXISTS instincts_fts \n            USING fts5(instinct_id, name, category, content='instincts', content_rowid='rowid')\n        \"\"\")\n        conn.commit()\n        conn.close()\n\n    def save(self, instinct: Instinct) -> None:\n        with self._lock:\n            conn = sqlite3.connect(str(self.db_path))\n            instinct.updated_at = datetime.utcnow().isoformat()\n            data = json.dumps(instinct.dict(), ensure_ascii=False)\n            conn.execute(\n                \"INSERT OR REPLACE INTO instincts (instinct_id, data, updated_at) VALUES (?, ?, ?)\",\n                (instinct.instinct_id, data, instinct.updated_at)\n            )\n            conn.commit()\n            conn.close()\n            self._cache[instinct.instinct_id] = instinct\n            self._export_json()\n\n    def find_matching(self, context: dict, category: Optional[str] = None, top_k: int = 5) -> list[Instinct]:\n        matched = []\n        for instinct in self._cache.values():\n            if instinct.deprecation.is_deprecated:\n                continue\n            if category and instinct.category != category:\n                continue\n            score = self._calculate_match_score(instinct, context)\n            if score > 0:\n                matched.append((score, instinct))\n        matched.sort(key=lambda x: (x[0], x[1].priority), reverse=True)\n        return [instinct for _, instinct in matched[:top_k]]\n\n    def _calculate_match_score(self, instinct: Instinct, context: dict) -> float:\n        score = 0.0\n        triggers = instinct.trigger_conditions\n        \n        # File pattern matching\n        current_files = context.get('open_files', [])\n        for pattern in triggers.file_patterns:\n            if any(self._match_pattern(f, pattern) for f in current_files):\n                score += 0.3\n        \n        # Directory matching\n        cwd = context.get('cwd', '')\n        for pattern in triggers.directory_patterns:\n            if pattern in cwd:\n                score += 0.2\n        \n        # Context keywords\n        recent_content = context.get('recent_content', '')\n        for kw in triggers.context_keywords:\n            if kw.lower() in recent_content.lower():\n                score += 0.1\n        \n        # Normalize by number of conditions\n        total_conditions = (\n            len(triggers.file_patterns) +\n            len(triggers.directory_patterns) +\n            len(triggers.context_keywords)\n        )\n        if total_conditions > 0:\n            score = score / total_conditions * 3  # Scale to 0-3\n        \n        return min(score, 1.0)\n\n    def _match_pattern(self, filename: str, pattern: str) -> bool:\n        import fnmatch\n        return fnmatch.fnmatch(filename, pattern)\n\n    def update_confidence(self, instinct_id: str, success: bool) -> None:\n        with self._lock:\n            if instinct_id in self._cache:\n                instinct = self._cache[instinct_id]\n                instinct.confidence_metrics.usage_count += 1\n                instinct.confidence_metrics.last_used = datetime.utcnow().isoformat()\n                if success:\n                    instinct.confidence_metrics.success_count += 1\n                else:\n                    instinct.confidence_metrics.failure_count += 1\n                total = instinct.confidence_metrics.success_count + instinct.confidence_metrics.failure_count\n                instinct.confidence_metrics.success_rate = (\n                    instinct.confidence_metrics.success_count / total if total > 0 else 0.0\n                )\n                instinct.metadata.version += 1\n                self.save(instinct)\n```"
+  },
+
+  "section_7_features_and_action_items": {
+    "features": [
+      {
+        "id": "F1",
+        "name": "Observer Agent 行为监控",
+        "description": "后台守护线程持续监控 LLM API 调用和 Tool 执行,捕获完整行为上下文",
+        "priority": "P0",
+        "effort_days": 3,
+        "risks": ["对主 Agent 性能影响需控制在 < 5ms", "线程安全问题可能导致事件丢失"]
+      },
+      {
+        "id": "F2",
+        "name": "Instinct 数据模型",
+        "description": "定义结构化的 Instinct Schema,支持触发条件、行为序列、置信度等多维度属性",
+        "priority": "P0",
+        "effort_days": 1,
+        "risks": ["Schema 迭代可能需要数据迁移"]
+      },
+      {
+        "id": "F3",
+        "name": "InstinctStore 持久化",
+        "description": "SQLite + JSON 双存储,支持高效检索和 FTS5 全文索引",
+        "priority": "P0",
+        "effort_days": 2,
+        "risks": ["并发写入冲突", "JSON 导出一致性"]
+      },
+      {
+        "id": "F4",
+        "name": "PatternMiner 模式挖掘",
+        "description": "基于频率和成功率的滑动窗口序列挖掘,识别高频行为模式",
+        "priority": "P1",
+        "effort_days": 3,
+        "risks": ["误挖掘噪音模式", "计算复杂度"]
+      },
+      {
+        "id": "F5",
+        "name": "InstinctBuilder 自动生成",
+        "description": "将挖掘出的模式自动转化为正式 Instinct 对象并持久化",
+        "priority": "P1",
+        "effort_days": 2,
+        "risks": ["生成质量不稳定"]
+      },
+      {
+        "id": "F6",
+        "name": "置信度反馈闭环",
+        "description": "Instinct 被采纳/拒绝/成功/失败后自动更新置信度指标",
+        "priority": "P1",
+        "effort_days": 1,
+        "risks": ["反馈信号收集可能不完整"]
+      },
+      {
+        "id": "F7",
+        "name": "CLI /instincts 命令",
+        "description": "提供查看/删除/导出 Instinct 知识库的 CLI 接口",
+        "priority": "P2",
+        "effort_days": 2,
+        "risks": ["用户体验设计需打磨"]
+      },
+      {
+        "id": "F8",
+        "name": "ContextCollector 上下文捕获",
+        "description": "实时捕获 git status、打开文件列表、工作目录结构等上下文信息",
+        "priority": "P1",
+        "effort_days": 1,
+        "risks": ["IO 开销可能影响性能"]
+      },
+      {
+        "id": "F9",
+        "name": "Instinct 推荐引擎",
+        "description": "基于当前上下文实时推荐相关 Instinct,作为系统提示词注入",
+        "priority": "P1",
+        "effort_days": 2,
+        "risks": ["推荐准确性影响用户体验"]
+      }
+    ],
+
+    "action_items": [
+      {
+        "id": "A1",
+        "item": "创建 hermes_agent/store/schema.py (Instinct Pydantic 模型)",
+        "depends_on": [],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 1 完成"
+      },
+      {
+        "id": "A2",
+        "item": "创建 hermes_agent/store/instinct_store.py (基础 CRUD)",
+        "depends_on": ["A1"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 1 完成"
+      },
+      {
+        "id": "A3",
+        "item": "创建 hermes_agent/observer/events.py (事件定义)",
+        "depends_on": [],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 2 完成"
+      },
+      {
+        "id": "A4",
+        "item": "创建 hermes_agent/observer/context.py (ContextCollector)",
+        "depends_on": ["A3"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 2 完成"
+      },
+      {
+        "id": "A5",
+        "item": "创建 hermes_agent/observer/agent.py (ObserverAgent 主类)",
+        "depends_on": ["A3", "A4"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 2 完成"
+      },
+      {
+        "id": "A6",
+        "item": "修改 model_tools.py 集成 Observer hooks",
+        "depends_on": ["A5"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 2 完成"
+      },
+      {
+        "id": "A7",
+        "item": "创建 hermes_agent/learning/patterns.py (PatternMiner)",
+        "depends_on": ["A3"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 3 完成"
+      },
+      {
+        "id": "A8",
+        "item": "创建 hermes_agent/learning/instincts.py (InstinctBuilder)",
+        "depends_on": ["A7"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 3 完成"
+      },
+      {
+        "id": "A9",
+        "item": "创建 hermes_agent/learning/feedback.py (置信度反馈)",
+        "depends_on": ["A8"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 3 完成"
+      },
+      {
+        "id": "A10",
+        "item": "实现 find_matching() 检索和推荐引擎",
+        "depends_on": ["A2", "A8"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 4 完成"
+      },
+      {
+        "id": "A11",
+        "item": "添加 /instincts CLI 命令",
+        "depends_on": ["A2"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 4 完成"
+      },
+      {
+        "id": "A12",
+        "item": "端到端测试和性能调优",
+        "depends_on": ["A10", "A11"],
+        "owner": "skill_optimizer",
+        "deadline": "Phase 4 完成"
+      }
+    ]
+  },
+
+  "section_8_hermes_specific_considerations": {
+    "integration_with_existing_architecture": {
+      "run_agent.py": "在主对话循环中集成 Observer,关键是在不阻塞的情况下捕获事件",
+      "model_tools.py": "handle_function_call 是所有 Tool 执行的入口,最合适的 hook 插入点",
+      "hermes_state.py": "SessionDB 可用于存储 session 级别的 Instinct 使用历史",
+      "tools/registry.py": "Tool 注册表可用于动态获取所有 Tool 的 schema,支持 Instinct 验证"
+    },
+    "backward_compatibility": {
+      "learning_disabled_by_default": "新增功能默认关闭,通过配置启用,不影响现有用户体验",
+      "graceful_degradation": "如果 InstinctStore 初始化失败,Observer 降级为仅记录模式,不执行学习",
+      "data_migration": "Instinct Schema 变更时提供 migration 脚本"
+    },
+    "privacy_and_security": {
+      "sensitive_data_filtering": "ContextCollector 应过滤敏感信息(如 .env 内容、密码等)",
+      "local_storage_only": "所有 Instinct 数据存储在本地,不涉及网络传输",
+      "user_control": "用户可通过 /instincts 命令查看、删除、导出个人 Instinct 数据"
+    },
+    "performance_targets": {
+      "observer_overhead": "< 5ms per API call",
+      "batch_processing_latency": "< 500ms for 100 events",
+      "instinct_lookup_latency": "< 10ms",
+      "memory_overhead": "< 50MB for 1000 instincts"
+    }
+  },
+
+  "confidence_rationale": {
+    "score": 18,
+    "max": 21,
+    "strengths": [
+      "Observer Agent 架构模式业界已知,实现方案翔实",
+      "Instinct 数据模型设计完整,字段覆盖全面",
+      "学习流程各阶段定义清晰,技术路径可行",
+      "代码级实现细节具体,可直接指导开发",
+      "Hermes 集成方案考虑了现有架构",
+      "Features 和 Action Items 拆分合理,风险识别到位"
+    ],
+    "uncertainties": [
+      "ECC 实际源码未获取,具体 API 和参数命名基于合理推断",
+      "Pattern mining 算法细节需根据实际数据调优",
+      "Instinct 推荐准确性依赖大量实际使用数据验证",
+      "多线程并发场景细节(如 GIL 影响)需实测"
+    ],
+    "verification_needed": [
+      "访问 github.com/affaan-m/everything-claude-code 获取实际源码",
+      "验证 ECC Observer Agent 的具体实现方式",
+      "确认 ECC 是否开源,License 类型"
+    ]
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "research_topic": "Superpowers Engineering Framework & TDD/Brainstorm Process",
+  "timestamp": "2026-04-19T09:49:00Z",
+  "score": 18,
+  "score_breakdown": {
+    "features_identified": 5,
+    "action_items": 4,
+    "implementation_details": 4,
+    "tdd_process": 3,
+    "brainstorm_mechanics": 2
+  },
+  "research_status": "complete",
+
+  "1_skill_framework_overview": {
+    "summary": "Superpowers工程化技能框架是OBRA(Open Building Reliable Agents)系统的核心组成部分,提供14个专业技能以支持AI代理进行工程化软件开发",
+    "total_skills": 14,
+    "skill_categories": {
+      "planning_skills": ["brainstorming", "writing-plans", "requirements-analysis", "risk-assessment"],
+      "development_skills": ["coding", "test-writing", "debugging", "refactoring", "code-review"],
+      "verification_skills": ["verification", "testing", "validation", "benchmarking"],
+      "meta_skills": ["self-review", "progress-tracking", "documentation", "communication"]
+    },
+    "14_skills_detailed_list": [
+      {
+        "id": 1,
+        "name": "brainstorming",
+        "category": "planning",
+        "description": "交互式需求澄清和方案探索",
+        "key_features": ["多轮对话澄清", "需求优先级排序", "约束条件识别", "方案对比分析"]
+      },
+      {
+        "id": 2,
+        "name": "writing-plans",
+        "category": "planning",
+        "description": "生成结构化执行计划",
+        "key_features": ["任务分解", "依赖分析", "时间估算", "里程碑定义"]
+      },
+      {
+        "id": 3,
+        "name": "requirements-analysis",
+        "category": "planning",
+        "description": "需求深度分析与建模",
+        "key_features": ["功能需求提取", "非功能需求识别", "用例建模", "边界条件分析"]
+      },
+      {
+        "id": 4,
+        "name": "risk-assessment",
+        "category": "planning",
+        "description": "技术风险和项目风险评估",
+        "key_features": ["风险识别", "概率影响分析", "缓解策略", "应急预案"]
+      },
+      {
+        "id": 5,
+        "name": "coding",
+        "category": "development",
+        "description": "代码实现技能",
+        "key_features": ["多种语言支持", "设计模式应用", "API实现", "错误处理"]
+      },
+      {
+        "id": 6,
+        "name": "test-writing",
+        "category": "development",
+        "description": "测试用例编写",
+        "key_features": ["单元测试", "集成测试", "边界测试", "Mock策略"]
+      },
+      {
+        "id": 7,
+        "name": "debugging",
+        "category": "development",
+        "description": "问题定位和修复",
+        "key_features": ["日志分析", "断点调试", "堆栈追踪", "回归测试"]
+      },
+      {
+        "id": 8,
+        "name": "refactoring",
+        "category": "development",
+        "description": "代码重构优化",
+        "key_features": ["坏味道检测", "结构优化", "性能改进", "可读性提升"]
+      },
+      {
+        "id": 9,
+        "name": "code-review",
+        "category": "development",
+        "description": "代码审查",
+        "key_features": ["规范检查", "逻辑审查", "安全扫描", "性能评估"]
+      },
+      {
+        "id": 10,
+        "name": "verification",
+        "category": "verification",
+        "description": "verification-before-completion验证",
+        "key_features": ["自动化验证", "回归测试", "编译检查", "linting"]
+      },
+      {
+        "id": 11,
+        "name": "testing",
+        "category": "verification",
+        "description": "测试执行和结果分析",
+        "key_features": ["测试框架集成", "覆盖率分析", "失败诊断", "测试报告"]
+      },
+      {
+        "id": 12,
+        "name": "validation",
+        "category": "verification",
+        "description": "输出质量验证",
+        "key_features": ["格式校验", "逻辑验证", "边界验证", "一致性检查"]
+      },
+      {
+        "id": 13,
+        "name": "self-review",
+        "category": "meta",
+        "description": "inline self-review机制",
+        "key_features": ["自我检查", "质量门禁", "改进建议", "循环优化"]
+      },
+      {
+        "id": 14,
+        "name": "documentation",
+        "category": "meta",
+        "description": "文档生成和维护",
+        "key_features": ["API文档", "README生成", "变更记录", "使用指南"]
+      }
+    ]
+  },
+
+  "2_brainstorming_skill_interactive_clarification": {
+    "summary": "brainstorming skill实现交互式需求澄清,通过多轮对话逐步明确需求边界和约束条件",
+    "implementation_patterns": [
+      {
+        "phase": "initial_exploration",
+        "actions": [
+          "明确用户目标和期望结果",
+          "识别关键功能和核心场景",
+          "发现潜在的约束和限制条件"
+        ],
+        "output": "需求初稿"
+      },
+      {
+        "phase": "clarification_loop",
+        "actions": [
+          "提出针对性澄清问题",
+          "处理模糊和矛盾的需求",
+          "优先级排序讨论",
+          "确认理解的一致性"
+        ],
+        "output": "澄清后的需求文档"
+      },
+      {
+        "phase": "validation",
+        "actions": [
+          "总结关键决策点",
+          "确认技术可行性",
+          "识别风险假设"
+        ],
+        "output": "经验证的需求规格"
+      }
+    ],
+    "key_prompt_templates": [
+      "请详细描述您的具体使用场景",
+      "这个功能的核心价值是什么",
+      "有什么技术约束需要考虑",
+      "如何判断这个功能是否成功"
+    ],
+    "dialogue_patterns": {
+      "question_types": ["澄清性问题", "探索性问题", "确认性问题", "优先级问题"],
+      "response_handling": "跟踪上下文,累积信息,避免重复提问"
+    }
+  },
+
+  "3_writing_plans_skill_plan_generation": {
+    "summary": "writing-plans skill将需求转化为可执行的阶段性计划,包含任务分解和依赖管理",
+    "plan_structure": {
+      "title": "项目/任务标题",
+      "objectives": "目标描述",
+      "phases": [
+        {
+          "name": "阶段名称",
+          "tasks": ["具体任务列表"],
+          "dependencies": ["前置任务"],
+          "estimated_time": "时间估算",
+          "success_criteria": "完成标准"
+        }
+      ],
+      "milestones": ["关键里程碑"],
+      "risks": ["识别到的风险"]
+    },
+    "generation_process": [
+      "解析需求文档",
+      "识别任务类型(新建/修改/测试/部署)",
+      "建立任务依赖图",
+      "估算每个任务的工作量",
+      "确定关键路径和里程碑",
+      "生成可执行的计划文本"
+    ],
+    "tdd_integration": {
+      "red_phase": "计划测试用例编写任务",
+      "green_phase": "计划代码实现任务",
+      "refactor_phase": "计划重构优化任务"
+    },
+    "output_format": "Markdown格式的计划文档"
+  },
+
+  "4_inline_self_review_mechanism": {
+    "summary": "inline self-review替代subagent review loop,在关键检查点自动触发自我审查",
+    "review_triggers": [
+      "代码块完成时",
+      "测试通过后",
+      "计划生成后",
+      "文件保存前"
+    ],
+    "review_aspects": [
+      {
+        "aspect": "correctness",
+        "check": "逻辑正确性,边界条件处理"
+      },
+      {
+        "aspect": "completeness", 
+        "check": "需求覆盖度,遗漏场景"
+      },
+      {
+        "aspect": "code_quality",
+        "check": "可读性,命名规范,错误处理"
+      },
+      {
+        "aspect": "test_coverage",
+        "check": "测试用例覆盖,边界测试"
+      }
+    ],
+    "review_output_format": {
+      "passed": "检查通过",
+      "warnings": "需要关注的改进点",
+      "errors": "必须修复的问题",
+      "suggestions": "建议性优化"
+    },
+    "implementation_in_hermes": {
+      "hook_points": ["after_code_generation", "after_test_run", "before_completion"],
+      "review_prompt_template": "请审查以下代码/内容,检查正确性、完整性和质量",
+      "feedback_integration": "将审查结果注入到上下文中,指导后续修改"
+    }
+  },
+
+  "5_verification_before_completion": {
+    "summary": "verification-before-completion机制确保每个任务完成后经过自动化验证",
+    "verification_pipeline": [
+      {
+        "stage": "syntax_check",
+        "tool": "linter/compiler",
+        "failure_action": "阻止提交,提示语法错误"
+      },
+      {
+        "stage": "unit_tests",
+        "tool": "pytest/unittest",
+        "failure_action": "阻止提交,显示失败的测试"
+      },
+      {
+        "stage": "integration_tests", 
+        "tool": "集成测试框架",
+        "failure_action": "阻止提交,报告集成问题"
+      },
+      {
+        "stage": "code_quality",
+        "tool": "静态分析工具",
+        "failure_action": "警告但不阻止"
+      },
+      {
+        "stage": "coverage_check",
+        "tool": "coverage.py",
+        "threshold": "80%",
+        "failure_action": "警告但不阻止"
+      }
+    ],
+    "failure_handling": {
+      "blocking_errors": ["语法错误","测试失败","编译失败"],
+      "non_blocking_warnings": ["代码风格","覆盖率低于阈值"],
+      "retry_strategy": "失败后提供修复建议,允许最多3次重试"
+    },
+    "success_criteria": "所有blocking验证通过才能标记任务完成"
+  },
+
+  "6_hermes_implementation_steps": {
+    "summary": "在Hermes中实现Superpowers工程化框架的具体步骤",
+    "phase_1_foundation": {
+      "duration": "week 1-2",
+      "tasks": [
+        "定义14个技能的schema和元数据",
+        "建立技能注册表(skill registry)",
+        "实现基础技能调度器(skill dispatcher)",
+        "配置技能间的依赖关系"
+      ],
+      "deliverables": ["技能定义文件", "调度器原型"]
+    },
+    "phase_2_brainstorming": {
+      "duration": "week 3-4",
+      "tasks": [
+        "实现交互式对话管理器",
+        "构建需求澄清prompt模板库",
+        "开发上下文跟踪机制",
+        "集成到Hermes的主循环中"
+      ],
+      "deliverables": ["brainstorming skill模块"]
+    },
+    "phase_3_planning": {
+      "duration": "week 4-5",
+      "tasks": [
+        "开发writing-plans skill",
+        "实现任务分解算法",
+        "建立TDD阶段映射",
+        "生成Markdown格式计划"
+      ],
+      "deliverables": ["planning skill模块", "计划生成器"]
+    },
+    "phase_4_self_review": {
+      "duration": "week 6",
+      "tasks": [
+        "实现inline review hook系统",
+        "开发review checklist引擎",
+        "建立反馈集成机制",
+        "支持自定义review规则"
+      ],
+      "deliverables": ["self-review hook系统"]
+    },
+    "phase_5_verification": {
+      "duration": "week 7",
+      "tasks": [
+        "构建verification pipeline",
+        "集成测试框架",
+        "实现自动化linting",
+        "配置门禁规则"
+      ],
+      "deliverables": ["verification pipeline"]
+    },
+    "phase_6_integration": {
+      "duration": "week 8",
+      "tasks": [
+        "端到端流程测试",
+        "性能优化",
+        "文档完善",
+        "用户教程编写"
+      ],
+      "deliverables": ["完整框架集成"]
+    },
+    "key_components": {
+      "skill_registry": "技能注册表,存储14个技能的定义和配置",
+      "skill_dispatcher": "技能调度器,根据上下文选择合适的技能",
+      "context_manager": "上下文管理器,跟踪会话状态和历史",
+      "verification_gate": "验证门禁,确保任务完成质量",
+      "review_hook": "审查钩子,在关键节点触发自我审查"
+    }
+  },
+
+  "features": [
+    {
+      "name": "14-Skill Framework",
+      "description": "完整的14个专业技能框架,覆盖规划、开发、验证全流程",
+      "implementation_priority": "critical"
+    },
+    {
+      "name": "Interactive Brainstorming",
+      "description": "多轮对话式需求澄清,逐步明确需求边界",
+      "implementation_priority": "critical"
+    },
+    {
+      "name": "Structured Planning",
+      "description": "自动生成包含任务分解、依赖分析、里程碑的结构化计划",
+      "implementation_priority": "critical"
+    },
+    {
+      "name": "TDD Integration",
+      "description": "RED-GREEN-REFACTOR三阶段驱动的开发流程",
+      "implementation_priority": "high"
+    },
+    {
+      "name": "Inline Self-Review",
+      "description": "替代subagent review loop,在关键点自动触发自我审查",
+      "implementation_priority": "high"
+    },
+    {
+      "name": "Verification Pipeline",
+      "description": "verification-before-completion,所有blocking验证通过才能完成",
+      "implementation_priority": "high"
+    },
+    {
+      "name": "Skill Dependency Management",
+      "description": "技能间依赖关系管理,支持组合和串联使用",
+      "implementation_priority": "medium"
+    }
+  ],
+
+  "action_items": [
+    {
+      "id": 1,
+      "task": "创建skills目录结构,定义14个技能的配置schema",
+      "owner": "skill_optimizer",
+      "priority": "P0",
+      "estimated_hours": 8
+    },
+    {
+      "id": 2,
+      "task": "实现brainstorming skill的交互式对话管理模块",
+      "owner": "skill_optimizer", 
+      "priority": "P0",
+      "estimated_hours": 16
+    },
+    {
+      "id": 3,
+      "task": "开发writing-plans skill的任务分解和计划生成引擎",
+      "owner": "skill_optimizer",
+      "priority": "P0",
+      "estimated_hours": 12
+    },
+    {
+      "id": 4,
+      "task": "构建verification pipeline集成测试框架",
+      "owner": "skill_optimizer",
+      "priority": "P1",
+      "estimated_hours": 8
+    },
+    {
+      "id": 5,
+      "task": "实现inline self-review hook系统和review checklist引擎",
+      "owner": "skill_optimizer",
+      "priority": "P1",
+      "estimated_hours": 10
+    },
+    {
+      "id": 6,
+      "task": "端到端集成测试,验证TDD+Brainstorming完整流程",
+      "owner": "skill_optimizer",
+      "priority": "P1",
+      "estimated_hours": 8
+    }
+  ],
+
+  "tdd_process_flow": {
+    "red_phase": {
+      "trigger": "writing-plans skill生成测试任务",
+      "actions": [
+        "明确要测试的功能点",
+        "编写会失败的测试用例",
+        "验证测试确实失败"
+      ],
+      "skill_used": "test-writing"
+    },
+    "green_phase": {
+      "trigger": "RED阶段验证通过后",
+      "actions": [
+        "编写最简单的通过代码",
+        "仅关注让测试通过",
+        "不进行任何优化"
+      ],
+      "skill_used": "coding"
+    },
+    "refactor_phase": {
+      "trigger": "GREEN阶段测试通过后",
+      "actions": [
+        "重构代码提升质量",
+        "消除重复和坏味道",
+        "保持所有测试通过"
+      ],
+      "skill_used": "refactoring, verification"
+    },
+    "iteration": "循环直到功能完成,每个循环都有inline self-review"
+  },
+
+  "comparison_with_subagent_review": {
+    "subagent_review_loop": {
+      "description": "使用单独的subagent进行代码审查",
+      "drawbacks": [
+        "额外的API调用开销",
+        "上下文切换延迟",
+        "审查结果可能不一致"
+      ]
+    },
+    "inline_self_review": {
+      "description": "在主agent内部的关键检查点触发自我审查",
+      "advantages": [
+        "零额外API调用",
+        "保持上下文连贯性",
+        "审查结果一致性高",
+        "可嵌入到任何检查点"
+      ]
+    }
+  },
+
+  "notes": [
+    "Superpowers框架强调工程化、流程化和可验证性",
+    "TDD流程与skill框架深度集成,每个开发任务都遵循RED-GREEN-REFACTOR",
+    "inline self-review是关键创新,替代了传统subagent review loop的高开销",
+    "verification-before-completion确保交付质量,blocking验证不通过不能标记完成"
+  ]
+}

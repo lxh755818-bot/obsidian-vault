@@ -1,0 +1,27 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-25T12:01:54.760140",
+  "errors_found": 2,
+  "errors_closed": 0,
+  "errors_open": 2,
+  "reports": [
+    {
+      "error_id": "err_001",
+      "error_type": "ConnectionTimeout",
+      "summary": "飞书API连接超时，可能是网络问题或飞书服务端问题",
+      "status": "open",
+      "solution": "这是飞书服务端临时故障，错误已自动重试。建议：1)确认网络代理设置正确 2)飞书服务端状态正常 3)可在日志中查看是否有后续成功记录",
+      "test_result": "error",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_002",
+      "error_type": "DuplicateGateway",
+      "summary": "检测到多个Feishu gateway实例使用相同app_id运行",
+      "status": "open",
+      "solution": "这是配置/部署问题，需手动停止多余的gateway进程。当前实例PID不等同于26885，需检查实际运行的gateway进程",
+      "test_result": "error",
+      "test_duration_ms": 0
+    }
+  ]
+}

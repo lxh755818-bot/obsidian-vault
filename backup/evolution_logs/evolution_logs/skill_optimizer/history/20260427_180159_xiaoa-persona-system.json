@@ -1,0 +1,40 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-27T18:01:59.447196",
+  "current_index": 106,
+  "total_skills": 151,
+  "current": {
+    "skill": "xiaoa-persona-system",
+    "category": "mlops/xiaoa-persona-system",
+    "type": "sandbox",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": ""
+    },
+    "audit": {
+      "doc_complete": "fail",
+      "dep_available": "pass",
+      "load_time_ms": 0,
+      "error_rate_pct": 100.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": {
+      "delta_pct": 0,
+      "prev_latency": 0
+    },
+    "suggestions": [
+      "文档不完整: 缺少 name/description/body"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "doc_complete": "fail",
+    "dep_available": "pass",
+    "perf_stable": "stable",
+    "error_rate": "fail",
+    "action": "文档不完整: 缺少 name/description/body"
+  }
+}

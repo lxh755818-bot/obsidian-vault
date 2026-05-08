@@ -1,0 +1,45 @@
+{
+  "action": "generate_fix",
+  "skill": "feishu-agent-mention",
+  "skill_path": "/data/data/com.termux/files/home/.hermes/skills/.archive/feishu-agent-mention/SKILL.md",
+  "file_issues": [
+    "YAML frontmatter 解析失败"
+  ],
+  "file_suggestions": [
+    "确保文件以 --- 开头，第二个 --- 标记 YAML 结束"
+  ],
+  "fixes_proposed": [
+    {
+      "type": "add_field",
+      "field": "name",
+      "location": "frontmatter",
+      "value": "SKILL",
+      "patch": "name: \"SKILL\""
+    },
+    {
+      "type": "add_field",
+      "field": "description",
+      "location": "frontmatter",
+      "value": "请补充描述...",
+      "patch": "description: \"技能功能描述\""
+    },
+    {
+      "type": "expand_body",
+      "current_chars": 0,
+      "suggestion": "body 当前 0 字符，需要补充实质内容到50字符以上"
+    }
+  ],
+  "trend_audit": {
+    "doc_complete": "fail",
+    "dep_available": "n/a",
+    "load_time_ms": 0,
+    "error_rate_pct": 0,
+    "perf_stable": "stable",
+    "output_valid": false
+  },
+  "auto_fixable": true,
+  "approval_required": true,
+  "decision": "new_skill",
+  "score": 16.2,
+  "timestamp": "2026-05-08T18:04:05.732578"
+}

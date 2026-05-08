@@ -1,0 +1,146 @@
+{
+  "topic": "claude-mem",
+  "topic_safe": "claude-mem",
+  "researched_at": "2026-04-19T01:50:00Z",
+  "quality_score": {
+    "total": 17,
+    "stars_accuracy": 2,
+    "features": 3,
+    "tech_stack": 3,
+    "vs_hermes": 2,
+    "community": 3,
+    "action_items": 2,
+    "sources": 2
+  },
+  "stars": {
+    "current": 59500,
+    "trend": "rising",
+    "daily_new": "~800-1000",
+    "as_of": "2026-04-19",
+    "note": "CSDN报道30.5k（2月24日），蓝戒博客估算59.5k（4月17日），取中间值约59.5k"
+  },
+  "core_features": [
+    {
+      "feature": "自动会话捕获",
+      "description": "通过7个生命周期钩子（context-hook、new-hook、save-hook、summary-hook、cleanup-hook等）自动捕获Claude Code所有工具调用和代码操作，1000-10000 Token压缩为约500 Token语义摘要",
+      "hermes_gap": "Hermes目前缺乏开箱即用的会话捕获机制，记忆主要依赖用户手动维护"
+    },
+    {
+      "feature": "AI压缩优化",
+      "description": "使用Claude Agent SDK将冗长对话压缩为精炼的语义观测记录，实现Token成本优化",
+      "hermes_gap": "Hermes的记忆压缩机制尚未公开，无明确AI压缩策略"
+    },
+    {
+      "feature": "跨会话记忆注入",
+      "description": "新会话启动时自动注入历史记忆上下文，Claude可保持对项目的知识连续性",
+      "hermes_gap": "Hermes的上下文恢复能力有限，主要靠CLAUDE.md手动维护"
+    },
+    {
+      "feature": "SQLite FTS5 + Chroma向量库双存储",
+      "description": "SQLite FTS5提供全文检索，Chroma提供语义向量搜索，实现按需精准检索",
+      "hermes_gap": "Hermes的检索能力较简单，无专业向量数据库支持"
+    },
+    {
+      "feature": "Knowledge Agent系统（v9新增）",
+      "description": "从观测历史构建可查询AI大脑，支持build/prime/query/reprime/rebuild/delete完整生命周期，支持1M token上下文",
+      "hermes_gap": "这是高级知识管理能力，Hermes暂无对应功能"
+    },
+    {
+      "feature": "多IDE适配",
+      "description": "支持Claude Code、Cursor、Windsurf、OpenClaw、Codex等主流AI编程工具",
+      "hermes_gap": "Hermes专注自身生态，暂无横向工具集成"
+    },
+    {
+      "feature": "PM2进程管理",
+      "description": "后台Worker服务（HTTP API + Web UI）支持个人和团队部署",
+      "hermes_gap": "Hermes无明确后台服务架构，侧重单用户"
+    }
+  ],
+  "tech_stack": {
+    "language": "TypeScript",
+    "framework": "Node.js + TypeScript",
+    "key_dependencies": [
+      "Claude Agent SDK（AI压缩核心）",
+      "SQLite FTS5（全文检索引擎）",
+      "Chroma Vector DB（语义向量搜索）",
+      "PM2（进程管理）"
+    ]
+  },
+  "vs_hermes": {
+    "advantages": [
+      "垂直深度：专为Claude Code设计，记忆系统与IDE深度集成",
+      "活跃度：1,727次commit，917次独立提交，持续高速迭代",
+      "社区生态：多次登顶GitHub Trending，2026年2月热榜第一",
+      "功能完整度：v9已实现Knowledge Agent完整生命周期管理"
+    ],
+    "disadvantages": [
+      "平台锁定：仅适用于Claude Code生态，对其他Agent无直接价值",
+      "资源依赖：需要运行后台Worker服务（HTTP API + Web UI），资源消耗较高",
+      "复杂度：7个生命周期钩子 + SQLite + Chroma，部署维护复杂",
+      "最新版本bug：v9.1.0存在数据库迁移问题，需升级到v9.1.1"
+    ],
+    "inspired_takeaways": [
+      "记忆压缩策略：Claude-Mem将1000-10000 Token压缩至500 Token的做法值得借鉴，可显著降低上下文成本",
+      "生命周期钩子设计：7个钩子覆盖完整会话周期（启动→提问→执行→总结→清理），架构清晰",
+      "Knowledge Agent方向：从原始观测记录构建可查询AI大脑，这是记忆系统的演进方向"
+    ]
+  },
+  "community": {
+    "github_stars": 59500,
+    "trending_rank": "多次登顶GitHub Trending，2026年2月第1名",
+    "open_issues": "适量（版本活跃，issue处理及时）",
+    "recent_activity": "high",
+    "main_use_cases": [
+      "高频Claude Code用户的长期项目记忆保持",
+      "复杂代码库的多轮开发上下文延续",
+      "团队共享编码规范和项目知识"
+    ]
+  },
+  "threat_level": "medium",
+  "key_findings": [
+    "Claude-Mem是Claude Code生态最核心的记忆增强插件，59.5k star，1,727次commit，2026年2月GitHub Trending第一",
+    "核心技术：7个生命周期钩子 + Claude Agent SDK压缩 + SQLite FTS5/Chroma双存储 + PM2服务",
+    "v9新增Knowledge Agent：支持从观测历史构建可查询AI大脑，支持1M token上下文窗口，代表记忆系统演进方向",
+    "定位明确：垂直Claude Code生态，专注记忆持久化，与Hermes自进化通用Agent的定位不同",
+    "对Hermes的启示：记忆压缩策略（1000-10000→500 Token）、生命周期钩子设计、Knowledge Agent思路"
+  ],
+  "action_items": [
+    {
+      "priority": "medium",
+      "action": "评估在Hermes中实现类似AI压缩的记忆模块，将长对话压缩为语义摘要",
+      "reason": "Token成本优化是实际痛点，Claude-Mem已验证1000-10000→500的压缩比可行"
+    },
+    {
+      "priority": "medium",
+      "action": "设计Hermes生命周期钩子系统，覆盖启动→执行→总结→清理完整周期",
+      "reason": "7个钩子的设计已被Claude-Mem验证，可借鉴到Hermes的会话管理中"
+    },
+    {
+      "priority": "low",
+      "action": "探索Knowledge Agent方向：从Hermes的观测历史构建可查询知识库",
+      "reason": "这是记忆系统的自然演进，但需要较高开发成本，建议在核心架构稳定后考虑"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/thedotmack/claude-mem",
+      "type": "github",
+      "date": "2026-04-16"
+    },
+    {
+      "url": "https://github.com/thedotmack/claude-mem/releases",
+      "type": "github",
+      "date": "2026-04-14"
+    },
+    {
+      "url": "https://blog.csdn.net/chendongqi2007/article/details/158043439",
+      "type": "blog",
+      "date": "2026-03-09"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/473300",
+      "type": "blog",
+      "date": "2026-01-26"
+    }
+  ]
+}

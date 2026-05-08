@@ -1,0 +1,81 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-05-01T12:02:52.777010",
+  "scan_window_hours": 12,
+  "errors_found": 66,
+  "errors_closed": 0,
+  "errors_accepted": 5,
+  "errors_open": 0,
+  "reports": [
+    {
+      "error_id": "err_lark_ws_001",
+      "error_type": "minimax_model_dump_error",
+      "summary": "2026-05-01 00:30:27,332 ERROR [cron_c105a216b890_20260501_003012] root: API call failed after 3 retries. 'dict' object has no attribute 'model_dump' | provider=minimax-cn model=MiniMax-M2.7-highspeed ",
+      "status": "accepted",
+      "solution": "already tracked",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 52
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "error_type": "Lark_no_close_frame",
+      "summary": "2026-05-01 04:14:40,727 ERROR Lark: receive message loop exit, err: no close frame received or sent [conn_id=7634590159510785245]",
+      "status": "accepted",
+      "solution": "already tracked",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "error_type": "build_anthropic_kwargs_drop_context",
+      "summary": "2026-05-01 06:31:00,304 ERROR [cron_c105a216b890_20260501_063058] root: Non-retryable client error: build_anthropic_kwargs() got an unexpected keyword argument 'drop_context_1m_beta'",
+      "status": "accepted",
+      "solution": "already tracked",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 11
+    },
+    {
+      "error_id": "err_105",
+      "error_type": "gateway_instance_conflict",
+      "summary": "2026-05-01 07:45:12,851 ERROR gateway.run: Another gateway instance is already running (PID 20894, HERMES_HOME=/data/data/com.termux/files/home/.hermes). Use 'hermes gateway restart' to replace it, or",
+      "status": "accepted",
+      "solution": "closed error reappeared → accepted (external/recurring noise)",
+      "test_result": "error_reappeared",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "error_type": "feishu_edit_timeout",
+      "summary": "2026-05-01 11:34:27,911 ERROR gateway.platforms.feishu: [Feishu] Failed to edit message om_x100b5075bcf824a8c32a6ed182b6e7b: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded ",
+      "status": "accepted",
+      "solution": "already tracked",
+      "test_result": "skipped",
+      "test_duration_ms": 0,
+      "occurrences": 1
+    }
+  ],
+  "open_errors_checked": [],
+  "noise_filtered": {
+    "asyncio_unclosed_client_session": 0,
+    "asyncio_unclosed_connector": 0
+  },
+  "tracker_summary": {
+    "total_tracked": 66,
+    "closed": 19,
+    "accepted": 47,
+    "open": 0,
+    "in_progress": 0
+  },
+  "new_errors_accepted": [],
+  "error_type_counts": {
+    "minimax_model_dump_error": 52,
+    "Lark_no_close_frame": 1,
+    "build_anthropic_kwargs_drop_context": 11,
+    "gateway_instance_conflict": 1,
+    "feishu_edit_timeout": 1
+  }
+}

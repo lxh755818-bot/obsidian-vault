@@ -1,0 +1,102 @@
+{
+  "topic": "Everything Claude Code",
+  "topic_safe": "Everything_Claude_Code",
+  "rank": 2,
+  "stars": "140000+",
+  "stars_exact": "140K+ (140,000+)",
+  "github_url": "https://github.com/affaan-m/everything-claude-code",
+  "key_features": [
+    "28+ 专业子代理 (Sub-agents)",
+    "125+ 技能定义 (Skills)",
+    "60+ 快捷命令 (Commands)",
+    "编码规范指南 (Rules)",
+    "事件驱动自动化钩子 (Hooks)",
+    "MCP 服务器配置",
+    "持续学习系统 (Observer Agent → Instincts)",
+    "成本感知 LLM 管道 (模型路由、预算跟踪)",
+    "质量门禁 (Quality Gates)",
+    "跨会话记忆持久化",
+    "Git Worktree 并行代理支持",
+    "Token 优化与模型选择"
+  ],
+  "tech_stack": [
+    "Node.js/CLI",
+    "Model Context Protocol (MCP)",
+    "12+ 编程语言生态",
+    "Bash/Shell 脚本",
+    "多 IDE 集成 (VSCode, Cursor, etc.)"
+  ],
+  "pricing": "免费开源 (MIT License)",
+  "hermes_comparison": {
+    "advantages": [
+      "社区规模远超 Hermes (140K+ vs 小型社区)",
+      "170+ 贡献者,生态活跃度高",
+      "Anthropic 官方 Hackathon 冠军,品牌背书强",
+      "持续学习机制 (Observer Agent 自动捕获模式)",
+      "成本感知管道 (自动模型路由)"
+    ],
+    "disadvantages": [
+      "仅限 Claude Code 生态,非通用 Agent 框架",
+      "依赖 Anthropic API,灵活性受限",
+      "配置复杂度高,学习曲线陡峭"
+    ],
+    "threat_level": "high",
+    "inspiration": [
+      "ECC 的持续学习机制值得借鉴:Observer Agent 自动分析行为→生成 Instincts",
+      "成本感知管道设计可用于优化 Hermes 的模型选择",
+      "Skill 系统结构化封装方式可移植到 Hermes"
+    ]
+  },
+  "community": {
+    "contributors": 170,
+    "forks": 21000,
+    "last_commit": "2026-04-16",
+    "open_issues": "未获取精确数据(搜索结果不一致)",
+    "language_ecosystems": 12
+  },
+  "core_features_detailed": [
+    {
+      "feature": "Sub-agents (28+)",
+      "description": "处理特定任务的专家代理,各司其职",
+      "hermes_gap": "Hermes 缺乏如此细粒度的专业化代理分工"
+    },
+    {
+      "feature": "Skills (125+)",
+      "description": "可复用的技能定义,类似插件化能力封装",
+      "hermes_gap": "Hermes skill 系统不完善"
+    },
+    {
+      "feature": "Continuous Learning",
+      "description": "Observer Agent 监控行为,自动生成 Instincts 供下次使用",
+      "hermes_gap": "Hermes 无自动学习机制,每次需重新描述"
+    },
+    {
+      "feature": "Memory Persistence",
+      "description": "钩子自动保存/加载上下文,跨会话记忆",
+      "hermes_gap": "Hermes 记忆系统较弱"
+    },
+    {
+      "feature": "Cost-aware LLM Pipeline",
+      "description": "按复杂度路由到不同模型,追踪预算",
+      "hermes_gap": "Hermes 无智能成本优化"
+    }
+  ],
+  "verdict": "AI Agent Harness 性能优化标杆,140K星验证了 Claude Code 生态的统治力,持续学习机制是最大亮点。",
+  "action_items": [
+    "借鉴 ECC Observer Agent 设计,强化 Hermes 自动学习能力",
+    "引入 Skill 封装标准,提升 Hermes 技能复用性",
+    "参考成本感知管道,优化 Hermes 多模型路由策略",
+    "研究 ECC 的质量门禁机制,集成到 Hermes 验证流程"
+  ],
+  "researched_at": "2026-04-18T17:31:42.648118+00:00",
+  "quality_score": {
+    "stars_accuracy": 2,
+    "features": 3,
+    "tech_stack": 2,
+    "vs_hermes": 2,
+    "community": 2,
+    "action_items": 3,
+    "sources": 1
+  },
+  "total_score": 15
+}

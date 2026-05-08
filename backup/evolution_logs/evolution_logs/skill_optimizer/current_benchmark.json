@@ -1,0 +1,33 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-05-08T18:03:31.012114",
+  "current_index": 5,
+  "total_skills": 181,
+  "current": {
+    "skill": "feishu-agent-mention",
+    "category": ".archive/feishu-agent-mention",
+    "type": "sandbox",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "No frontmatter - could not parse YAML block"
+    },
+    "audit": {
+      "doc_complete": "fail",
+      "dep_available": "n/a",
+      "load_time_ms": 0,
+      "error_rate_pct": 0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": {
+      "delta_pct": 0.0
+    },
+    "suggestions": [
+      "文档不完整：缺少 YAML frontmatter 或 description 字段，建议添加标准 SKILL.md frontmatter",
+      "无法解析 YAML frontmatter，文件格式不符合标准"
+    ],
+    "status": "degraded"
+  }
+}

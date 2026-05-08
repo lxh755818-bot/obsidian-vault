@@ -1,0 +1,40 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-17T08:02:42",
+  "current_index": 3,
+  "total_skills": 88,
+  "current": {
+    "skill": "imessage",
+    "category": "apple/imessage",
+    "type": "sandbox",
+    "metrics": {
+      "latency_ms": 0,
+      "success": true,
+      "output_valid": true,
+      "error": null
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 0,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": true
+    },
+    "vs_last": {
+      "duration_delta_ms": 0,
+      "duration_change_pct": 0,
+      "note": ""
+    },
+    "suggestions": [
+      "依赖不可用: imsg 未安装，标记为 manual_only",
+      "沙箱技能无平台依赖，建议启用自动化测试"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 2,
+    "audit_warnings": 1,
+    "action": "依赖不可用: imsg 未安装，标记为 manual_only"
+  }
+}

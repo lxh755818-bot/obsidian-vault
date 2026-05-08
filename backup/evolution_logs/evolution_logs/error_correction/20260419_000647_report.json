@@ -1,0 +1,37 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-19T00:06:47.564540",
+  "errors_found": 3,
+  "errors_closed": 0,
+  "errors_open": 3,
+  "reports": [
+    {
+      "error_id": "err_022",
+      "error_type": "MissingEventProcessor",
+      "summary": "bot_p2p_chat_entered_v1 processor not found (1404 occurrences in 12h)",
+      "status": "in_progress",
+      "solution": "修复代码已在 feishu.py line 1222-1224: .register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(lambda data: None)。但运行中进程使用的是旧代码(内存)，需要重启 gateway 服务使修复生效。",
+      "test_result": "fix_in_code",
+      "test_duration_ms": 0,
+      "applied_fix": "feishu.py _build_event_handler() 已注册 bot_p2p_chat_entered_v1 处理器"
+    },
+    {
+      "error_id": "err_023",
+      "error_type": "WebSocketError",
+      "summary": "WebSocket ping timeout (14 occurrences in 12h)",
+      "status": "open",
+      "solution": "WebSocket ping超时，飞书服务端主动断开连接。已有自动重连机制，这是网络临时问题，无需代码修复。",
+      "test_result": "not_needed",
+      "test_duration_ms": 0
+    },
+    {
+      "error_id": "err_025",
+      "error_type": "NetworkError",
+      "summary": "Feishu connection errors (40 occurrences in 12h)",
+      "status": "open",
+      "solution": "飞书服务器连接失败/超时，网络临时问题。已有重试和重连机制，无需代码修复。",
+      "test_result": "not_needed",
+      "test_duration_ms": 0
+    }
+  ]
+}

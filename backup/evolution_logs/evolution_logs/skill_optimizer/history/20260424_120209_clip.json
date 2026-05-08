@@ -1,0 +1,36 @@
+{
+  "task": "skill_cycle_optimizer",
+  "timestamp": "2026-04-24T12:02:09.321304",
+  "current_index": 75,
+  "total_skills": 122,
+  "current": {
+    "skill": "clip",
+    "category": "mlops/models/clip",
+    "type": "cli",
+    "metrics": {
+      "latency_ms": 0,
+      "success": false,
+      "output_valid": false,
+      "error": "ImportError: No module named 'clip'"
+    },
+    "audit": {
+      "doc_complete": "pass",
+      "dep_available": "fail",
+      "load_time_ms": 1,
+      "error_rate_pct": 0.0,
+      "perf_stable": "stable",
+      "output_valid": false
+    },
+    "vs_last": null,
+    "suggestions": [
+      "依赖缺失: transformers not installed, torch not installed, pillow not installed，建议安装或标记为 manual_only"
+    ],
+    "status": "degraded"
+  },
+  "summary": {
+    "audit_passed": 1,
+    "audit_warnings": 0,
+    "audit_fails": 1,
+    "action": "依赖缺失，需要配置"
+  }
+}

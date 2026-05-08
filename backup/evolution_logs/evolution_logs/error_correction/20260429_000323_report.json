@@ -1,0 +1,216 @@
+{
+  "task": "log_error_correction",
+  "timestamp": "2026-04-29T00:03:23.763881",
+  "scan_window_hours": 12,
+  "scan_window_start": "2026-04-28T12:03:23.237919",
+  "errors_found": 18,
+  "errors_closed": 0,
+  "errors_open": 8,
+  "reports": [],
+  "open_errors_checked": [
+    {
+      "error_id": "err_020",
+      "summary": "lark_loop_exit (5 occurrences)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_101",
+      "summary": "飞书WebSocket连接异常断开 (keepalive ping timeout / no close frame)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "summary": "Lark WebSocket 连接正常断开(no close frame) - 12次/12h，属平台正常行为",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_012",
+      "summary": "vision_invalid_image (4 occurrences)",
+      "previous_status": "closed",
+      "current_status": "accepted",
+      "reason": "Category vision_invalid_image_source still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_vision_invalid_image_20260426",
+      "summary": "tools.vision_tools: Error analyzing image: Invalid image source (user provided bad input)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category vision_invalid_image_source still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_001",
+      "summary": "飞书API连接超时，可能是网络问题或飞书服务端问题",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_timeout still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_001",
+      "summary": "飞书API连接超时，可能是网络问题或飞书服务端问题",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_timeout still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_020",
+      "summary": "lark_loop_exit (5 occurrences)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_101",
+      "summary": "飞书WebSocket连接异常断开 (keepalive ping timeout / no close frame)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "summary": "Lark WebSocket 连接正常断开(no close frame) - 12次/12h，属平台正常行为",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_020",
+      "summary": "lark_loop_exit (5 occurrences)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_101",
+      "summary": "飞书WebSocket连接异常断开 (keepalive ping timeout / no close frame)",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_lark_ws_001",
+      "summary": "Lark WebSocket 连接正常断开(no close frame) - 12次/12h，属平台正常行为",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_ws_loop_exit still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_001",
+      "summary": "飞书API连接超时，可能是网络问题或飞书服务端问题",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_failed still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_003",
+      "summary": "urllib3 连接池请求失败",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_failed still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_001",
+      "summary": "飞书API连接超时，可能是网络问题或飞书服务端问题",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_failed still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_003",
+      "summary": "urllib3 连接池请求失败",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category lark_connect_failed still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_116",
+      "summary": "飞书编辑消息失败 (2x) - 消息已被删除或过期",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category feishu_edit_message_error still occurring but treated as accepted external factor"
+    },
+    {
+      "error_id": "err_116",
+      "summary": "飞书编辑消息失败 (2x) - 消息已被删除或过期",
+      "previous_status": "accepted",
+      "current_status": "accepted",
+      "reason": "Category feishu_edit_message_error still occurring but treated as accepted external factor"
+    }
+  ],
+  "noise_filtered": {
+    "asyncio: Unclosed client session": 607,
+    "asyncio: Unclosed connector": 34,
+    "asyncio: Future exception was never retrieved": 2
+  },
+  "tracker_summary": {
+    "total_tracked": 40,
+    "closed": 19,
+    "accepted": 21,
+    "open": 0,
+    "in_progress": 0
+  },
+  "new_errors": [
+    {
+      "category": "traceback_generic",
+      "summary": "Traceback (most recent call last):",
+      "source": "agent.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "api_exception_response",
+      "summary": "raise ApiException.from_response(",
+      "source": "agent.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "api_exception_httpresp",
+      "summary": "raise ApiException(http_resp=http_resp, body=body, data=data)",
+      "source": "agent.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "hindsight_api_402",
+      "summary": "hindsight_client_api.exceptions.ApiException: (402)",
+      "source": "agent.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "asyncio_unhandled_exception",
+      "summary": "2026-04-28 13:53:27,170 ERROR asyncio: unhandled exception during asyncio.run() shutdown",
+      "source": "agent.log",
+      "timestamp": "2026-04-28 13:53:27",
+      "status": "open"
+    },
+    {
+      "category": "minimax_model_dump_error",
+      "summary": "ERROR root: API call failed after 3 retries. 'dict' object has no attribute 'model_dump' | provider=minimax-cn model=MiniMax-M2.7-highspeed msgs=2 tokens=~680",
+      "source": "gateway.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "minimax_model_dump_error",
+      "summary": "ERROR root: API call failed after 3 retries. 'dict' object has no attribute 'model_dump' | provider=minimax-cn model=MiniMax-M2.7-highspeed msgs=2 tokens=~5,091",
+      "source": "gateway.log",
+      "timestamp": null,
+      "status": "open"
+    },
+    {
+      "category": "minimax_model_dump_error",
+      "summary": "ERROR root: API call failed after 3 retries. 'dict' object has no attribute 'model_dump' | provider=minimax-cn model=MiniMax-M2.7-highspeed msgs=4 tokens=~677",
+      "source": "gateway.log",
+      "timestamp": null,
+      "status": "open"
+    }
+  ],
+  "summary": "Found 18 unique error signatures after noise filtering. 8 truly new errors need tracking. All 0 open tracked errors are currently resolved/accepted."
+}
